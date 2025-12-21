@@ -66,26 +66,26 @@ export function StoryHighlight() {
                 {/* Header */}
                 <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 md:mb-16 gap-6 md:gap-10">
                     <div className="text-left space-y-4 items-start flex flex-col">
-                        <span className="text-primary/60 font-black tracking-[0.3em] text-[10px] md:text-xs uppercase block">Insights &amp; Heritage</span>
+                        <span className="text-primary/80 font-black tracking-[0.3em] text-[10px] md:text-xs uppercase block">Insights &amp; Heritage</span>
                         <h2 className="text-4xl md:text-7xl font-black text-primary leading-[1.1] tracking-tighter">소나버스 <br />스토리</h2>
                     </div>
-                    <button className="group flex items-center gap-4 text-gray-400 font-black hover:text-primary transition-all text-sm tracking-widest uppercase">
-                        <Link href="/stories">View All Stories</Link> <span className="material-symbols-outlined select-none transition-transform group-hover:translate-x-2 text-xl">east</span>
-                    </button>
+                    <Link href="/stories" className="group flex items-center gap-4 text-gray-400 font-black hover:text-primary transition-all text-sm tracking-widest uppercase p-2">
+                        View All Stories <span className="material-symbols-outlined select-none transition-transform group-hover:translate-x-2 text-xl">east</span>
+                    </Link>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {/* Featured Story (Large Card) */}
                     <div className="lg:col-span-2 group cursor-pointer relative overflow-hidden rounded-[3.5rem] bg-gray-900 shadow-3xl h-[600px]">
                         <div className="absolute inset-0 opacity-70 group-hover:opacity-60 transition-all duration-1000 group-hover:scale-105">
-                            <OptimizedImage 
-                                alt="만보 워크메이트 개발 비하인드" 
+                            <OptimizedImage
+                                alt="만보 워크메이트 개발 비하인드"
                                 title="만보 워크메이트 개발 비하인드 스토리"
                                 src="/images/stories/story-thumb-1.webp"
-                                fill 
+                                fill
                                 priority
                                 sizes="(max-width: 1024px) 100vw, 50vw"
-                                objectFit="cover" 
+                                objectFit="cover"
                             />
                         </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
@@ -108,13 +108,13 @@ export function StoryHighlight() {
                         <div key={story.id} className="group cursor-pointer flex flex-col">
                             <Link href={`/stories/${story.id}`}>
                                 <div className="aspect-[16/10] rounded-[2.5rem] overflow-hidden mb-8 shadow-sm relative bg-gray-100">
-                                    <OptimizedImage 
-                                        alt={story.title} 
-                                        title={story.title} 
-                                        className="transition-transform duration-700 group-hover:scale-110" 
+                                    <OptimizedImage
+                                        alt={story.title}
+                                        title={story.title}
+                                        className="transition-transform duration-700 group-hover:scale-110"
                                         src={i === 0 ? "/images/stories/story-thumb-2.webp" : "/images/stories/story-thumb-3.webp"}
-                                        fill 
-                                        objectFit="cover" 
+                                        fill
+                                        objectFit="cover"
                                     />
                                     <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-xl px-4 py-1.5 rounded-full text-[10px] font-black text-gray-900 shadow-sm uppercase tracking-widest">{story.category}</div>
                                 </div>

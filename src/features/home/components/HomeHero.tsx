@@ -51,12 +51,18 @@ export function HomeHero() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-5 mt-6">
-                    <button className="h-16 px-12 rounded-full bg-white text-gray-900 font-black hover:bg-gray-100 transition-all shadow-[0_20px_40px_rgba(255,255,255,0.2)] hover:scale-105 hover:-translate-y-1 active:scale-95">
-                        <Link href="/products/manbo">{t('home.hero.cta.products') || '제품 보러가기'}</Link>
-                    </button>
-                    <button className="h-16 px-12 rounded-full border border-white/30 bg-white/5 backdrop-blur-xl text-white font-bold hover:bg-white/10 transition-all hover:scale-105">
-                        <Link href="/stories">{t('home.hero.cta.story') || '브랜드 스토리'}</Link>
-                    </button>
+                    <Link
+                        href="/products/manbo"
+                        className="h-16 px-12 rounded-full bg-white text-gray-900 font-black hover:bg-gray-100 transition-all shadow-[0_20px_40px_rgba(255,255,255,0.2)] hover:scale-105 hover:-translate-y-1 active:scale-95 flex items-center justify-center"
+                    >
+                        {t('home.hero.cta.products') || '제품 보러가기'}
+                    </Link>
+                    <Link
+                        href="/stories"
+                        className="h-16 px-12 rounded-full border border-white/30 bg-white/5 backdrop-blur-xl text-white font-bold hover:bg-white/10 transition-all hover:scale-105 flex items-center justify-center"
+                    >
+                        {t('home.hero.cta.story') || '브랜드 스토리'}
+                    </Link>
                 </div>
             </div>
 
