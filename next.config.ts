@@ -35,7 +35,12 @@ const nextConfig: NextConfig = {
     removeConsole: process.env.NODE_ENV === 'production' ? { exclude: ['error'] } : false,
   },
   // 메모리 사용 최적화를 위한 웹팩 설정
-  webpack: (config, { isServer }) => {
+  webpack: (config, { isServer, dev }) => {
+    // 개발 모드에서 캐시 비활성화 (메모리 부족 문제 해결)
+    if (dev) {
+      config.cache = false; // 캐시 완전 비활성화
+    }
+
     if (!isServer) {
       // 클라이언트 빌드 최적화
       config.optimization = {

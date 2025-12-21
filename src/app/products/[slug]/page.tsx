@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: Props) {
         description: product.seo?.meta_description_ko || product.short_description?.ko || product.description?.ko || "",
         keywords: product.seo?.keywords_ko || [],
         ogImage,
-        ogType: "product",
+        ogType: "website", // OpenGraph는 'website' 또는 'article'만 허용
         canonicalUrl: product.seo?.canonical_url || `${siteUrl}/products/${slug}`,
     })
 }
