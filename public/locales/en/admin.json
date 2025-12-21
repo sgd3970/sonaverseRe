@@ -1,0 +1,99 @@
+{
+  "login": {
+    "title": "Admin Login",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Login",
+    "forgotPassword": "Forgot password?",
+    "errors": {
+      "invalidCredentials": "Invalid email or password",
+      "accountLocked": "Account is locked. Contact administrator",
+      "serverError": "Server error occurred"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "stats": {
+      "todayVisitors": "Today's Visitors",
+      "newInquiries": "New Inquiries",
+      "productViews": "Product Views",
+      "recentPosts": "Recent Posts"
+    },
+    "recentActivity": "Recent Activity",
+    "recentInquiries": "Recent Inquiries"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "press": "Press",
+    "stories": "Stories",
+    "history": "History",
+    "products": "Products",
+    "inquiries": "Inquiries",
+    "analytics": "Analytics",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "history": {
+    "title": "History Management",
+    "new": "New History",
+    "edit": "Edit History",
+    "list": "History List",
+    "year": "Year",
+    "events": "Key Events",
+    "seedSuccess": "Initial data has been created",
+    "seedError": "Failed to create initial data",
+    "deleteConfirm": "Are you sure you want to delete this history?"
+  },
+  "press": {
+    "title": "Press Management",
+    "new": "New Press",
+    "edit": "Edit Press",
+    "list": "Press List",
+    "published": "Published",
+    "draft": "Draft",
+    "featured": "Featured"
+  },
+  "stories": {
+    "title": "Story Management",
+    "new": "New Story",
+    "edit": "Edit Story",
+    "list": "Story List",
+    "mainStory": "Main Story"
+  },
+  "products": {
+    "title": "Product Management",
+    "new": "New Product",
+    "edit": "Edit Product",
+    "list": "Product List"
+  },
+  "inquiries": {
+    "title": "Inquiry Management",
+    "detail": "Inquiry Detail",
+    "list": "Inquiry List",
+    "status": {
+      "pending": "Pending",
+      "in_progress": "In Progress",
+      "resolved": "Resolved",
+      "closed": "Closed"
+    },
+    "priority": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "urgent": "Urgent"
+    }
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "import": "Import",
+    "upload": "Upload",
+    "download": "Download"
+  }
+}

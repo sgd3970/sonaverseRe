@@ -1,0 +1,86 @@
+{
+  "manbo": {
+    "title": "MANBO Walker",
+    "subtitle": "Hybrid Smart Walkmate",
+    "hero": {
+      "title": "Safe Walking\nwith MANBO",
+      "description": "Next-generation walking aid equipped with AI technology"
+    },
+    "features": {
+      "title": "Key Features",
+      "items": {
+        "hybrid": {
+          "title": "Hybrid Driving",
+          "description": "Safe walking support in various indoor and outdoor environments"
+        },
+        "slope": {
+          "title": "Auto Slope Control",
+          "description": "AI detects slopes and automatically adjusts speed"
+        },
+        "emergency": {
+          "title": "Emergency Stop",
+          "description": "Immediate stop when detecting危险 situations"
+        },
+        "fallPrevention": {
+          "title": "AI Fall Prevention",
+          "description": "Detect and prevent fall risks in advance"
+        }
+      }
+    },
+    "specifications": {
+      "title": "Specifications",
+      "weight": "Weight",
+      "maxLoad": "Max Load",
+      "batteryLife": "Battery Life",
+      "maxSpeed": "Max Speed"
+    },
+    "relatedStories": {
+      "title": "Related Stories"
+    }
+  },
+  "bodeum": {
+    "title": "Bodeum Diaper",
+    "subtitle": "Premium Adult Diaper",
+    "hero": {
+      "title": "Diapers that Protect\nComfort and Dignity",
+      "description": "Minimized skin irritation and maximized absorbency"
+    },
+    "lineup": {
+      "title": "Product Lineup",
+      "types": {
+        "tape": "Tape Type",
+        "panty": "Panty Type"
+      },
+      "sizes": {
+        "s": "Small",
+        "m": "Medium",
+        "l": "Large",
+        "xl": "Extra Large"
+      }
+    },
+    "features": {
+      "title": "Key Features",
+      "items": {
+        "3dTailoring": {
+          "title": "3D Tailoring",
+          "description": "Excellent fit with 3D design"
+        },
+        "absorbency": {
+          "title": "High Absorbency",
+          "description": "Highly absorbent materials for long-lasting use"
+        },
+        "natural": {
+          "title": "Natural Materials",
+          "description": "Uses natural materials to minimize skin irritation"
+        },
+        "odorControl": {
+          "title": "Odor Control",
+          "description": "Effective odor blocking technology"
+        }
+      }
+    },
+    "relatedStories": {
+      "title": "Related Stories"
+    }
+  }
+}

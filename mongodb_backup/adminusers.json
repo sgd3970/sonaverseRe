@@ -1,0 +1,55 @@
+[
+  {
+    "_id": "689b5340bfb04216ae60c8b6",
+    "email": "admin@sonaverse.kr",
+    "password_hash": "$2b$12$l7DmxmUVx4wYUeyxx1ZQ8uvlgtUQUjHTAXi513CuWmXXU0YEad73u",
+    "name": "admin",
+    "role": "admin",
+    "permissions": {
+      "press_releases": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "stories": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "products": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "inquiries": [
+        "read",
+        "update",
+        "delete"
+      ],
+      "analytics": [
+        "read"
+      ],
+      "settings": [
+        "read",
+        "update"
+      ],
+      "users": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    },
+    "is_active": true,
+    "is_email_verified": true,
+    "email_verified_at": "2025-08-12T05:44:16.839Z",
+    "two_factor_enabled": false,
+    "failed_login_attempts": 0,
+    "last_login_at": "2025-12-05T17:41:18.999Z",
+    "created_at": "2025-08-12T05:44:16.839Z",
+    "updated_at": "2025-08-12T05:44:16.839Z"
+  }
+]

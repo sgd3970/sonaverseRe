@@ -1,0 +1,16 @@
+{
+  "title": "Press Coverage",
+  "subtitle": "Sonaverse's innovation is being recognized worldwide",
+  "pressName": "Media Outlet",
+  "publishedDate": "Published",
+  "viewCount": "Views",
+  "readArticle": "Read Article",
+  "externalLink": "View Original",
+  "featured": "Featured News",
+  "recent": "Recent News",
+  "loadMore": "Load More",
+  "noPress": "No press coverage available",
+  "searchPlaceholder": "Search press...",
+  "filterByYear": "By Year",
+  "filterByCategory": "By Category"
+}

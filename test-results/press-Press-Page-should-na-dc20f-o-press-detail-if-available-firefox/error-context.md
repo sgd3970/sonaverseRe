@@ -1,0 +1,240 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - link "메인 콘텐츠로 건너뛰기" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "accessibility_new Sonaverse" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e8]: accessibility_new
+          - heading "Sonaverse" [level=1] [ref=e9]
+        - navigation [ref=e10]:
+          - link "홈" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - button "제품소개 expand_more" [ref=e14]:
+            - text: 제품소개
+            - generic [ref=e15]: expand_more
+          - link "소나버스 스토리" [ref=e17] [cursor=pointer]:
+            - /url: /stories
+          - link "언론보도" [ref=e19] [cursor=pointer]:
+            - /url: /press
+          - link "구매/제휴 문의" [ref=e21] [cursor=pointer]:
+            - /url: /inquiry
+        - button "language 한국어 expand_more" [ref=e24]:
+          - generic [ref=e25]: language
+          - generic [ref=e26]: 한국어
+          - generic [ref=e27]: expand_more
+    - main [ref=e28]:
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - heading "언론보도" [level=2] [ref=e32]
+          - paragraph [ref=e33]: 소나버스의 새로운 소식과 언론에 비친 우리의 모습을 전해드립니다.
+        - generic [ref=e34]:
+          - generic:
+            - generic: search
+          - textbox "기사 제목 또는 언론사를 검색하세요" [ref=e35]
+        - generic [ref=e36]:
+          - link "CES 2024 혁신상 수상 기대작 Startup Today | 2024. 12. 05. CES 2024 혁신상 수상 기대작 오는 1월 라스베이거스에서 열리는 CES 2024를 앞두고, 한국 스타트업 소나버스가 혁신상 유력 후보로 거론되고 있다.소나버스는 이번 CES에서 차세대 보행 보조 로봇과 스마트 기저귀 케어 시스템을 선보일 예정이다. 자세히 보기 arrow_forward" [active] [ref=e37] [cursor=pointer]:
+            - /url: /press/sonaverse-ces-2024-innovation-award
+            - generic [ref=e38]:
+              - generic:
+                - img "CES 2024 혁신상 수상 기대작"
+            - generic [ref=e39]:
+              - generic [ref=e40]:
+                - generic [ref=e41]: Startup Today
+                - generic [ref=e42]: "|"
+                - generic [ref=e43]: 2024. 12. 05.
+              - heading "CES 2024 혁신상 수상 기대작" [level=3] [ref=e44]
+              - paragraph [ref=e45]: 오는 1월 라스베이거스에서 열리는 CES 2024를 앞두고, 한국 스타트업 소나버스가 혁신상 유력 후보로 거론되고 있다.소나버스는 이번 CES에서 차세대 보행 보조 로봇과 스마트 기저귀 케어 시스템을 선보일 예정이다.
+              - generic [ref=e46]:
+                - text: 자세히 보기
+                - generic [ref=e47]: arrow_forward
+          - link "AI가 결합된 실버 케어의 미래 AI Times | 2024. 10. 20. AI가 결합된 실버 케어의 미래 소나버스의 CTO를 만나 AI가 그리는 돌봄의 미래에 대해 들어보았다.만보 워커에 탑재된 AI 기술은 사용자의 보행 패턴을 분석하여 낙상 위험을 예측하고, 건강 이상 징후를 조기 발견하는 데 활용된다. 자세히 보기 arrow_forward" [ref=e48] [cursor=pointer]:
+            - /url: /press/sonaverse-ai-technology
+            - generic [ref=e49]:
+              - generic:
+                - img "AI가 결합된 실버 케어의 미래"
+            - generic [ref=e50]:
+              - generic [ref=e51]:
+                - generic [ref=e52]: AI Times
+                - generic [ref=e53]: "|"
+                - generic [ref=e54]: 2024. 10. 20.
+              - heading "AI가 결합된 실버 케어의 미래" [level=3] [ref=e55]
+              - paragraph [ref=e56]: 소나버스의 CTO를 만나 AI가 그리는 돌봄의 미래에 대해 들어보았다.만보 워커에 탑재된 AI 기술은 사용자의 보행 패턴을 분석하여 낙상 위험을 예측하고, 건강 이상 징후를 조기 발견하는 데 활용된다.
+              - generic [ref=e57]:
+                - text: 자세히 보기
+                - generic [ref=e58]: arrow_forward
+          - link "소나버스, 시니어 테크의 새로운 지평을 열다 TechCrunch Korea | 2024. 09. 15. 소나버스, 시니어 테크의 새로운 지평을 열다 시니어 테크 스타트업 소나버스가 100억 원 규모의 시리즈 A 투자를 성공적으로 유치하며 글로벌 시장 진출의 신호탄을 쏘아 올렸다.소나버스는 하이브리드 보행 보조기 '만보 워크메이트'를 통해 고령화 사회의 핵심 문제인 이동성 저하와 낙상 사고 예방 솔루션을 제시하고 있... 자세히 보기 arrow_forward" [ref=e59] [cursor=pointer]:
+            - /url: /press/sonaverse-senior-tech-leader
+            - generic [ref=e60]:
+              - generic:
+                - img "소나버스, 시니어 테크의 새로운 지평을 열다"
+            - generic [ref=e61]:
+              - generic [ref=e62]:
+                - generic [ref=e63]: TechCrunch Korea
+                - generic [ref=e64]: "|"
+                - generic [ref=e65]: 2024. 09. 15.
+              - heading "소나버스, 시니어 테크의 새로운 지평을 열다" [level=3] [ref=e66]
+              - paragraph [ref=e67]: 시니어 테크 스타트업 소나버스가 100억 원 규모의 시리즈 A 투자를 성공적으로 유치하며 글로벌 시장 진출의 신호탄을 쏘아 올렸다.소나버스는 하이브리드 보행 보조기 '만보 워크메이트'를 통해 고령화 사회의 핵심 문제인 이동성 저하와 낙상 사고 예방 솔루션을 제시하고 있...
+              - generic [ref=e68]:
+                - text: 자세히 보기
+                - generic [ref=e69]: arrow_forward
+          - link "만보 워커 사용자 만족도 95% 달성 메디컬투데이 | 2024. 09. 10. 만보 워커 사용자 만족도 95% 달성 소나버스는 만보 워커 사용자 200명을 대상으로 실시한 만족도 조사에서 95%의 높은 만족도를 기록했다고 9월 10일 발표했다.특히 안전성과 사용 편의성에서 높은 점수를 받았으며, 90% 이상의 사용자가 추천 의향을 밝혔다. 자세히 보기 arrow_forward" [ref=e70] [cursor=pointer]:
+            - /url: /press/manbo-walker-user-testimonial
+            - generic [ref=e71]:
+              - generic:
+                - img "만보 워커 사용자 만족도 95% 달성"
+            - generic [ref=e72]:
+              - generic [ref=e73]:
+                - generic [ref=e74]: 메디컬투데이
+                - generic [ref=e75]: "|"
+                - generic [ref=e76]: 2024. 09. 10.
+              - heading "만보 워커 사용자 만족도 95% 달성" [level=3] [ref=e77]
+              - paragraph [ref=e78]: 소나버스는 만보 워커 사용자 200명을 대상으로 실시한 만족도 조사에서 95%의 높은 만족도를 기록했다고 9월 10일 발표했다.특히 안전성과 사용 편의성에서 높은 점수를 받았으며, 90% 이상의 사용자가 추천 의향을 밝혔다.
+              - generic [ref=e79]:
+                - text: 자세히 보기
+                - generic [ref=e80]: arrow_forward
+          - link "소나버스, 북미 시장 진출 계획 발표 한국경제 | 2024. 08. 15. 소나버스, 북미 시장 진출 계획 발표 소나버스는 8월 15일 만보 워커와 보듬 기저귀의 북미 시장 진출 계획을 발표했다.미국과 캐나다의 주요 의료기관 및 요양시설과 파트너십을 체결하며 글로벌 시장 공략에 나선다. 자세히 보기 arrow_forward" [ref=e81] [cursor=pointer]:
+            - /url: /press/sonaverse-global-expansion
+            - generic [ref=e82]:
+              - generic:
+                - img "소나버스, 북미 시장 진출 계획 발표"
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - generic [ref=e85]: 한국경제
+                - generic [ref=e86]: "|"
+                - generic [ref=e87]: 2024. 08. 15.
+              - heading "소나버스, 북미 시장 진출 계획 발표" [level=3] [ref=e88]
+              - paragraph [ref=e89]: 소나버스는 8월 15일 만보 워커와 보듬 기저귀의 북미 시장 진출 계획을 발표했다.미국과 캐나다의 주요 의료기관 및 요양시설과 파트너십을 체결하며 글로벌 시장 공략에 나선다.
+              - generic [ref=e90]:
+                - text: 자세히 보기
+                - generic [ref=e91]: arrow_forward
+          - link "보듬 기저귀, 프리미엄 시니어 케어 시장 진출 헬스케어뉴스 | 2024. 07. 01. 보듬 기저귀, 프리미엄 시니어 케어 시장 진출 소나버스는 7월 1일 프리미엄 성인용 기저귀 브랜드 '보듬'을 공식 출시했다고 발표했다.보듬 기저귀는 피부 자극을 최소화하고 흡수력을 극대화한 제품으로, 시니어의 편안함과 존엄성을 최우선으로 설계되었다. 자세히 보기 arrow_forward" [ref=e92] [cursor=pointer]:
+            - /url: /press/bodeum-diaper-launch
+            - generic [ref=e93]:
+              - generic:
+                - img "보듬 기저귀, 프리미엄 시니어 케어 시장 진출"
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - generic [ref=e96]: 헬스케어뉴스
+                - generic [ref=e97]: "|"
+                - generic [ref=e98]: 2024. 07. 01.
+              - heading "보듬 기저귀, 프리미엄 시니어 케어 시장 진출" [level=3] [ref=e99]
+              - paragraph [ref=e100]: 소나버스는 7월 1일 프리미엄 성인용 기저귀 브랜드 '보듬'을 공식 출시했다고 발표했다.보듬 기저귀는 피부 자극을 최소화하고 흡수력을 극대화한 제품으로, 시니어의 편안함과 존엄성을 최우선으로 설계되었다.
+              - generic [ref=e101]:
+                - text: 자세히 보기
+                - generic [ref=e102]: arrow_forward
+          - link "소나버스, 혁신기업 100선 선정 Startup Today | 2024. 06. 05. 소나버스, 혁신기업 100선 선정 소나버스는 사회적 문제를 기술로 해결하는 혁신 기업으로 인정받아 2024년 혁신기업 100선에 선정되었다고 6월 5일 발표했다.특히 만보 워커와 보듬 기저귀가 시니어의 삶의 질 향상에 기여한 점이 높이 평가되었다. 자세히 보기 arrow_forward" [ref=e103] [cursor=pointer]:
+            - /url: /press/sonaverse-innovation-award-2024
+            - generic [ref=e104]:
+              - generic:
+                - img "소나버스, 혁신기업 100선 선정"
+            - generic [ref=e105]:
+              - generic [ref=e106]:
+                - generic [ref=e107]: Startup Today
+                - generic [ref=e108]: "|"
+                - generic [ref=e109]: 2024. 06. 05.
+              - heading "소나버스, 혁신기업 100선 선정" [level=3] [ref=e110]
+              - paragraph [ref=e111]: 소나버스는 사회적 문제를 기술로 해결하는 혁신 기업으로 인정받아 2024년 혁신기업 100선에 선정되었다고 6월 5일 발표했다.특히 만보 워커와 보듬 기저귀가 시니어의 삶의 질 향상에 기여한 점이 높이 평가되었다.
+              - generic [ref=e112]:
+                - text: 자세히 보기
+                - generic [ref=e113]: arrow_forward
+          - link "만보 워커, 식약처 의료기기 인증 획득 AI Times | 2024. 05. 20. 만보 워커, 식약처 의료기기 인증 획득 소나버스는 만보 워커가 식품의약품안전처로부터 2등급 의료기기 인증을 받았다고 5월 20일 발표했다.이로써 만보 워커는 의료기관 및 요양시설에서 공식적으로 사용할 수 있게 되었다. 자세히 보기 arrow_forward" [ref=e114] [cursor=pointer]:
+            - /url: /press/manbo-walker-medical-device-approval
+            - generic [ref=e115]:
+              - generic:
+                - img "만보 워커, 식약처 의료기기 인증 획득"
+            - generic [ref=e116]:
+              - generic [ref=e117]:
+                - generic [ref=e118]: AI Times
+                - generic [ref=e119]: "|"
+                - generic [ref=e120]: 2024. 05. 20.
+              - heading "만보 워커, 식약처 의료기기 인증 획득" [level=3] [ref=e121]
+              - paragraph [ref=e122]: 소나버스는 만보 워커가 식품의약품안전처로부터 2등급 의료기기 인증을 받았다고 5월 20일 발표했다.이로써 만보 워커는 의료기관 및 요양시설에서 공식적으로 사용할 수 있게 되었다.
+              - generic [ref=e123]:
+                - text: 자세히 보기
+                - generic [ref=e124]: arrow_forward
+        - generic [ref=e125]:
+          - button "Previous page" [disabled] [ref=e126]:
+            - generic [ref=e127]: chevron_left
+          - button "1" [ref=e128]
+          - button "2" [ref=e129]
+          - button "Next page" [ref=e130]:
+            - generic [ref=e131]: chevron_right
+    - contentinfo [ref=e132]:
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - img "소나버스 로고" [ref=e136]
+          - generic [ref=e137]:
+            - generic [ref=e138]: 상호명
+            - generic [ref=e139]: (주)소나버스
+            - generic [ref=e140]: 대표자명
+            - generic [ref=e141]: 이수진
+            - generic [ref=e142]: 사업장 주소
+            - generic [ref=e143]: (24232) 강원특별자치도 춘천시 후석로462번길 7 춘천ICT벤처센터 319호
+            - generic [ref=e144]: 대표 전화
+            - link "010-5703-8899" [ref=e146] [cursor=pointer]:
+              - /url: tel:010-5703-8899
+            - generic [ref=e147]: 사업자등록번호
+            - generic [ref=e148]: 697-87-02555
+            - generic [ref=e149]: 통신판매업 신고 번호
+            - generic [ref=e150]: 2023-강원춘천-0688
+          - generic [ref=e151]:
+            - button "개인정보처리방침" [ref=e152]
+            - link "제품 카탈로그 다운로드" [ref=e153] [cursor=pointer]:
+              - /url: /catalog
+        - generic [ref=e154]:
+          - heading "SONAVERSE" [level=4] [ref=e155]
+          - list [ref=e156]:
+            - listitem [ref=e157]:
+              - link "만보 보행기" [ref=e158] [cursor=pointer]:
+                - /url: /products/manbo
+            - listitem [ref=e159]:
+              - link "BO DUME 기저귀" [ref=e160] [cursor=pointer]:
+                - /url: /products/bodume
+            - listitem [ref=e161]:
+              - link "소나버스 스토리" [ref=e162] [cursor=pointer]:
+                - /url: /stories
+            - listitem [ref=e163]:
+              - link "언론보도" [ref=e164] [cursor=pointer]:
+                - /url: /press
+            - listitem [ref=e165]:
+              - link "구매/제휴 문의" [ref=e166] [cursor=pointer]:
+                - /url: /inquiry
+        - generic [ref=e167]:
+          - generic [ref=e168]:
+            - heading "고객지원" [level=4] [ref=e169]
+            - generic [ref=e170]:
+              - generic [ref=e171]:
+                - paragraph [ref=e172]: 고객센터
+                - link "010-5703-8899" [ref=e173] [cursor=pointer]:
+                  - /url: tel:010-5703-8899
+              - generic [ref=e174]:
+                - paragraph [ref=e175]: 이메일
+                - link "shop@sonaverse.kr" [ref=e176] [cursor=pointer]:
+                  - /url: mailto:shop@sonaverse.kr
+              - generic [ref=e177]:
+                - paragraph [ref=e178]: 운영시간
+                - paragraph [ref=e179]:
+                  - text: 평일 09:30 ~ 18:30
+                  - text: (주말·공휴일 휴무)
+          - generic [ref=e180]:
+            - heading "SNS" [level=4] [ref=e181]
+            - generic [ref=e182]:
+              - link "네이버" [ref=e183] [cursor=pointer]:
+                - /url: https://blog.naver.com/sonaverse
+                - text: "N"
+              - link "유튜브" [ref=e184] [cursor=pointer]:
+                - /url: https://youtube.com/@sonaverse
+                - generic [ref=e185]: play_arrow
+              - link "인스타그램" [ref=e186] [cursor=pointer]:
+                - /url: https://instagram.com/sonaverse
+                - generic [ref=e187]: photo_camera
+              - link "카카오톡" [ref=e188] [cursor=pointer]:
+                - /url: https://pf.kakao.com/sonaverse
+                - generic [ref=e189]: chat_bubble
+  - alert [ref=e190]
+```

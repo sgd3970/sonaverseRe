@@ -1,0 +1,22 @@
+{
+  "title": "소나버스 스토리",
+  "subtitle": "소나버스 제품의 개발 스토리부터 유용한 복지/건강 정보까지!",
+  "categories": {
+    "all": "전체",
+    "product_story": "제품 스토리",
+    "usage": "사용 후기",
+    "health_info": "건강 정보",
+    "welfare_info": "복지 정보",
+    "company_news": "회사 소식",
+    "interview": "인터뷰"
+  },
+  "readTime": "{{minutes}}분 읽기",
+  "author": "작성자",
+  "publishedAt": "게시일",
+  "viewCount": "조회수",
+  "relatedStories": "관련 스토리",
+  "mainStory": "메인 스토리",
+  "loadMore": "더 보기",
+  "noStories": "등록된 스토리가 없습니다",
+  "searchPlaceholder": "스토리 검색..."
+}

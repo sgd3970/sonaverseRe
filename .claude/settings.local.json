@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tsx:*)",
+      "Bash(node scripts/optimize-images.js:*)",
+      "Bash(npm run build:*)",
+      "Bash(npx tsc:*)",
+      "Bash(find:*)",
+      "Bash(1 ;)",
+      "Bash(node --version)",
+      "Bash(npm:*)",
+      "Bash(timeout 30 npm run dev:*)",
+      "Bash(cat:*)",
+      "Bash(dir /s /b \"c:\\\\Users\\\\cse39\\\\Desktop\\\\sonaverseRe\\\\public\\\\images\\\\*.webp\")",
+      "Bash(npx playwright test --list)",
+      "Bash(npx playwright test:*)",
+      "Bash(timeout 15 npm run dev:*)"
+    ]
+  }
+}

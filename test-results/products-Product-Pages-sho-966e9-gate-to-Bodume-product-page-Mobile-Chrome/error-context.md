@@ -1,0 +1,163 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "메인 콘텐츠로 건너뛰기" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "accessibility_new Sonaverse" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e8]: accessibility_new
+          - heading "Sonaverse" [level=1] [ref=e9]
+        - button "Toggle menu" [ref=e10]:
+          - generic [ref=e11]: menu
+    - main [ref=e12]:
+      - generic [ref=e15]:
+        - generic [ref=e17]:
+          - generic:
+            - img "보듬"
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: water_drop
+              - generic [ref=e21]: 초강력 흡수
+            - paragraph [ref=e22]: 밤새 걱정 없는 12시간 지속
+        - generic [ref=e23]:
+          - generic [ref=e24]: Premium Care
+          - heading "보듬" [level=1] [ref=e25]
+          - paragraph [ref=e26]: 프리미엄 성인용 기저귀
+          - generic [ref=e27]:
+            - generic [ref=e28]:
+              - paragraph [ref=e29]: 100%
+              - paragraph [ref=e30]: 순면 감촉
+            - generic [ref=e31]:
+              - paragraph [ref=e32]: 12h
+              - paragraph [ref=e33]: 안심 보호
+            - generic [ref=e34]:
+              - paragraph [ref=e35]: ISO
+              - paragraph [ref=e36]: 국제 인증
+      - generic [ref=e38]:
+        - button "전체 보기" [ref=e39]
+        - button "팬티형" [ref=e40]
+        - button "속기저귀" [ref=e41]
+        - button "깔개매트" [ref=e42]
+      - generic [ref=e45]:
+        - generic [ref=e46] [cursor=pointer]:
+          - generic [ref=e47]:
+            - generic:
+              - img "보듬 팬티형 대형"
+            - generic [ref=e48]: 팬티형
+          - generic [ref=e50]:
+            - heading "보듬 팬티형 대형" [level=3] [ref=e51]
+            - paragraph [ref=e52]: 혼자서도 입고 벗기 편한 팬티형 기저귀. 활동량이 많은 분들에게 추천합니다.
+            - generic [ref=e53]:
+              - generic [ref=e54]: 18,000원
+              - generic [ref=e55]: 30매입
+        - generic [ref=e56] [cursor=pointer]:
+          - generic [ref=e57]:
+            - generic:
+              - img "보듬 팬티형 중형"
+            - generic [ref=e59]: 팬티형
+          - generic [ref=e61]:
+            - heading "보듬 팬티형 중형" [level=3] [ref=e62]
+            - paragraph [ref=e63]: 부드러운 허리 밴드로 편안한 착용감을 제공합니다.
+            - generic [ref=e64]:
+              - generic [ref=e65]: 18,000원
+              - generic [ref=e66]: 34매입
+        - generic [ref=e67] [cursor=pointer]:
+          - generic [ref=e68]:
+            - generic:
+              - img "보듬 속기저귀 일반형"
+            - generic [ref=e69]: 속기저귀
+          - generic [ref=e71]:
+            - heading "보듬 속기저귀 일반형" [level=3] [ref=e72]
+            - paragraph [ref=e73]: 팬티형과 함께 사용하면 더욱 경제적인 교체형 속기저귀.
+            - generic [ref=e74]:
+              - generic [ref=e75]: 12,000원
+              - generic [ref=e76]: 30매입
+        - generic [ref=e77] [cursor=pointer]:
+          - generic [ref=e78]:
+            - generic:
+              - img "보듬 깔개매트"
+            - generic [ref=e79]: 깔개매트
+          - generic [ref=e81]:
+            - heading "보듬 깔개매트" [level=3] [ref=e82]
+            - paragraph [ref=e83]: 침구 오염을 방지하는 위생적인 일회용 매트.
+            - generic [ref=e84]:
+              - generic [ref=e85]: 15,000원
+              - generic [ref=e86]: 10매입
+    - contentinfo [ref=e87]:
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - img "소나버스 로고" [ref=e91]
+          - generic [ref=e92]:
+            - generic [ref=e93]: 상호명
+            - generic [ref=e94]: (주)소나버스
+            - generic [ref=e95]: 대표자명
+            - generic [ref=e96]: 이수진
+            - generic [ref=e97]: 사업장 주소
+            - generic [ref=e98]: (24232) 강원특별자치도 춘천시 후석로462번길 7 춘천ICT벤처센터 319호
+            - generic [ref=e99]: 대표 전화
+            - link "010-5703-8899" [ref=e101] [cursor=pointer]:
+              - /url: tel:010-5703-8899
+            - generic [ref=e102]: 사업자등록번호
+            - generic [ref=e103]: 697-87-02555
+            - generic [ref=e104]: 통신판매업 신고 번호
+            - generic [ref=e105]: 2023-강원춘천-0688
+          - generic [ref=e106]:
+            - button "개인정보처리방침" [ref=e107]
+            - link "제품 카탈로그 다운로드" [ref=e108] [cursor=pointer]:
+              - /url: /catalog
+        - generic [ref=e109]:
+          - heading "SONAVERSE" [level=4] [ref=e110]
+          - list [ref=e111]:
+            - listitem [ref=e112]:
+              - link "만보 보행기" [ref=e113] [cursor=pointer]:
+                - /url: /products/manbo
+            - listitem [ref=e114]:
+              - link "BO DUME 기저귀" [ref=e115] [cursor=pointer]:
+                - /url: /products/bodume
+            - listitem [ref=e116]:
+              - link "소나버스 스토리" [ref=e117] [cursor=pointer]:
+                - /url: /stories
+            - listitem [ref=e118]:
+              - link "언론보도" [ref=e119] [cursor=pointer]:
+                - /url: /press
+            - listitem [ref=e120]:
+              - link "구매/제휴 문의" [ref=e121] [cursor=pointer]:
+                - /url: /inquiry
+        - generic [ref=e122]:
+          - generic [ref=e123]:
+            - heading "고객지원" [level=4] [ref=e124]
+            - generic [ref=e125]:
+              - generic [ref=e126]:
+                - paragraph [ref=e127]: 고객센터
+                - link "010-5703-8899" [ref=e128] [cursor=pointer]:
+                  - /url: tel:010-5703-8899
+              - generic [ref=e129]:
+                - paragraph [ref=e130]: 이메일
+                - link "shop@sonaverse.kr" [ref=e131] [cursor=pointer]:
+                  - /url: mailto:shop@sonaverse.kr
+              - generic [ref=e132]:
+                - paragraph [ref=e133]: 운영시간
+                - paragraph [ref=e134]:
+                  - text: 평일 09:30 ~ 18:30
+                  - text: (주말·공휴일 휴무)
+          - generic [ref=e135]:
+            - heading "SNS" [level=4] [ref=e136]
+            - generic [ref=e137]:
+              - link "네이버" [ref=e138] [cursor=pointer]:
+                - /url: https://blog.naver.com/sonaverse
+                - text: "N"
+              - link "유튜브" [ref=e139] [cursor=pointer]:
+                - /url: https://youtube.com/@sonaverse
+                - generic [ref=e140]: play_arrow
+              - link "인스타그램" [ref=e141] [cursor=pointer]:
+                - /url: https://instagram.com/sonaverse
+                - generic [ref=e142]: photo_camera
+              - link "카카오톡" [ref=e143] [cursor=pointer]:
+                - /url: https://pf.kakao.com/sonaverse
+                - generic [ref=e144]: chat_bubble
+  - alert [ref=e145]
+```

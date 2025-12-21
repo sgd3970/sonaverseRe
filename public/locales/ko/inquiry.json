@@ -1,0 +1,72 @@
+{
+  "title": "문의하기",
+  "subtitle": "소나버스에 대해 궁금한 점이 있으신가요? 언제든지 문의해주세요.",
+  "form": {
+    "inquiryType": {
+      "label": "문의 유형",
+      "placeholder": "문의 유형을 선택해주세요",
+      "options": {
+        "service_introduction": "서비스 소개",
+        "product_inquiry": "제품 문의",
+        "quote_request": "견적 요청",
+        "demo_request": "데모 요청",
+        "partnership_proposal": "제휴 제안",
+        "technical_partnership": "기술 제휴",
+        "channel_partnership": "유통 제휴",
+        "other": "기타"
+      }
+    },
+    "name": {
+      "label": "성함",
+      "placeholder": "홍길동",
+      "required": "성함을 입력해주세요"
+    },
+    "position": {
+      "label": "직급",
+      "placeholder": "팀장"
+    },
+    "companyName": {
+      "label": "회사명",
+      "placeholder": "(주)소나버스"
+    },
+    "phoneNumber": {
+      "label": "연락처",
+      "placeholder": "010-0000-0000",
+      "required": "연락처를 입력해주세요"
+    },
+    "email": {
+      "label": "이메일",
+      "placeholder": "example@company.com",
+      "required": "이메일을 입력해주세요",
+      "invalid": "올바른 이메일 형식이 아닙니다"
+    },
+    "message": {
+      "label": "문의 내용",
+      "placeholder": "구체적인 문의 내용을 남겨주시면 빠르게 답변 드리겠습니다.",
+      "required": "문의 내용을 입력해주세요"
+    },
+    "attachments": {
+      "label": "첨부 파일",
+      "description": "최대 5개, 각 10MB 이하",
+      "upload": "파일 선택",
+      "uploading": "업로드 중..."
+    },
+    "privacy": {
+      "label": "개인정보 수집 및 이용 동의",
+      "description": "문의 처리를 위해 개인정보 수집 및 이용에 동의합니다.",
+      "required": "개인정보 수집 및 이용에 동의해주세요"
+    },
+    "submit": "문의하기",
+    "submitting": "전송 중..."
+  },
+  "success": {
+    "title": "문의가 접수되었습니다",
+    "message": "빠른 시일 내에 답변 드리겠습니다.",
+    "inquiryNumber": "문의 번호"
+  },
+  "error": {
+    "title": "문의 접수 실패",
+    "message": "일시적인 오류가 발생했습니다. 잠시 후 다시 시도해주세요.",
+    "retry": "다시 시도"
+  }
+}

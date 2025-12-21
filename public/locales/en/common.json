@@ -1,0 +1,87 @@
+{
+  "site": {
+    "title": "Sonaverse",
+    "description": "Innovation for Better Senior Living"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "manbo": "MANBO Walker",
+    "bodume": "BO DUME Diaper",
+    "stories": "Sonaverse Story",
+    "press": "Press",
+    "inquiry": "Purchase/Partnership"
+  },
+  "language": {
+    "ko": "한국어",
+    "en": "English",
+    "switch": "Switch Language"
+  },
+  "common": {
+    "viewMore": "View More",
+    "viewAll": "View All",
+    "viewDetail": "View Details",
+    "readMore": "Read More",
+    "readMoreNews": "Read More News",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "noData": "No data available",
+    "comingSoon": "Coming Soon"
+  },
+  "footer": {
+    "company": {
+      "title": "Company Info",
+      "companyName": "Company:",
+      "companyNameValue": "Sonaverse Inc.",
+      "ceoName": "CEO:",
+      "ceoNameValue": "Soojin Lee",
+      "address": "Address:",
+      "addressValue": "319, Chuncheon ICT Venture Center, 7 Huseok-ro 462beon-gil, Chuncheon-si, Gangwon-do, 24232, Korea",
+      "phone": "Phone:",
+      "phoneValue": "+82-10-5703-8899",
+      "businessNumber": "Business Number:",
+      "businessNumberValue": "697-87-02555",
+      "salesNumber": "Sales License:",
+      "salesNumberValue": "2023-Gangwon-Chuncheon-0688"
+    },
+    "links": {
+      "title": "SONAVERSE",
+      "manbo": "MANBO Walker",
+      "bodume": "BO DUME Diaper",
+      "stories": "Sonaverse Story",
+      "press": "Press",
+      "inquiry": "Purchase/Partnership"
+    },
+    "support": {
+      "title": "Customer Support",
+      "customerCenter": "Customer Center",
+      "customerPhone": "+82-10-5703-8899",
+      "email": "Email",
+      "emailValue": "shop@sonaverse.kr",
+      "hours": "Hours",
+      "hoursValue": "Weekdays 09:30 ~ 18:30",
+      "hoursNote": "(Closed on weekends/holidays)",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "catalog": "Download Product Catalog"
+    },
+    "social": {
+      "title": "SNS",
+      "naver": "Naver",
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "kakaotalk": "KakaoTalk"
+    },
+    "copyright": "© 2025 Sonaverse Inc. All rights reserved."
+  }
+}

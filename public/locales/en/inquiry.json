@@ -1,0 +1,72 @@
+{
+  "title": "Contact Us",
+  "subtitle": "Have questions about Sonaverse? Feel free to reach out anytime.",
+  "form": {
+    "inquiryType": {
+      "label": "Inquiry Type",
+      "placeholder": "Select inquiry type",
+      "options": {
+        "service_introduction": "Service Introduction",
+        "product_inquiry": "Product Inquiry",
+        "quote_request": "Quote Request",
+        "demo_request": "Demo Request",
+        "partnership_proposal": "Partnership Proposal",
+        "technical_partnership": "Technical Partnership",
+        "channel_partnership": "Distribution Partnership",
+        "other": "Other"
+      }
+    },
+    "name": {
+      "label": "Name",
+      "placeholder": "John Doe",
+      "required": "Please enter your name"
+    },
+    "position": {
+      "label": "Position",
+      "placeholder": "Manager"
+    },
+    "companyName": {
+      "label": "Company Name",
+      "placeholder": "Sonaverse Inc."
+    },
+    "phoneNumber": {
+      "label": "Phone Number",
+      "placeholder": "+1-555-1234",
+      "required": "Please enter your phone number"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "example@company.com",
+      "required": "Please enter your email",
+      "invalid": "Invalid email format"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Please provide detailed information about your inquiry.",
+      "required": "Please enter your message"
+    },
+    "attachments": {
+      "label": "Attachments",
+      "description": "Max 5 files, 10MB each",
+      "upload": "Choose Files",
+      "uploading": "Uploading..."
+    },
+    "privacy": {
+      "label": "Privacy Policy Agreement",
+      "description": "I agree to the collection and use of personal information for inquiry processing.",
+      "required": "Please agree to the privacy policy"
+    },
+    "submit": "Submit Inquiry",
+    "submitting": "Submitting..."
+  },
+  "success": {
+    "title": "Inquiry Submitted",
+    "message": "We will respond as soon as possible.",
+    "inquiryNumber": "Inquiry Number"
+  },
+  "error": {
+    "title": "Submission Failed",
+    "message": "A temporary error occurred. Please try again later.",
+    "retry": "Retry"
+  }
+}

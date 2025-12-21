@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "title": "For Better\nSenior Living",
+    "subtitle": "Innovation discovered through users experiencing discomfort.",
+    "description": "Sonaverse researches and develops innovative solutions\nfor seniors' free mobility and comfortable life.",
+    "cta": {
+      "manbo": "Manbo Walker",
+      "bodume": "BO DUME Diaper",
+      "products": "View Products",
+      "story": "Brand Story"
+    }
+  },
+  "problems": {
+    "title": "Problems We're Solving",
+    "subtitle": "Innovation discovered through users experiencing discomfort, solving senior living problems with clear branding.",
+    "items": {
+      "aging": {
+        "title": "Rapid Aging,\nUnprepared Daily Life",
+        "description": "South Korea is aging the fastest in the world. However, technology and infrastructure supporting seniors' daily lives are still insufficient."
+      },
+      "mobility": {
+        "title": "Unsafe\nMobility Environment",
+        "description": "Falls are one of the biggest threats to senior health. The lack of safe walking aids restricts social activities."
+      },
+      "dignity": {
+        "title": "Care Experiences\nHarming Dignity",
+        "description": "Discomfort in sensitive areas such as excretion care lowers seniors' self-esteem and increases caregivers' burden."
+      }
+    }
+  },
+  "products": {
+    "title": "Our Solutions",
+    "manbo": {
+      "badge": "Smart Walker",
+      "name": "Manbo",
+      "description": "Smart walking assistance robot for safe mobility\nand independent living of seniors.",
+      "inquiry": "Pre-order Inquiry"
+    },
+    "bodume": {
+      "badge": "Premium Diaper",
+      "name": "BO DUME",
+      "description": "Premium adult diaper with minimized skin irritation\nand maximized absorbency.",
+      "purchase": "Buy Online"
+    }
+  },
+  "stories": {
+    "title": "Sonaverse Story",
+    "subtitle": "From product development stories to useful welfare and health information!",
+    "categories": {
+      "all": "All",
+      "productStory": "Product Story",
+      "usage": "User Reviews",
+      "healthInfo": "Health Info",
+      "welfareInfo": "Welfare Info"
+    }
+  },
+  "press": {
+    "title": "Press Coverage",
+    "subtitle": "Sonaverse's innovation is being recognized worldwide"
+  },
+  "history": {
+    "title": "Company History",
+    "subtitle": "Our journey towards innovation",
+    "vision": {
+      "title": "Continuing Journey",
+      "subtitle": "Sonaverse's challenge for senior life innovation continues."
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "login": {
+    "title": "관리자 로그인",
+    "email": "이메일",
+    "password": "비밀번호",
+    "submit": "로그인",
+    "forgotPassword": "비밀번호를 잊으셨나요?",
+    "errors": {
+      "invalidCredentials": "이메일 또는 비밀번호가 올바르지 않습니다",
+      "accountLocked": "계정이 잠겼습니다. 관리자에게 문의하세요",
+      "serverError": "서버 오류가 발생했습니다"
+    }
+  },
+  "dashboard": {
+    "title": "대시보드",
+    "stats": {
+      "todayVisitors": "오늘 방문자",
+      "newInquiries": "신규 문의",
+      "productViews": "제품 조회",
+      "recentPosts": "최근 게시글"
+    },
+    "recentActivity": "최근 활동",
+    "recentInquiries": "최근 문의"
+  },
+  "sidebar": {
+    "dashboard": "대시보드",
+    "press": "언론보도",
+    "stories": "스토리",
+    "history": "연혁",
+    "products": "제품",
+    "inquiries": "문의",
+    "settings": "설정",
+    "logout": "로그아웃"
+  },
+  "history": {
+    "title": "연혁 관리",
+    "new": "새 연혁",
+    "edit": "연혁 수정",
+    "list": "연혁 목록",
+    "year": "연도",
+    "events": "주요 이벤트",
+    "seedSuccess": "초기 데이터가 생성되었습니다",
+    "seedError": "초기 데이터 생성에 실패했습니다",
+    "deleteConfirm": "이 연혁을 삭제하시겠습니까?"
+  },
+  "press": {
+    "title": "언론보도 관리",
+    "new": "새 언론보도",
+    "edit": "언론보도 수정",
+    "list": "언론보도 목록",
+    "published": "발행됨",
+    "draft": "임시저장",
+    "featured": "주요 뉴스"
+  },
+  "stories": {
+    "title": "스토리 관리",
+    "new": "새 스토리",
+    "edit": "스토리 수정",
+    "list": "스토리 목록",
+    "mainStory": "메인 스토리"
+  },
+  "products": {
+    "title": "제품 관리",
+    "new": "새 제품",
+    "edit": "제품 수정",
+    "list": "제품 목록"
+  },
+  "inquiries": {
+    "title": "문의 관리",
+    "detail": "문의 상세",
+    "list": "문의 목록",
+    "status": {
+      "pending": "대기",
+      "in_progress": "처리중",
+      "resolved": "완료",
+      "closed": "종료"
+    },
+    "priority": {
+      "low": "낮음",
+      "medium": "보통",
+      "high": "높음",
+      "urgent": "긴급"
+    }
+  },
+  "common": {
+    "save": "저장",
+    "cancel": "취소",
+    "delete": "삭제",
+    "edit": "수정",
+    "create": "생성",
+    "search": "검색",
+    "filter": "필터",
+    "export": "내보내기",
+    "import": "가져오기",
+    "upload": "업로드",
+    "download": "다운로드"
+  }
+}

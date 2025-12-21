@@ -1,0 +1,22 @@
+{
+  "title": "Sonaverse Story",
+  "subtitle": "From product development stories to useful welfare and health information!",
+  "categories": {
+    "all": "All",
+    "product_story": "Product Story",
+    "usage": "User Reviews",
+    "health_info": "Health Info",
+    "welfare_info": "Welfare Info",
+    "company_news": "Company News",
+    "interview": "Interview"
+  },
+  "readTime": "{{minutes}} min read",
+  "author": "Author",
+  "publishedAt": "Published",
+  "viewCount": "Views",
+  "relatedStories": "Related Stories",
+  "mainStory": "Main Story",
+  "loadMore": "Load More",
+  "noStories": "No stories available",
+  "searchPlaceholder": "Search stories..."
+}

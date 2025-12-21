@@ -1,0 +1,16 @@
+{
+  "title": "언론보도",
+  "subtitle": "소나버스의 혁신이 세상에 알려지고 있습니다",
+  "pressName": "언론사",
+  "publishedDate": "보도일",
+  "viewCount": "조회수",
+  "readArticle": "기사 읽기",
+  "externalLink": "원문 보기",
+  "featured": "주요 뉴스",
+  "recent": "최신 뉴스",
+  "loadMore": "더 보기",
+  "noPress": "등록된 언론보도가 없습니다",
+  "searchPlaceholder": "언론보도 검색...",
+  "filterByYear": "연도별",
+  "filterByCategory": "카테고리별"
+}

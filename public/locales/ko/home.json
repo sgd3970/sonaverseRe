@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "title": "시니어의\n더 나은 일상을 위해",
+    "subtitle": "불편을 겪는 사용자를 통해 발견한 혁신.",
+    "description": "소나버스는 시니어의 자유로운 이동과 편안한 삶을 위한\n혁신적인 솔루션을 연구하고 개발합니다.",
+    "cta": {
+      "manbo": "Manbo Walker",
+      "bodume": "BO DUME Diaper",
+      "products": "제품 보러가기",
+      "story": "브랜드 스토리"
+    }
+  },
+  "problems": {
+    "title": "우리가 해결하고자 하는 문제들",
+    "subtitle": "불편을 겪는 사용자를 통해 발견한 혁신, 명확한 브랜딩으로 시니어 생활 문제를 해결합니다.",
+    "items": {
+      "aging": {
+        "title": "급격한 고령화,\n준비되지 않은 일상",
+        "description": "대한민국은 세계에서 가장 빠르게 늙어가고 있습니다. 하지만 시니어의 일상을 지원하는 기술과 인프라는 여전히 부족합니다."
+      },
+      "mobility": {
+        "title": "안전하지 않은\n이동 환경",
+        "description": "낙상 사고는 시니어 건강을 위협하는 가장 큰 요인 중 하나입니다. 안전한 보행 보조 기구의 부재는 사회 활동을 위축시킵니다."
+      },
+      "dignity": {
+        "title": "존엄성을 해치는\n돌봄 경험",
+        "description": "배설 케어와 같은 민감한 영역에서의 불편함은 시니어의 자존감을 낮추고 보호자의 부담을 가중시킵니다."
+      }
+    }
+  },
+  "products": {
+    "title": "우리의 해결책",
+    "manbo": {
+      "badge": "Smart Walker",
+      "name": "Manbo",
+      "description": "시니어의 안전한 보행과 자립적인 생활을 돕는\n스마트 보행 보조 로봇입니다.",
+      "inquiry": "사전 문의"
+    },
+    "bodume": {
+      "badge": "Premium Diaper",
+      "name": "BO DUME",
+      "description": "피부 자극을 최소화하고 흡수력을 극대화한\n프리미엄 성인용 기저귀입니다.",
+      "purchase": "온라인 구매"
+    }
+  },
+  "stories": {
+    "title": "소나버스 스토리",
+    "subtitle": "소나버스 제품의 개발 스토리부터 유용한 복지/건강 정보까지!",
+    "categories": {
+      "all": "전체",
+      "productStory": "제품 스토리",
+      "usage": "사용 후기",
+      "healthInfo": "건강 정보",
+      "welfareInfo": "복지 정보"
+    }
+  },
+  "press": {
+    "title": "언론보도",
+    "subtitle": "소나버스의 혁신이 세상에 알려지고 있습니다"
+  },
+  "history": {
+    "title": "회사 연혁",
+    "subtitle": "혁신을 향한 우리의 여정",
+    "vision": {
+      "title": "계속되는 여정",
+      "subtitle": "시니어 라이프 혁신을 위한 소나버스의 도전은 계속됩니다."
+    }
+  }
+}

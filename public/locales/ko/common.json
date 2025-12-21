@@ -1,0 +1,87 @@
+{
+  "site": {
+    "title": "소나버스",
+    "description": "시니어의 더 나은 일상을 위한 혁신"
+  },
+  "nav": {
+    "home": "홈",
+    "products": "제품소개",
+    "manbo": "만보 보행기",
+    "bodume": "BO DUME 기저귀",
+    "stories": "소나버스 스토리",
+    "press": "언론보도",
+    "inquiry": "구매/제휴 문의"
+  },
+  "language": {
+    "ko": "한국어",
+    "en": "English",
+    "switch": "언어 전환"
+  },
+  "common": {
+    "viewMore": "더 보기",
+    "viewAll": "전체보기",
+    "viewDetail": "자세히 보기",
+    "readMore": "더 읽기",
+    "readMoreNews": "뉴스 더 보기",
+    "learnMore": "자세히 알아보기",
+    "contactUs": "문의하기",
+    "submit": "제출하기",
+    "cancel": "취소",
+    "save": "저장",
+    "delete": "삭제",
+    "edit": "수정",
+    "search": "검색",
+    "filter": "필터",
+    "sort": "정렬",
+    "loading": "로딩 중...",
+    "error": "오류가 발생했습니다",
+    "noData": "데이터가 없습니다",
+    "comingSoon": "곧 만나요"
+  },
+  "footer": {
+    "company": {
+      "title": "회사 정보",
+      "companyName": "상호명:",
+      "companyNameValue": "(주)소나버스",
+      "ceoName": "대표자명:",
+      "ceoNameValue": "이수진",
+      "address": "사업장 주소:",
+      "addressValue": "(24232) 강원특별자치도 춘천시 후석로462번길 7 춘천ICT벤처센터 319호",
+      "phone": "대표 전화:",
+      "phoneValue": "010-5703-8899",
+      "businessNumber": "사업자등록번호:",
+      "businessNumberValue": "697-87-02555",
+      "salesNumber": "통신판매업 신고 번호:",
+      "salesNumberValue": "2023-강원춘천-0688"
+    },
+    "links": {
+      "title": "SONAVERSE",
+      "manbo": "만보 보행기",
+      "bodume": "BO DUME 기저귀",
+      "stories": "소나버스 스토리",
+      "press": "언론보도",
+      "inquiry": "구매/제휴 문의"
+    },
+    "support": {
+      "title": "고객지원",
+      "customerCenter": "고객센터",
+      "customerPhone": "010-5703-8899",
+      "email": "이메일",
+      "emailValue": "shop@sonaverse.kr",
+      "hours": "운영시간",
+      "hoursValue": "평일 09:30 ~ 18:30",
+      "hoursNote": "(주말·공휴일 휴무)",
+      "privacy": "개인정보처리방침",
+      "terms": "이용약관",
+      "catalog": "제품 카탈로그 다운로드"
+    },
+    "social": {
+      "title": "SNS",
+      "naver": "네이버",
+      "youtube": "유튜브",
+      "instagram": "인스타그램",
+      "kakaotalk": "카카오톡"
+    },
+    "copyright": "© 2025 Sonaverse Inc. All rights reserved."
+  }
+}

@@ -1,0 +1,159 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "메인 콘텐츠로 건너뛰기" [ref=e3]:
+      - /url: "#main-content"
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "accessibility_new Sonaverse" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e8]: accessibility_new
+          - heading "Sonaverse" [level=1] [ref=e9]
+        - navigation [ref=e10]:
+          - link "홈" [ref=e12]:
+            - /url: /
+          - button "제품소개 expand_more" [ref=e14]:
+            - text: 제품소개
+            - generic [ref=e15]: expand_more
+          - link "소나버스 스토리" [ref=e17]:
+            - /url: /stories
+          - link "언론보도" [ref=e19]:
+            - /url: /press
+          - link "구매/제휴 문의" [ref=e21]:
+            - /url: /inquiry
+        - button "language 한국어 expand_more" [ref=e24]:
+          - generic [ref=e25]: language
+          - generic [ref=e26]: 한국어
+          - generic [ref=e27]: expand_more
+    - main [ref=e28]:
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - generic [ref=e33]: verified
+            - generic [ref=e34]: Innovation Leader
+          - generic [ref=e35]:
+            - heading "만보 (MANBO)" [level=1] [ref=e36]
+            - paragraph [ref=e37]: 하이브리드형 스마트 워크메이트
+          - paragraph [ref=e38]: 시니어의 안전한 보행과 자립적인 생활을 돕는 스마트 보행 보조 로봇
+          - generic [ref=e39]:
+            - button "Consulting Request" [ref=e40]:
+              - link "Consulting Request" [ref=e41]:
+                - /url: /inquiry?product=manbo
+            - button "Catalog" [ref=e42]:
+              - link "Catalog" [ref=e43]:
+                - /url: /catalog/manbo
+        - generic [ref=e48]: image_not_supported
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e54]: insights
+          - heading "하이브리드 주행" [level=3] [ref=e55]
+          - paragraph [ref=e56]: Sonaverse Technology
+        - generic [ref=e57]:
+          - generic [ref=e59]: shield
+          - heading "경사지 자동 제어" [level=3] [ref=e60]
+          - paragraph [ref=e61]: Sonaverse Technology
+        - generic [ref=e62]:
+          - generic [ref=e64]: emergency_share
+          - heading "비상 자동 정지" [level=3] [ref=e65]
+          - paragraph [ref=e66]: Sonaverse Technology
+        - generic [ref=e67]:
+          - generic [ref=e69]: bolt
+          - heading "AI 낙상 예방" [level=3] [ref=e70]
+          - paragraph [ref=e71]: Sonaverse Technology
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e76]:
+            - generic:
+              - img "경사를 평지처럼,"
+          - generic [ref=e78]:
+            - text: Core Technology 01
+            - heading "경사를 평지처럼, Hybrid Motor" [level=2] [ref=e79]:
+              - text: 경사를 평지처럼,
+              - text: Hybrid Motor
+            - paragraph [ref=e80]: 오르막에서는 뒤에서 밀어주는 힘을, 내리막에서는 일정한 속도를 유지하는 감속 제어를 통해 신체적 부담을 70% 이상 경감시킵니다.
+        - generic [ref=e81]:
+          - generic [ref=e83]:
+            - generic:
+              - img "직관을 넘어서는"
+          - generic [ref=e85]:
+            - text: Core Technology 02
+            - heading "직관을 넘어서는 Smart Display" [level=2] [ref=e86]:
+              - text: 직관을 넘어서는
+              - text: Smart Display
+            - paragraph [ref=e87]: 고해상도 저전력 LCD를 탑재하여 햇빛 아래에서도 선명합니다. 복잡한 설정 없이 잡기만 하면 자동으로 시작되는 보행 트래킹을 경험하세요.
+    - contentinfo [ref=e88]:
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - img "소나버스 로고" [ref=e92]
+          - generic [ref=e93]:
+            - generic [ref=e94]: 상호명
+            - generic [ref=e95]: (주)소나버스
+            - generic [ref=e96]: 대표자명
+            - generic [ref=e97]: 이수진
+            - generic [ref=e98]: 사업장 주소
+            - generic [ref=e99]: (24232) 강원특별자치도 춘천시 후석로462번길 7 춘천ICT벤처센터 319호
+            - generic [ref=e100]: 대표 전화
+            - link "010-5703-8899" [ref=e102]:
+              - /url: tel:010-5703-8899
+            - generic [ref=e103]: 사업자등록번호
+            - generic [ref=e104]: 697-87-02555
+            - generic [ref=e105]: 통신판매업 신고 번호
+            - generic [ref=e106]: 2023-강원춘천-0688
+          - generic [ref=e107]:
+            - button "개인정보처리방침" [ref=e108]
+            - link "제품 카탈로그 다운로드" [ref=e109]:
+              - /url: /catalog
+        - generic [ref=e110]:
+          - heading "SONAVERSE" [level=4] [ref=e111]
+          - list [ref=e112]:
+            - listitem [ref=e113]:
+              - link "만보 보행기" [ref=e114] [cursor=pointer]:
+                - /url: /products/manbo
+            - listitem [ref=e115]:
+              - link "BO DUME 기저귀" [ref=e116] [cursor=pointer]:
+                - /url: /products/bodume
+            - listitem [ref=e117]:
+              - link "소나버스 스토리" [ref=e118] [cursor=pointer]:
+                - /url: /stories
+            - listitem [ref=e119]:
+              - link "언론보도" [ref=e120] [cursor=pointer]:
+                - /url: /press
+            - listitem [ref=e121]:
+              - link "구매/제휴 문의" [ref=e122] [cursor=pointer]:
+                - /url: /inquiry
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - heading "고객지원" [level=4] [ref=e125]
+            - generic [ref=e126]:
+              - generic [ref=e127]:
+                - paragraph [ref=e128]: 고객센터
+                - link "010-5703-8899" [ref=e129]:
+                  - /url: tel:010-5703-8899
+              - generic [ref=e130]:
+                - paragraph [ref=e131]: 이메일
+                - link "shop@sonaverse.kr" [ref=e132]:
+                  - /url: mailto:shop@sonaverse.kr
+              - generic [ref=e133]:
+                - paragraph [ref=e134]: 운영시간
+                - paragraph [ref=e135]:
+                  - text: 평일 09:30 ~ 18:30
+                  - text: (주말·공휴일 휴무)
+          - generic [ref=e136]:
+            - heading "SNS" [level=4] [ref=e137]
+            - generic [ref=e138]:
+              - link "네이버" [ref=e139] [cursor=pointer]:
+                - /url: https://blog.naver.com/sonaverse
+                - text: "N"
+              - link "유튜브" [ref=e140] [cursor=pointer]:
+                - /url: https://youtube.com/@sonaverse
+                - generic [ref=e141]: play_arrow
+              - link "인스타그램" [ref=e142] [cursor=pointer]:
+                - /url: https://instagram.com/sonaverse
+                - generic [ref=e143]: photo_camera
+              - link "카카오톡" [ref=e144] [cursor=pointer]:
+                - /url: https://pf.kakao.com/sonaverse
+                - generic [ref=e145]: chat_bubble
+  - alert [ref=e146]
+```

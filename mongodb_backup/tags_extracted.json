@@ -1,0 +1,2685 @@
+[
+  {
+    "_id": "tag_1_1766302659424",
+    "name": {
+      "ko": "강원창조경제혁신센터",
+      "en": "Gangwon Creative Economy Innovation Center"
+    },
+    "slug": "강원창조경제혁신센터",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.424Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2c4e24acb047ff17e9167"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_2_1766302659426",
+    "name": {
+      "ko": "g스타트업",
+      "en": "gStartup"
+    },
+    "slug": "g스타트업",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2c4e24acb047ff17e9167"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_3_1766302659426",
+    "name": {
+      "ko": "IR대회",
+      "en": "IR Contest"
+    },
+    "slug": "IR대회",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2c4e24acb047ff17e9167"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_4_1766302659426",
+    "name": {
+      "ko": "노인보행기",
+      "en": "Elderly Walking Machine"
+    },
+    "slug": "노인보행기",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2c4e24acb047ff17e9167"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_5_1766302659426",
+    "name": {
+      "ko": "IR피칭",
+      "en": "IR pitching"
+    },
+    "slug": "IR피칭",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2c4e24acb047ff17e9167"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_6_1766302659426",
+    "name": {
+      "ko": "헬스케어보행기",
+      "en": "Healthcare Walker"
+    },
+    "slug": "헬스케어보행기",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2c4e24acb047ff17e9167"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_7_1766302659426",
+    "name": {
+      "ko": "여성창업경진대회",
+      "en": "Women's Start-up Competition"
+    },
+    "slug": "여성창업경진대회",
+    "type": "press",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2cdcffbcfe5f3bae5022b",
+      "68a2cf3ef7d3c112b01dd0a2"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_8_1766302659426",
+    "name": {
+      "ko": "여성대표",
+      "en": "Women's Representative"
+    },
+    "slug": "여성대표",
+    "type": "press",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2cdcffbcfe5f3bae5022b",
+      "68a2cf3ef7d3c112b01dd0a2"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_9_1766302659426",
+    "name": {
+      "ko": "여성창업",
+      "en": "Women's Start-up"
+    },
+    "slug": "여성창업",
+    "type": "press",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2cdcffbcfe5f3bae5022b",
+      "68a2cf3ef7d3c112b01dd0a2"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_10_1766302659426",
+    "name": {
+      "ko": "팁스타운",
+      "en": "Tippstown"
+    },
+    "slug": "팁스타운",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2cdcffbcfe5f3bae5022b"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_11_1766302659426",
+    "name": {
+      "ko": "중소벤처기업부",
+      "en": "Ministry of SMEs and Startups"
+    },
+    "slug": "중소벤처기업부",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2cdcffbcfe5f3bae5022b"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_12_1766302659426",
+    "name": {
+      "ko": "여성기업종합지원센터",
+      "en": "Women's Enterprise Support Center"
+    },
+    "slug": "여성기업종합지원센터",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2cdcffbcfe5f3bae5022b"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_13_1766302659426",
+    "name": {
+      "ko": "오기웅",
+      "en": "Oh Ki-woong"
+    },
+    "slug": "오기웅",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2cdcffbcfe5f3bae5022b"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_14_1766302659426",
+    "name": {
+      "ko": "하이브리드보행기",
+      "en": "Hybrid Walking Machine"
+    },
+    "slug": "하이브리드보행기",
+    "type": "press",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2cf3ef7d3c112b01dd0a2",
+      "68a2d0d5fc17979fdf0db005"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_15_1766302659426",
+    "name": {
+      "ko": "시니어",
+      "en": "Senior"
+    },
+    "slug": "시니어",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2cf3ef7d3c112b01dd0a2"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_16_1766302659426",
+    "name": {
+      "ko": "성인용보행기",
+      "en": "Adult Walking Machine"
+    },
+    "slug": "성인용보행기",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2cf3ef7d3c112b01dd0a2"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_17_1766302659426",
+    "name": {
+      "ko": "시니어모빌리티",
+      "en": "Senior Mobility"
+    },
+    "slug": "시니어모빌리티",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2cf3ef7d3c112b01dd0a2"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_18_1766302659426",
+    "name": {
+      "ko": "ICT"
+    },
+    "slug": "ICT",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2d0d5fc17979fdf0db005"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_19_1766302659426",
+    "name": {
+      "ko": "과학기술정보통신부",
+      "en": "Ministry of Science and ICT"
+    },
+    "slug": "과학기술정보통신부",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2d0d5fc17979fdf0db005"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_20_1766302659426",
+    "name": {
+      "ko": "연구개발특구 육성사업",
+      "en": "R&D Special Zone Development Project"
+    },
+    "slug": "연구개발특구-육성사업",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2d0d5fc17979fdf0db005"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_21_1766302659426",
+    "name": {
+      "ko": "R&D"
+    },
+    "slug": "RD",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2d0d5fc17979fdf0db005"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_22_1766302659426",
+    "name": {
+      "ko": "청년창업사관학교",
+      "en": "Youth Start-up Academy"
+    },
+    "slug": "청년창업사관학교",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2d0d5fc17979fdf0db005"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_23_1766302659426",
+    "name": {
+      "ko": "한국기계연구원",
+      "en": "Korea Institute of Machinery and Technology"
+    },
+    "slug": "한국기계연구원",
+    "type": "press",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [
+      "68a2d0d5fc17979fdf0db005"
+    ],
+    "_story_ids": []
+  },
+  {
+    "_id": "tag_24_1766302659426",
+    "name": {
+      "ko": "흡수력좋은성인기저귀"
+    },
+    "slug": "흡수력좋은성인기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e"
+    ]
+  },
+  {
+    "_id": "tag_25_1766302659426",
+    "name": {
+      "ko": "성인용기저귀"
+    },
+    "slug": "성인용기저귀",
+    "type": "story",
+    "usage_count": 11,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e",
+      "68d33e2019f4dbdd8a722a02",
+      "68d49d319f79edd78e347bf7",
+      "68d64f99eb43e14ec07848b3",
+      "68dcbddbeb43e14ec07848bc",
+      "68df9f6eeb43e14ec07848ca",
+      "68f60981caf89a27aefe9e86",
+      "6901b166541a8cc4191efdbf",
+      "6909cafeb9de874a9ee3293c",
+      "690d7b6fe88e98c0c5e185bc",
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_26_1766302659426",
+    "name": {
+      "ko": "보듬"
+    },
+    "slug": "보듬",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e"
+    ]
+  },
+  {
+    "_id": "tag_27_1766302659426",
+    "name": {
+      "ko": "BODUME"
+    },
+    "slug": "BODUME",
+    "type": "story",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e",
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_28_1766302659426",
+    "name": {
+      "ko": "새지않는기저귀"
+    },
+    "slug": "새지않는기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e"
+    ]
+  },
+  {
+    "_id": "tag_29_1766302659426",
+    "name": {
+      "ko": "편안한기저귀"
+    },
+    "slug": "편안한기저귀",
+    "type": "story",
+    "usage_count": 4,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e",
+      "68d49d319f79edd78e347bf7",
+      "6901b166541a8cc4191efdbf",
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_30_1766302659426",
+    "name": {
+      "ko": "냄새없는기저귀"
+    },
+    "slug": "냄새없는기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e"
+    ]
+  },
+  {
+    "_id": "tag_31_1766302659426",
+    "name": {
+      "ko": "부모님기저귀"
+    },
+    "slug": "부모님기저귀",
+    "type": "story",
+    "usage_count": 3,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e",
+      "68d49d319f79edd78e347bf7",
+      "68d64f99eb43e14ec07848b3"
+    ]
+  },
+  {
+    "_id": "tag_32_1766302659426",
+    "name": {
+      "ko": "요실금팬티"
+    },
+    "slug": "요실금팬티",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e"
+    ]
+  },
+  {
+    "_id": "tag_33_1766302659426",
+    "name": {
+      "ko": "성인용팬티"
+    },
+    "slug": "성인용팬티",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e"
+    ]
+  },
+  {
+    "_id": "tag_34_1766302659426",
+    "name": {
+      "ko": "성인기저귀추천"
+    },
+    "slug": "성인기저귀추천",
+    "type": "story",
+    "usage_count": 4,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e",
+      "68d49d319f79edd78e347bf7",
+      "68d64f99eb43e14ec07848b3",
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_35_1766302659426",
+    "name": {
+      "ko": "효도선물"
+    },
+    "slug": "효도선물",
+    "type": "story",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e",
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_36_1766302659426",
+    "name": {
+      "ko": "간병용품"
+    },
+    "slug": "간병용품",
+    "type": "story",
+    "usage_count": 4,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e",
+      "68d49d319f79edd78e347bf7",
+      "68d64f99eb43e14ec07848b3",
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_37_1766302659426",
+    "name": {
+      "ko": "성인용품"
+    },
+    "slug": "성인용품",
+    "type": "story",
+    "usage_count": 5,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e",
+      "68d64f99eb43e14ec07848b3",
+      "68dcbddbeb43e14ec07848bc",
+      "6901b166541a8cc4191efdbf",
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_38_1766302659426",
+    "name": {
+      "ko": "요실금케어"
+    },
+    "slug": "요실금케어",
+    "type": "story",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e",
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_39_1766302659426",
+    "name": {
+      "ko": "생활용품"
+    },
+    "slug": "생활용품",
+    "type": "story",
+    "usage_count": 4,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e",
+      "68d49d319f79edd78e347bf7",
+      "68d64f99eb43e14ec07848b3",
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_40_1766302659426",
+    "name": {
+      "ko": "보듬팬티형"
+    },
+    "slug": "보듬팬티형",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e"
+    ]
+  },
+  {
+    "_id": "tag_41_1766302659426",
+    "name": {
+      "ko": "보듬속기저귀"
+    },
+    "slug": "보듬속기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e"
+    ]
+  },
+  {
+    "_id": "tag_42_1766302659426",
+    "name": {
+      "ko": "흡수력강한기저귀"
+    },
+    "slug": "흡수력강한기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e"
+    ]
+  },
+  {
+    "_id": "tag_43_1766302659426",
+    "name": {
+      "ko": "일상의편안함"
+    },
+    "slug": "일상의편안함",
+    "type": "story",
+    "usage_count": 4,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d110876f92db73f2a9497e",
+      "68d49d319f79edd78e347bf7",
+      "68d64f99eb43e14ec07848b3",
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_44_1766302659426",
+    "name": {
+      "ko": "얇은기저귀"
+    },
+    "slug": "얇은기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02"
+    ]
+  },
+  {
+    "_id": "tag_45_1766302659426",
+    "name": {
+      "ko": "실내활동기저귀"
+    },
+    "slug": "실내활동기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02"
+    ]
+  },
+  {
+    "_id": "tag_46_1766302659426",
+    "name": {
+      "ko": "팬티형기저귀"
+    },
+    "slug": "팬티형기저귀",
+    "type": "story",
+    "usage_count": 5,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02",
+      "68dcbddbeb43e14ec07848bc",
+      "68df9f6eeb43e14ec07848ca",
+      "68f60981caf89a27aefe9e86",
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_47_1766302659426",
+    "name": {
+      "ko": "속기저귀"
+    },
+    "slug": "속기저귀",
+    "type": "story",
+    "usage_count": 3,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02",
+      "68df9f6eeb43e14ec07848ca",
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_48_1766302659426",
+    "name": {
+      "ko": "요실금관리"
+    },
+    "slug": "요실금관리",
+    "type": "story",
+    "usage_count": 5,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02",
+      "68df9f6eeb43e14ec07848ca",
+      "68f60981caf89a27aefe9e86",
+      "6901b166541a8cc4191efdbf",
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_49_1766302659426",
+    "name": {
+      "ko": "편안한착용감"
+    },
+    "slug": "편안한착용감",
+    "type": "story",
+    "usage_count": 3,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02",
+      "68d64f99eb43e14ec07848b3",
+      "68f60981caf89a27aefe9e86"
+    ]
+  },
+  {
+    "_id": "tag_50_1766302659426",
+    "name": {
+      "ko": "흡수력"
+    },
+    "slug": "흡수력",
+    "type": "story",
+    "usage_count": 3,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02",
+      "68dcbddbeb43e14ec07848bc",
+      "68f60981caf89a27aefe9e86"
+    ]
+  },
+  {
+    "_id": "tag_51_1766302659426",
+    "name": {
+      "ko": "피부건강"
+    },
+    "slug": "피부건강",
+    "type": "story",
+    "usage_count": 4,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02",
+      "68d49d319f79edd78e347bf7",
+      "6909cafeb9de874a9ee3293c",
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_52_1766302659426",
+    "name": {
+      "ko": "통기성"
+    },
+    "slug": "통기성",
+    "type": "story",
+    "usage_count": 3,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02",
+      "68dcbddbeb43e14ec07848bc",
+      "68f60981caf89a27aefe9e86"
+    ]
+  },
+  {
+    "_id": "tag_53_1766302659426",
+    "name": {
+      "ko": "액티브시니어"
+    },
+    "slug": "액티브시니어",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02"
+    ]
+  },
+  {
+    "_id": "tag_54_1766302659426",
+    "name": {
+      "ko": "노인케어"
+    },
+    "slug": "노인케어",
+    "type": "story",
+    "usage_count": 3,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02",
+      "6901b166541a8cc4191efdbf",
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_55_1766302659426",
+    "name": {
+      "ko": "BO DUME"
+    },
+    "slug": "BO-DUME",
+    "type": "story",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02",
+      "68df9f6eeb43e14ec07848ca"
+    ]
+  },
+  {
+    "_id": "tag_56_1766302659426",
+    "name": {
+      "ko": "보듬제품"
+    },
+    "slug": "보듬제품",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02"
+    ]
+  },
+  {
+    "_id": "tag_57_1766302659426",
+    "name": {
+      "ko": "위생용품"
+    },
+    "slug": "위생용품",
+    "type": "story",
+    "usage_count": 3,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02",
+      "68f60981caf89a27aefe9e86",
+      "6901b166541a8cc4191efdbf"
+    ]
+  },
+  {
+    "_id": "tag_58_1766302659426",
+    "name": {
+      "ko": "자유로운움직임"
+    },
+    "slug": "자유로운움직임",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02"
+    ]
+  },
+  {
+    "_id": "tag_59_1766302659426",
+    "name": {
+      "ko": "데일리케어"
+    },
+    "slug": "데일리케어",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02"
+    ]
+  },
+  {
+    "_id": "tag_60_1766302659426",
+    "name": {
+      "ko": "삶의질향상"
+    },
+    "slug": "삶의질향상",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02"
+    ]
+  },
+  {
+    "_id": "tag_61_1766302659426",
+    "name": {
+      "ko": "디스크릿"
+    },
+    "slug": "디스크릿",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02"
+    ]
+  },
+  {
+    "_id": "tag_62_1766302659426",
+    "name": {
+      "ko": "성인위생"
+    },
+    "slug": "성인위생",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d33e2019f4dbdd8a722a02"
+    ]
+  },
+  {
+    "_id": "tag_63_1766302659426",
+    "name": {
+      "ko": "노인기저귀"
+    },
+    "slug": "노인기저귀",
+    "type": "story",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d49d319f79edd78e347bf7",
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_64_1766302659426",
+    "name": {
+      "ko": "어르신기저귀"
+    },
+    "slug": "어르신기저귀",
+    "type": "story",
+    "usage_count": 3,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d49d319f79edd78e347bf7",
+      "68d64f99eb43e14ec07848b3",
+      "6901b166541a8cc4191efdbf"
+    ]
+  },
+  {
+    "_id": "tag_65_1766302659426",
+    "name": {
+      "ko": "기저귀선택"
+    },
+    "slug": "기저귀선택",
+    "type": "story",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d49d319f79edd78e347bf7",
+      "6901b166541a8cc4191efdbf"
+    ]
+  },
+  {
+    "_id": "tag_66_1766302659426",
+    "name": {
+      "ko": "요실금기저귀"
+    },
+    "slug": "요실금기저귀",
+    "type": "story",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d49d319f79edd78e347bf7",
+      "68f60981caf89a27aefe9e86"
+    ]
+  },
+  {
+    "_id": "tag_67_1766302659426",
+    "name": {
+      "ko": "성인피부관리"
+    },
+    "slug": "성인피부관리",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d49d319f79edd78e347bf7"
+    ]
+  },
+  {
+    "_id": "tag_68_1766302659426",
+    "name": {
+      "ko": "효도용품"
+    },
+    "slug": "효도용품",
+    "type": "story",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d49d319f79edd78e347bf7",
+      "68d64f99eb43e14ec07848b3"
+    ]
+  },
+  {
+    "_id": "tag_69_1766302659426",
+    "name": {
+      "ko": "흡수력좋은기저귀"
+    },
+    "slug": "흡수력좋은기저귀",
+    "type": "story",
+    "usage_count": 5,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d49d319f79edd78e347bf7",
+      "68d64f99eb43e14ec07848b3",
+      "68df9f6eeb43e14ec07848ca",
+      "6901b166541a8cc4191efdbf",
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_70_1766302659426",
+    "name": {
+      "ko": "샘방지"
+    },
+    "slug": "샘방지",
+    "type": "story",
+    "usage_count": 3,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d49d319f79edd78e347bf7",
+      "68dcbddbeb43e14ec07848bc",
+      "68f60981caf89a27aefe9e86"
+    ]
+  },
+  {
+    "_id": "tag_71_1766302659426",
+    "name": {
+      "ko": "냄새걱정없는"
+    },
+    "slug": "냄새걱정없는",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d49d319f79edd78e347bf7"
+    ]
+  },
+  {
+    "_id": "tag_72_1766302659426",
+    "name": {
+      "ko": "케어용품"
+    },
+    "slug": "케어용품",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d49d319f79edd78e347bf7"
+    ]
+  },
+  {
+    "_id": "tag_73_1766302659426",
+    "name": {
+      "ko": "기저귀사용법"
+    },
+    "slug": "기저귀사용법",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d49d319f79edd78e347bf7"
+    ]
+  },
+  {
+    "_id": "tag_74_1766302659426",
+    "name": {
+      "ko": "시니어케어"
+    },
+    "slug": "시니어케어",
+    "type": "story",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d49d319f79edd78e347bf7",
+      "68f60981caf89a27aefe9e86"
+    ]
+  },
+  {
+    "_id": "tag_75_1766302659426",
+    "name": {
+      "ko": "서울강남구요양원"
+    },
+    "slug": "서울강남구요양원",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d64f99eb43e14ec07848b3"
+    ]
+  },
+  {
+    "_id": "tag_76_1766302659426",
+    "name": {
+      "ko": "기저귀구매"
+    },
+    "slug": "기저귀구매",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d64f99eb43e14ec07848b3"
+    ]
+  },
+  {
+    "_id": "tag_77_1766302659426",
+    "name": {
+      "ko": "요양원기저귀"
+    },
+    "slug": "요양원기저귀",
+    "type": "story",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d64f99eb43e14ec07848b3",
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_78_1766302659426",
+    "name": {
+      "ko": "강남기저귀"
+    },
+    "slug": "강남기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d64f99eb43e14ec07848b3"
+    ]
+  },
+  {
+    "_id": "tag_79_1766302659426",
+    "name": {
+      "ko": "요양병원용품"
+    },
+    "slug": "요양병원용품",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d64f99eb43e14ec07848b3"
+    ]
+  },
+  {
+    "_id": "tag_80_1766302659426",
+    "name": {
+      "ko": "기저귀선택법"
+    },
+    "slug": "기저귀선택법",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d64f99eb43e14ec07848b3"
+    ]
+  },
+  {
+    "_id": "tag_81_1766302659426",
+    "name": {
+      "ko": "피부트러블방지"
+    },
+    "slug": "피부트러블방지",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d64f99eb43e14ec07848b3"
+    ]
+  },
+  {
+    "_id": "tag_82_1766302659426",
+    "name": {
+      "ko": "실버용품"
+    },
+    "slug": "실버용품",
+    "type": "story",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d64f99eb43e14ec07848b3",
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_83_1766302659426",
+    "name": {
+      "ko": "건강한노년"
+    },
+    "slug": "건강한노년",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68d64f99eb43e14ec07848b3"
+    ]
+  },
+  {
+    "_id": "tag_84_1766302659426",
+    "name": {
+      "ko": "남성성인용기저귀"
+    },
+    "slug": "남성성인용기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68dcbddbeb43e14ec07848bc"
+    ]
+  },
+  {
+    "_id": "tag_85_1766302659426",
+    "name": {
+      "ko": "허리둘레90cm"
+    },
+    "slug": "허리둘레90cm",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68dcbddbeb43e14ec07848bc"
+    ]
+  },
+  {
+    "_id": "tag_86_1766302659426",
+    "name": {
+      "ko": "기저귀고르기"
+    },
+    "slug": "기저귀고르기",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68dcbddbeb43e14ec07848bc"
+    ]
+  },
+  {
+    "_id": "tag_87_1766302659426",
+    "name": {
+      "ko": "요실금개선"
+    },
+    "slug": "요실금개선",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68dcbddbeb43e14ec07848bc"
+    ]
+  },
+  {
+    "_id": "tag_88_1766302659426",
+    "name": {
+      "ko": "실금관리"
+    },
+    "slug": "실금관리",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68dcbddbeb43e14ec07848bc"
+    ]
+  },
+  {
+    "_id": "tag_89_1766302659426",
+    "name": {
+      "ko": "피부트러블"
+    },
+    "slug": "피부트러블",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68dcbddbeb43e14ec07848bc"
+    ]
+  },
+  {
+    "_id": "tag_90_1766302659426",
+    "name": {
+      "ko": "냄새방지"
+    },
+    "slug": "냄새방지",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68dcbddbeb43e14ec07848bc"
+    ]
+  },
+  {
+    "_id": "tag_91_1766302659426",
+    "name": {
+      "ko": "착용감"
+    },
+    "slug": "착용감",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68dcbddbeb43e14ec07848bc"
+    ]
+  },
+  {
+    "_id": "tag_92_1766302659426",
+    "name": {
+      "ko": "어른기저귀"
+    },
+    "slug": "어른기저귀",
+    "type": "story",
+    "usage_count": 3,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68dcbddbeb43e14ec07848bc",
+      "6901b166541a8cc4191efdbf",
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_93_1766302659426",
+    "name": {
+      "ko": "생활정보"
+    },
+    "slug": "생활정보",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68dcbddbeb43e14ec07848bc"
+    ]
+  },
+  {
+    "_id": "tag_94_1766302659426",
+    "name": {
+      "ko": "건강관리"
+    },
+    "slug": "건강관리",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68dcbddbeb43e14ec07848bc"
+    ]
+  },
+  {
+    "_id": "tag_95_1766302659426",
+    "name": {
+      "ko": "일상생활팁"
+    },
+    "slug": "일상생활팁",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68dcbddbeb43e14ec07848bc"
+    ]
+  },
+  {
+    "_id": "tag_96_1766302659426",
+    "name": {
+      "ko": "실버케어"
+    },
+    "slug": "실버케어",
+    "type": "story",
+    "usage_count": 3,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68dcbddbeb43e14ec07848bc",
+      "6901b166541a8cc4191efdbf",
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_97_1766302659426",
+    "name": {
+      "ko": "제품정보"
+    },
+    "slug": "제품정보",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68dcbddbeb43e14ec07848bc"
+    ]
+  },
+  {
+    "_id": "tag_98_1766302659426",
+    "name": {
+      "ko": "요실금성인기저귀"
+    },
+    "slug": "요실금성인기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68df9f6eeb43e14ec07848ca"
+    ]
+  },
+  {
+    "_id": "tag_99_1766302659426",
+    "name": {
+      "ko": "보듬기저귀"
+    },
+    "slug": "보듬기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68df9f6eeb43e14ec07848ca"
+    ]
+  },
+  {
+    "_id": "tag_100_1766302659426",
+    "name": {
+      "ko": "성인기저귀선택법"
+    },
+    "slug": "성인기저귀선택법",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68df9f6eeb43e14ec07848ca"
+    ]
+  },
+  {
+    "_id": "tag_101_1766302659426",
+    "name": {
+      "ko": "샘방지기저귀"
+    },
+    "slug": "샘방지기저귀",
+    "type": "story",
+    "usage_count": 3,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68df9f6eeb43e14ec07848ca",
+      "6901b166541a8cc4191efdbf",
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_102_1766302659426",
+    "name": {
+      "ko": "착용감중요"
+    },
+    "slug": "착용감중요",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68df9f6eeb43e14ec07848ca"
+    ]
+  },
+  {
+    "_id": "tag_103_1766302659426",
+    "name": {
+      "ko": "여성요실금고민"
+    },
+    "slug": "여성요실금고민",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68df9f6eeb43e14ec07848ca"
+    ]
+  },
+  {
+    "_id": "tag_104_1766302659426",
+    "name": {
+      "ko": "시니어라이프"
+    },
+    "slug": "시니어라이프",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68df9f6eeb43e14ec07848ca"
+    ]
+  },
+  {
+    "_id": "tag_105_1766302659426",
+    "name": {
+      "ko": "일상의자신감"
+    },
+    "slug": "일상의자신감",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68df9f6eeb43e14ec07848ca"
+    ]
+  },
+  {
+    "_id": "tag_106_1766302659426",
+    "name": {
+      "ko": "피부건강관리"
+    },
+    "slug": "피부건강관리",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68df9f6eeb43e14ec07848ca"
+    ]
+  },
+  {
+    "_id": "tag_107_1766302659426",
+    "name": {
+      "ko": "냄새케어"
+    },
+    "slug": "냄새케어",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68df9f6eeb43e14ec07848ca"
+    ]
+  },
+  {
+    "_id": "tag_108_1766302659426",
+    "name": {
+      "ko": "편안한활동"
+    },
+    "slug": "편안한활동",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68df9f6eeb43e14ec07848ca"
+    ]
+  },
+  {
+    "_id": "tag_109_1766302659426",
+    "name": {
+      "ko": "30대여성"
+    },
+    "slug": "30대여성",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68df9f6eeb43e14ec07848ca"
+    ]
+  },
+  {
+    "_id": "tag_110_1766302659426",
+    "name": {
+      "ko": "40대여성"
+    },
+    "slug": "40대여성",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68df9f6eeb43e14ec07848ca"
+    ]
+  },
+  {
+    "_id": "tag_111_1766302659426",
+    "name": {
+      "ko": "50대여성"
+    },
+    "slug": "50대여성",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68df9f6eeb43e14ec07848ca"
+    ]
+  },
+  {
+    "_id": "tag_112_1766302659426",
+    "name": {
+      "ko": "기저귀선택가이드"
+    },
+    "slug": "기저귀선택가이드",
+    "type": "story",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68f60981caf89a27aefe9e86",
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_113_1766302659426",
+    "name": {
+      "ko": "냄새제거"
+    },
+    "slug": "냄새제거",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68f60981caf89a27aefe9e86"
+    ]
+  },
+  {
+    "_id": "tag_114_1766302659426",
+    "name": {
+      "ko": "피부보호"
+    },
+    "slug": "피부보호",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68f60981caf89a27aefe9e86"
+    ]
+  },
+  {
+    "_id": "tag_115_1766302659426",
+    "name": {
+      "ko": "노인건강"
+    },
+    "slug": "노인건강",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68f60981caf89a27aefe9e86"
+    ]
+  },
+  {
+    "_id": "tag_116_1766302659426",
+    "name": {
+      "ko": "일상의질"
+    },
+    "slug": "일상의질",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68f60981caf89a27aefe9e86"
+    ]
+  },
+  {
+    "_id": "tag_117_1766302659426",
+    "name": {
+      "ko": "성인기저귀정보"
+    },
+    "slug": "성인기저귀정보",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68f60981caf89a27aefe9e86"
+    ]
+  },
+  {
+    "_id": "tag_118_1766302659426",
+    "name": {
+      "ko": "건강정보"
+    },
+    "slug": "건강정보",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68f60981caf89a27aefe9e86"
+    ]
+  },
+  {
+    "_id": "tag_119_1766302659426",
+    "name": {
+      "ko": "실용정보"
+    },
+    "slug": "실용정보",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68f60981caf89a27aefe9e86"
+    ]
+  },
+  {
+    "_id": "tag_120_1766302659426",
+    "name": {
+      "ko": "요실금대처"
+    },
+    "slug": "요실금대처",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68f60981caf89a27aefe9e86"
+    ]
+  },
+  {
+    "_id": "tag_121_1766302659426",
+    "name": {
+      "ko": "현명한소비"
+    },
+    "slug": "현명한소비",
+    "type": "story",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "68f60981caf89a27aefe9e86",
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_122_1766302659426",
+    "name": {
+      "ko": "간병생활"
+    },
+    "slug": "간병생활",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6901b166541a8cc4191efdbf"
+    ]
+  },
+  {
+    "_id": "tag_123_1766302659426",
+    "name": {
+      "ko": "재가요양"
+    },
+    "slug": "재가요양",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6901b166541a8cc4191efdbf"
+    ]
+  },
+  {
+    "_id": "tag_124_1766302659426",
+    "name": {
+      "ko": "피부자극없는기저귀"
+    },
+    "slug": "피부자극없는기저귀",
+    "type": "story",
+    "usage_count": 2,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6901b166541a8cc4191efdbf",
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_125_1766302659426",
+    "name": {
+      "ko": "기저귀교체팁"
+    },
+    "slug": "기저귀교체팁",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6901b166541a8cc4191efdbf"
+    ]
+  },
+  {
+    "_id": "tag_126_1766302659426",
+    "name": {
+      "ko": "부모님선물"
+    },
+    "slug": "부모님선물",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6901b166541a8cc4191efdbf"
+    ]
+  },
+  {
+    "_id": "tag_127_1766302659426",
+    "name": {
+      "ko": "생활편의용품"
+    },
+    "slug": "생활편의용품",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6901b166541a8cc4191efdbf"
+    ]
+  },
+  {
+    "_id": "tag_128_1766302659426",
+    "name": {
+      "ko": "일상의질향상"
+    },
+    "slug": "일상의질향상",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6901b166541a8cc4191efdbf"
+    ]
+  },
+  {
+    "_id": "tag_129_1766302659426",
+    "name": {
+      "ko": "간병고민"
+    },
+    "slug": "간병고민",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6901b166541a8cc4191efdbf"
+    ]
+  },
+  {
+    "_id": "tag_130_1766302659426",
+    "name": {
+      "ko": "흡수력중요성"
+    },
+    "slug": "흡수력중요성",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_131_1766302659426",
+    "name": {
+      "ko": "착용감우수"
+    },
+    "slug": "착용감우수",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_132_1766302659426",
+    "name": {
+      "ko": "샘방지기능"
+    },
+    "slug": "샘방지기능",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_133_1766302659426",
+    "name": {
+      "ko": "통기성소재"
+    },
+    "slug": "통기성소재",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_134_1766302659426",
+    "name": {
+      "ko": "패드형기저귀"
+    },
+    "slug": "패드형기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_135_1766302659426",
+    "name": {
+      "ko": "기저귀선택방법"
+    },
+    "slug": "기저귀선택방법",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_136_1766302659426",
+    "name": {
+      "ko": "웰빙생활"
+    },
+    "slug": "웰빙생활",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_137_1766302659426",
+    "name": {
+      "ko": "생활편의"
+    },
+    "slug": "생활편의",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_138_1766302659426",
+    "name": {
+      "ko": "위생관리"
+    },
+    "slug": "위생관리",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_139_1766302659426",
+    "name": {
+      "ko": "사용자맞춤"
+    },
+    "slug": "사용자맞춤",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_140_1766302659426",
+    "name": {
+      "ko": "제품선택가이드"
+    },
+    "slug": "제품선택가이드",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_141_1766302659426",
+    "name": {
+      "ko": "기저귀정보"
+    },
+    "slug": "기저귀정보",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "6909cafeb9de874a9ee3293c"
+    ]
+  },
+  {
+    "_id": "tag_142_1766302659426",
+    "name": {
+      "ko": "부모님용품"
+    },
+    "slug": "부모님용품",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_143_1766302659426",
+    "name": {
+      "ko": "기저귀종류"
+    },
+    "slug": "기저귀종류",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_144_1766302659426",
+    "name": {
+      "ko": "편의용품"
+    },
+    "slug": "편의용품",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_145_1766302659426",
+    "name": {
+      "ko": "흡수력기저귀"
+    },
+    "slug": "흡수력기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_146_1766302659426",
+    "name": {
+      "ko": "착용감기저귀"
+    },
+    "slug": "착용감기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_147_1766302659426",
+    "name": {
+      "ko": "통기성좋은기저귀"
+    },
+    "slug": "통기성좋은기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_148_1766302659426",
+    "name": {
+      "ko": "팬티형"
+    },
+    "slug": "팬티형",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_149_1766302659426",
+    "name": {
+      "ko": "기저귀사이즈"
+    },
+    "slug": "기저귀사이즈",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_150_1766302659426",
+    "name": {
+      "ko": "어르신삶의질"
+    },
+    "slug": "어르신삶의질",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_151_1766302659426",
+    "name": {
+      "ko": "돌봄정보"
+    },
+    "slug": "돌봄정보",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_152_1766302659426",
+    "name": {
+      "ko": "생활의지혜"
+    },
+    "slug": "생활의지혜",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_153_1766302659426",
+    "name": {
+      "ko": "건강한생활"
+    },
+    "slug": "건강한생활",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d7b6fe88e98c0c5e185bc"
+    ]
+  },
+  {
+    "_id": "tag_154_1766302659426",
+    "name": {
+      "ko": "성인기저귀가격"
+    },
+    "slug": "성인기저귀가격",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_155_1766302659426",
+    "name": {
+      "ko": "성인용팬티기저귀"
+    },
+    "slug": "성인용팬티기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_156_1766302659426",
+    "name": {
+      "ko": "성인속기저귀"
+    },
+    "slug": "성인속기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_157_1766302659426",
+    "name": {
+      "ko": "어머니선물"
+    },
+    "slug": "어머니선물",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_158_1766302659426",
+    "name": {
+      "ko": "부모님돌봄"
+    },
+    "slug": "부모님돌봄",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_159_1766302659426",
+    "name": {
+      "ko": "노인용품"
+    },
+    "slug": "노인용품",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_160_1766302659426",
+    "name": {
+      "ko": "보호자필수템"
+    },
+    "slug": "보호자필수템",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d9952e88e98c0c5e185c3"
+    ]
+  },
+  {
+    "_id": "tag_161_1766302659426",
+    "name": {
+      "ko": "가성비기저귀"
+    },
+    "slug": "가성비기저귀",
+    "type": "story",
+    "usage_count": 1,
+    "is_active": true,
+    "created_at": "2025-12-21T07:37:39.426Z",
+    "created_by": "689b5340bfb04216ae60c8b6",
+    "_press_ids": [],
+    "_story_ids": [
+      "690d9952e88e98c0c5e185c3"
+    ]
+  }
+]

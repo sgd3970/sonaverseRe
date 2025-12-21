@@ -1,0 +1,146 @@
+# Sonaverse Ultimate Front-end Design Specification (v1.0)
+
+이 문서는 소나버스(Sonaverse) 프로젝트의 모든 시각적 요소와 사용자 경험을 재현하기 위한 최종 명세서입니다. 본 명세서의 수치와 로직을 준수하면 소나버스 홈페이지와 관리자 패널을 완벽하게 동일하게 구성할 수 있습니다.
+
+---
+
+## 1. 전역 시스템 설정 (Tailwind Config)
+
+### 1.1 Color Palette (Hex & Context)
+- **Brand Identity**
+  - `primary`: `#1C4376` (Deep Navy) - 신뢰와 전문성. 헤더 로고, 메인 액션 버튼.
+  - `accent`: `#BDA191` (Warm Sand) - 따뜻한 감성. 카테고리 뱃지, 강조 텍스트.
+  - `bg-beige`: `#F0ECE9` - 부드러운 배경색. 푸터, 제품 상세 섹션.
+  - `bg-soft`: `#FCFBF9` - 카드 내부 및 보조 배경.
+
+- **Product Specific (Gradients)**
+  - `manbo-green`: `#2EB865` → `gradient: from-[#2EB865] to-[#249652]`
+  - `bodeum-green`: `#5EBA7D` → `gradient: from-[#5EBA7D] to-[#4DA86E]`
+
+- **Admin Console (Professional Slate)**
+  - `admin-bg`: `#0F172A` (Slate 900)
+  - `admin-surface`: `#1E293B` (Slate 800)
+  - `admin-border`: `#334155` (Slate 700)
+  - `admin-primary`: `#3B82F6` (Blue 500)
+  - `admin-success`: `#10B981`, `admin-danger`: `#EF4444`
+
+### 1.2 Typography
+- **Fonts**: `Inter`, `Noto Sans KR` (Fallback: `sans-serif`)
+- **Weights**: Black(900), Bold(700), Medium(500), Regular(400), Light(300)
+- **Letter Spacing**: 
+  - Titles: `tracking-tighter` (-0.05em)
+  - Eyebrows: `tracking-[0.3em]` (0.3em)
+  - Body: `tracking-normal` (0)
+
+### 1.3 Border Radius (Core DNA)
+- `rounded-xl`: `1rem` (Buttons, small cards)
+- `rounded-2xl`: `2rem` (Medium cards)
+- `rounded-[2.5rem]`: `2.5rem` (Major cards - Problems)
+- `rounded-[3rem]`: `3rem` (Premium Product Cards)
+- `rounded-[3.5rem]`: `3.5rem` (Featured Story Cards)
+
+---
+
+## 2. 레이아웃 시스템 (Layout & Spacing)
+
+### 2.1 Container & Grid
+- **Max Width**: `max-w-7xl` (1280px) 중앙 정렬.
+- **Horizontal Padding**: Mobile: `px-6`, Desktop: `px-12`.
+- **Vertical Padding (Section)**:
+  - Standard: `py-32` (128px)
+  - Dramatic: `py-48` (192px) - 메인 홈 주요 섹션.
+
+### 2.2 Header (Layout.tsx)
+- **Default State**: `bg-transparent`, `h-20`.
+- **Scrolled State**: `bg-white/95`, `backdrop-blur-md`, `shadow-sm`, `border-b border-gray-100`.
+- **Navigation**: `text-lg`, `font-bold`, `text-gray-500`. 
+  - Hover: `text-primary`.
+  - Active: `text-primary`, `border-b-2 border-primary` (선택 사항).
+
+---
+
+## 3. 핵심 컴포넌트 상세 명세 (Components)
+
+### 3.1 Premium Product Card (Home & List)
+- **구조**: 상단 이미지(4:3 비율) + 하단 텍스트 + 하단 액션 버튼 그룹.
+- **이미지 효과**: `overflow-hidden`, `group-hover:scale-110` (duration-1000).
+- **그라데이션 오버레이**: `bg-gradient-to-t from-white via-transparent to-transparent` (hover 시 노출).
+- **그림자 로직**:
+  - Default: `shadow-2xl`.
+  - Hover: `shadow-[0_60px_100px_-30px_rgba(0,0,0,0.15)]`, `translate-y-[-10px]`.
+
+### 3.2 CTA Buttons
+- **Primary Gradient Button**: 
+  - `bg-gradient-to-br from-[COLOR] to-[DARKER_COLOR]`.
+  - `shadow-[0_15px_35px_-5px_rgba(COLOR, 0.4)]`.
+  - Hover: `shadow-[0_25px_50px_-10px_rgba(COLOR, 0.6)]`, `-translate-y-1`.
+- **Secondary Ghost Button**:
+  - `border-2 border-gray-100`, `text-gray-500`, `font-black`, `uppercase`.
+  - Hover: `border-primary/20`, `text-primary`.
+
+---
+
+## 4. 페이지별 디자인 아키텍처
+
+### 4.1 Home.tsx (The Showcase)
+1. **Hero**: `h-screen`, `bg-black/70 overlay`. 타이틀 `text-9xl`, 자간 `tracking-tighter`.
+2. **Problem (Our Mission)**: `grid-cols-4`, `bg-gray-50` 카드. 아이콘 배경 `bg-opacity-10`.
+3. **Products (The Collection)**: `bg-[#f5f2f0]`, `py-48`. 카드 라운딩 `rounded-[3rem]`.
+4. **History (Heritage)**: 중앙 수직선 `w-[2px]`. 연도 텍스트 `text-8xl`, `font-black`, `text-gray-100`.
+
+### 4.2 Product Detail (Premium Spec)
+- **Hero Area**: `pt-48`, 좌측 텍스트 / 우측 이미지 비율 `1:1`.
+- **Badge**: `manbo-green/10` 배경에 `manbo-green` 텍스트.
+- **Feature Icons**: `20x20` 크기의 화이트 배경 + 그림자 박스 내 아이콘.
+
+### 4.3 Inquiry (The Form)
+- **Form Card**: `max-w-[640px]`, `p-10`, `rounded-3xl`, `shadow-lg`.
+- **Inputs**: `h-12`, `rounded-xl`, `border-gray-200`, `focus:ring-primary/20`.
+- **Privacy Modal**: `bg-black/50`, `backdrop-blur-sm`, `animate-fade-in`.
+
+---
+
+## 5. 인터랙션 & 애니메이션 (The Sona Motion)
+
+### 5.1 전역 트랜지션
+- 모든 `hover`, `active`, `color` 변화: `transition-all`, `duration-500`, `ease-in-out`.
+
+### 5.2 등장 애니메이션 (Entrance)
+- **Fade-in-up**: 
+  - `from: { opacity: 0, transform: translateY(30px) }`
+  - `to: { opacity: 1, transform: translateY(0) }`
+  - `duration-1000`.
+
+### 5.3 카드 마이크로 인터랙션
+- **Scale up**: 이미지 호버 시 `scale-105` 또는 `scale-110`.
+- **Text Slide**: 타이틀 호버 시 `translate-x-2` (Story Card 전용).
+
+---
+
+## 6. 관리자 패널 명세 (Admin Dashboard)
+
+### 6.1 Sidebar
+- **Background**: `#020617` (Deepest Navy).
+- **Active Menu**: `bg-admin-primary` (Blue 500), `text-white`, `shadow-admin-primary/20`.
+- **Hover Menu**: `bg-admin-surface` (Slate 800).
+
+### 6.2 Data Display
+- **Stats Card**: `p-6`, `bg-admin-surface`, `border-admin-border`. 아이콘 `admin-primary/10` 배경.
+- **Table**: `divide-admin-border`. 행 호버 시 `bg-admin-surface-hover/50`.
+- **Badge Status**: 
+  - `Wait`: `bg-yellow-500/10 text-yellow-400`.
+  - `Done`: `bg-green-500/10 text-green-400`.
+
+---
+
+## 7. 반응형 규칙 (Responsive Breakpoints)
+- **Mobile (< 768px)**: 
+  - Section Padding: `py-24`.
+  - Font Sizes: `text-9xl` → `text-6xl`.
+  - Grids: `grid-cols-4` → `grid-cols-1`.
+- **Desktop (>= 1024px)**: 
+  - Full spacing, Multi-column grids, Dramatic font sizes.
+
+---
+
+**준수 사항**: 이 명세서의 모든 색상 코드는 Tailwind 설정 파일(`tailwind.config.js`)에 변수로 등록하여 사용해야 하며, 여백 수치는 정해진 `mb-x`, `py-x` 단위를 엄격히 지켜야 일관된 고급스러움을 유지할 수 있습니다.
