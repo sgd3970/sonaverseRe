@@ -114,7 +114,7 @@ export function BodumeLineup({ products: dbProducts }: BodumeLineupProps) {
             descEn: "Easy to put on and take off. Recommended for active users.",
             price: 18000,
             quantity: "30매입",
-            image: "https://picsum.photos/500/500?random=201",
+            image: "/images/product/bodume/product1.webp",
         },
         {
             id: "pants-medium",
@@ -125,7 +125,7 @@ export function BodumeLineup({ products: dbProducts }: BodumeLineupProps) {
             descEn: "Soft waistband provides comfortable fit.",
             price: 18000,
             quantity: "34매입",
-            image: "https://picsum.photos/500/500?random=202",
+            image: "/images/product/bodume/product1.webp",
         },
         {
             id: "inner-regular",
@@ -136,7 +136,7 @@ export function BodumeLineup({ products: dbProducts }: BodumeLineupProps) {
             descEn: "Economical replacement inner pad for use with pants type.",
             price: 12000,
             quantity: "30매입",
-            image: "https://picsum.photos/500/500?random=203",
+            image: "/images/product/bodume/product1.webp",
         },
         {
             id: "mat",
@@ -147,7 +147,7 @@ export function BodumeLineup({ products: dbProducts }: BodumeLineupProps) {
             descEn: "Hygienic disposable mat to prevent bedding contamination.",
             price: 15000,
             quantity: "10매입",
-            image: "https://picsum.photos/500/500?random=204",
+            image: "/images/product/bodume/product1.webp",
         },
     ]
 
@@ -165,7 +165,7 @@ export function BodumeLineup({ products: dbProducts }: BodumeLineupProps) {
 
             // Image
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            const imageUrl = (p.thumbnail_image_id as any)?.url || (p.hero_image_id as any)?.url || "https://picsum.photos/500/500?random=200";
+            const imageUrl = (p.thumbnail_image_id as any)?.url || (p.hero_image_id as any)?.url || "/images/product/bodume/product1.webp";
 
             return {
                 id: p._id.toString(),

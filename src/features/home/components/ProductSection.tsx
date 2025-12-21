@@ -97,7 +97,7 @@ export function ProductSection() {
                                 alt="Manbo" 
                                 title="만보 워크메이트 - 자유로운 이동을 위한 테크놀로지의 집약"
                                 className="transition-transform duration-1000 group-hover:scale-110" 
-                                src="https://picsum.photos/800/600?random=10" 
+                                src="/images/product/manbo/product2.webp"
                                 fill 
                                 priority
                                 sizes="(max-width: 1024px) 85vw, 50vw"
@@ -130,7 +130,7 @@ export function ProductSection() {
                                 alt="Bodeum" 
                                 title="보듬 기저귀 - 최상의 편안함과 위생을 향한 고집"
                                 className="transition-transform duration-1000 group-hover:scale-110" 
-                                src="https://picsum.photos/800/600?random=11" 
+                                src="/images/product/bodume/product1.webp"
                                 fill 
                                 sizes="(max-width: 1024px) 85vw, 50vw"
                                 objectFit="cover" 

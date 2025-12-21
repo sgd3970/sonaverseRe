@@ -75,7 +75,7 @@ export function PressSection() {
                                         alt={mainPress.title} 
                                         title={mainPress.title}
                                         className="transition-transform duration-1000 group-hover:scale-110" 
-                                        src="https://picsum.photos/800/600?random=10" 
+                                        src="/images/press/press-thumb-1.webp"
                                         fill 
                                         sizes="(max-width: 1024px) 100vw, 65vw"
                                         objectFit="cover" 
@@ -117,7 +117,7 @@ export function PressSection() {
                                                     alt={article.title} 
                                                     title={article.title}
                                                     className="group-hover:scale-110 transition-transform duration-500" 
-                                                    src={`https://picsum.photos/800/600?random=${11 + idx}`} 
+                                                    src={idx === 0 ? "/images/press/press-thumb-2.webp" : idx === 1 ? "/images/press/press-thumb-3.webp" : "/images/press/press-thumb-4.webp"}
                                                     fill 
                                                     sizes="128px"
                                                     objectFit="cover" 

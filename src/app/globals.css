@@ -40,7 +40,8 @@
 
   /* 보듬 (BO DUME) */
   --color-bodume-green: #5eba7d;
-  --color-bodume-green-dark: #4a9863;
+  /* 접근성 대비 4.5:1 이상을 위해 어두운 색상으로 변경 */
+  --color-bodume-green-dark: #3a7a4f;
   --color-bodume-green-light: #edf7f1;
 
   /* ============================================
@@ -180,5 +181,20 @@ body {
   
   .animate-fade-in-down {
     animation: fade-in-down 0.3s ease-out forwards;
+  }
+  
+  /* 접근성: 터치 영역 최소 크기 확보 (44x44px) */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* 접근성: 색상 대비 개선 */
+  .text-primary-40 {
+    color: rgba(28, 67, 118, 0.6); /* primary 40% 대신 60%로 변경하여 대비율 개선 */
+  }
+  
+  .text-gray-400-improved {
+    color: #6B7280; /* gray-500로 변경하여 대비율 개선 */
   }
 }

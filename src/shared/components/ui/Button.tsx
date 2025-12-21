@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-    "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-bold transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-5 [&_svg]:shrink-0 active:scale-95",
+    "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-bold transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-5 [&_svg]:shrink-0 active:scale-95 touch-target",
     {
         variants: {
             variant: {
@@ -31,11 +31,11 @@ const buttonVariants = cva(
                 "category-inactive": "bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors",
             },
             size: {
-                default: "h-12 px-6 py-3 text-base", // Mobile default (48px)
-                sm: "h-10 px-4 text-sm",
-                lg: "h-14 px-10 text-lg", // Desktop large
-                icon: "h-12 w-12",
-                xl: "h-14 px-10 text-lg", // Hero CTA
+                default: "h-12 px-6 py-3 text-base min-h-[44px]", // 접근성: 최소 44px 터치 영역
+                sm: "h-10 px-4 text-sm min-h-[44px]", // 접근성: 최소 44px 터치 영역
+                lg: "h-14 px-10 text-lg min-h-[44px]", // Desktop large
+                icon: "h-12 w-12 min-h-[44px] min-w-[44px]", // 접근성: 최소 44x44px 터치 영역
+                xl: "h-14 px-10 text-lg min-h-[44px]", // Hero CTA
             },
         },
         defaultVariants: {

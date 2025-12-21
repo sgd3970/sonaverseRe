@@ -78,7 +78,7 @@ export function ManboSpecs({ product }: ManboSpecsProps) {
         <section className="py-20 md:py-48 bg-[#f8f6f4]">
             <div className="max-w-7xl mx-auto px-6 space-y-24 md:space-y-48">
                 <SpecSection
-                    image="https://picsum.photos/800/600?random=101"
+                    image="/images/product/manbo/product2.webp"
                     badge="Core Technology 01"
                     title="경사를 평지처럼,"
                     highlight="Hybrid Motor"
@@ -88,7 +88,7 @@ export function ManboSpecs({ product }: ManboSpecsProps) {
                 />
 
                 <SpecSection
-                    image="https://picsum.photos/800/600?random=102"
+                    image="/images/product/manbo/product2.webp"
                     badge="Core Technology 02"
                     title="직관을 넘어서는"
                     highlight="Smart Display"

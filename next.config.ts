@@ -16,14 +16,8 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'public.blob.vercel-storage.com',
       },
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'picsum.photos',
-      },
+      // 외부 이미지 서비스 제거: 성능 최적화를 위해 로컬 이미지 사용
+      // images.unsplash.com, picsum.photos 제거됨
     ],
   },
   typescript: {

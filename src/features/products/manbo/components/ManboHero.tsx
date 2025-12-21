@@ -80,7 +80,7 @@ export function ManboHero({ product, heroImage }: ManboHeroProps) {
     const title = product?.name?.ko || "만보 / 워크메이트"
     const subtitle = product?.subtitle?.ko || "지능형 하이브리드 보행 보조기"
     const description = product?.short_description?.ko || "사용자의 의지를 읽는 인공지능 모터 제어.\n경사지에서도 평지처럼 가벼운 보행을 선물합니다."
-    const imageUrl = heroImage?.url || "https://picsum.photos/800/800?random=100"
+    const imageUrl = heroImage?.url || "/images/product/manbo/product2.webp"
 
     if (isLoading) {
         return (

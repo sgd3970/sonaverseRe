@@ -92,7 +92,7 @@ export function BodumeHero({ product, heroImage }: BodumeHeroProps) {
     // Fallback data
     const title = product?.name?.ko || "보듬"
     const subtitle = product?.subtitle?.ko || "프리미엄 성인용 기저귀"
-    const imageUrl = heroImage?.url || "https://picsum.photos/800/800?random=200"
+    const imageUrl = heroImage?.url || "/images/product/bodume/product1.webp"
 
     if (isLoading) {
         return (
