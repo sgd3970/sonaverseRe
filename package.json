@@ -2,6 +2,9 @@
   "name": "temp_app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "cross-env NODE_OPTIONS=--max-old-space-size=3072 --expose-gc next dev --webpack",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 next build --webpack",
