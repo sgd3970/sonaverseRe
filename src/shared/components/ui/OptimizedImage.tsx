@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils';
 interface OptimizedImageProps {
   src: string;
   alt: string;
+  title?: string; // 추가: 접근성 및 SEO 개선
   width?: number;
   height?: number;
   fill?: boolean;
@@ -31,6 +32,7 @@ const grayBlurDataURL = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABC
 export function OptimizedImage({
   src,
   alt,
+  title,
   width,
   height,
   fill = false,
@@ -47,6 +49,14 @@ export function OptimizedImage({
 }: OptimizedImageProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
+
+  // fill이 false인 경우 width와 height 필수 검증
+  if (!fill && (!width || !height)) {
+    console.warn(
+      `OptimizedImage: width and height are required when fill is false. ` +
+      `Received: width=${width}, height=${height}, src=${src}`
+    );
+  }
 
   // 외부 URL인지 확인
   const isExternal = src.startsWith('http://') || src.startsWith('https://');
@@ -108,6 +118,7 @@ export function OptimizedImage({
       <Image
         src={src}
         alt={alt}
+        title={title || alt} // title 속성 추가 (접근성 및 SEO 개선)
         width={fill ? undefined : width}
         height={fill ? undefined : height}
         fill={fill}
@@ -116,6 +127,7 @@ export function OptimizedImage({
         sizes={defaultSizes}
         placeholder={placeholder}
         blurDataURL={blurDataURL || (isExternal ? grayBlurDataURL : defaultBlurDataURL)}
+        loading={priority ? undefined : 'lazy'} // 명시적 lazy loading 설정
         className={cn(
           "transition-opacity duration-300",
           isLoading ? "opacity-0" : "opacity-100",
@@ -137,6 +149,7 @@ export function OptimizedImage({
 interface ThumbnailImageProps {
   src?: string;
   alt: string;
+  title?: string; // 추가: 접근성 개선
   aspectRatio?: '1/1' | '4/3' | '16/9' | '3/2';
   className?: string;
   priority?: boolean;
@@ -145,6 +158,7 @@ interface ThumbnailImageProps {
 export function ThumbnailImage({
   src,
   alt,
+  title,
   aspectRatio = '16/9',
   className,
   priority = false,
@@ -175,6 +189,7 @@ export function ThumbnailImage({
       <OptimizedImage
         src={src}
         alt={alt}
+        title={title || alt}
         fill
         priority={priority}
         objectFit="cover"
@@ -187,6 +202,7 @@ export function ThumbnailImage({
 interface HeroImageProps {
   src?: string;
   alt: string;
+  title?: string; // 추가: 접근성 개선
   className?: string;
   overlay?: boolean;
   overlayOpacity?: number;
@@ -195,6 +211,7 @@ interface HeroImageProps {
 export function HeroImage({
   src,
   alt,
+  title,
   className,
   overlay = true,
   overlayOpacity = 40,
@@ -210,6 +227,7 @@ export function HeroImage({
       <OptimizedImage
         src={src}
         alt={alt}
+        title={title || alt}
         fill
         priority
         objectFit="cover"

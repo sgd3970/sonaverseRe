@@ -1,0 +1,322 @@
+
+코어 웹 바이탈 평가: 
+통과
+
+뷰 펼치기
+Largest Contentful Paint (LCP)
+1.2초
+
+Interaction to Next Paint (INP)
+188밀리초
+
+Cumulative Layout Shift (CLS)
+0.01
+
+다른 주요 측정항목
+First Contentful Paint (FCP)
+1.1초
+
+Time to First Byte (TTFB)
+0.5초
+측정항목
+뷰 펼치기
+First Contentful Paint
+0.4 초
+Largest Contentful Paint
+1.2 초
+Total Blocking Time
+200 밀리초
+Cumulative Layout Shift
+0
+Speed Index
+1.0 초
+
+렌더링 차단 요청 예상 절감 시간: 280밀리초
+요청으로 인해 페이지의 초기 렌더링이 차단되어 LCP가 지연될 수 있습니다. 지연 또는 인라인 처리하면 이러한 네트워크 요청이 주요 경로에서 벗어날 수 있습니다.LCPFCP점수에 포함되지 않음
+URL
+전송 크기
+시간
+vercel.com 퍼스트 파티
+210.5 KiB	1,610ms
+…chunks/2f41719c84185e1c.css?dpl=dpl_8qz6b…(vercel.com)
+77.3 KiB
+400ms
+…chunks/0a8e9ea43e37c0cc.css?dpl=dpl_8qz6b…(vercel.com)
+24.1 KiB
+160ms
+…chunks/f05607d6b67c44ee.css?dpl=dpl_8qz6b…(vercel.com)
+23.4 KiB
+240ms
+…chunks/8b82b198ec976d2f.css?dpl=dpl_8qz6b…(vercel.com)
+21.0 KiB
+120ms
+…chunks/c69b4761d9377ba6.css?dpl=dpl_8qz6b…(vercel.com)
+24.7 KiB
+240ms
+…chunks/40344f6720694f0f.css?dpl=dpl_8qz6b…(vercel.com)
+24.0 KiB
+160ms
+…chunks/535a624a9ff38975.css?dpl=dpl_8qz6b…(vercel.com)
+8.6 KiB
+160ms
+…chunks/a6f5ac9da2acd5db.css?dpl=dpl_8qz6b…(vercel.com)
+4.1 KiB
+120ms
+…chunks/ad643eac1f82b82a.css?dpl=dpl_8qz6b…(vercel.com)
+3.4 KiB
+강제 실행된 리플로우
+DOM 상태 변경으로 인해 스타일이 무효화된 후 JavaScript가 기하학적 속성(예: offsetWidth)을 쿼리하면 강제 리플로우가 발생합니다. 이로 인해 성능이 저하될 수 있습니다. 강제 리플로우 및 가능한 완화 조치에 관해 자세히 알아보세요.점수에 포함되지 않음
+상위 함수 호출
+총 리플로우 시간
+…chunks/b77bcbe404d75132.js?dpl=dpl_8qz6b…:7:5572(vercel.com)
+23ms
+소스
+총 리플로우 시간
+[출처 불명]
+45ms
+…chunks/e3ed965dc5803377.js?dpl=dpl_8qz6b…:5:29609(vercel.com)
+15ms
+…chunks/b77bcbe404d75132.js?dpl=dpl_8qz6b…:6:5659(vercel.com)
+23ms
+네트워크 종속 항목 트리
+체인의 길이를 줄이고, 리소스의 다운로드 크기를 줄이거나 불필요한 리소스의 다운로드를 지연하여 페이지 로드 속도를 개선하는 방식으로 크리티컬 요청 체이닝을 방지합니다.LCP점수에 포함되지 않음
+최상 경로 최대 지연 시간: 859ms
+초기 탐색
+/login?next=…(vercel.com) - 796ms, 20.42 KiB
+…chunks/0a8e9ea43e37c0cc.css?dpl=dpl_8qz6b…(vercel.com) - 824ms, 24.06 KiB
+…chunks/ad643eac1f82b82a.css?dpl=dpl_8qz6b…(vercel.com) - 804ms, 3.38 KiB
+…chunks/8b82b198ec976d2f.css?dpl=dpl_8qz6b…(vercel.com) - 819ms, 20.96 KiB
+…chunks/40344f6720694f0f.css?dpl=dpl_8qz6b…(vercel.com) - 813ms, 23.97 KiB
+…chunks/f05607d6b67c44ee.css?dpl=dpl_8qz6b…(vercel.com) - 821ms, 23.45 KiB
+…chunks/a6f5ac9da2acd5db.css?dpl=dpl_8qz6b…(vercel.com) - 805ms, 4.06 KiB
+…chunks/2f41719c84185e1c.css?dpl=dpl_8qz6b…(vercel.com) - 859ms, 77.35 KiB
+…chunks/535a624a9ff38975.css?dpl=dpl_8qz6b…(vercel.com) - 810ms, 8.60 KiB
+…chunks/c69b4761d9377ba6.css?dpl=dpl_8qz6b…(vercel.com) - 815ms, 24.67 KiB
+사전 연결된 출처
+사전 연결 힌트는 브라우저가 페이지 로드 초기에 연결을 설정하도록 지원하여 해당 출처에 대한 첫 번째 요청이 이루어질 때 시간을 절약합니다. 다음은 페이지가 사전 연결된 출처입니다.
+출처
+소스
+https://avatars.githubusercontent.com
+<https://avatars.githubusercontent.com>; rel=preconnect; crossorigin=""
+미사용 연결입니다. 페이지에서 요청할 가능성이 있는 출처에만 preconnect를 사용합니다.
+https://assets.vercel.com
+<https://assets.vercel.com>; rel=preconnect; crossorigin=""
+미사용 연결입니다. 페이지에서 요청할 가능성이 있는 출처에만 preconnect를 사용합니다.
+후보 사전 연결
+가장 중요한 출처에 사전 연결 힌트를 추가하되 4개 이하로 사용하세요.
+사전 연결에 적합한 추가 출처가 없습니다.
+효율적인 캐시 수명 사용 예상 절감 용량: 17KiB
+캐시 수명이 길면 페이지를 반복해서 방문하는 속도가 빨라질 수 있습니다. 자세히 알아보기LCPFCP점수에 포함되지 않음
+요청
+캐시 TTL
+전송 크기
+vercel.com 퍼스트 파티
+22 KiB
+…plugins/rsa-plugins-legacyEncryptionUtils.min.js(cdp.vercel.com)
+1시간
+5 KiB
+…plugins/rsa-plugins-RetryQueue.min.js(cdp.vercel.com)
+1시간
+4 KiB
+…plugins/rsa-plugins-common.min.js(cdp.vercel.com)
+1시간
+4 KiB
+…plugins/rsa-plugins-remote-XhrQueue.min.js(cdp.vercel.com)
+1시간
+2 KiB
+…plugins/rsa-plugins-remote-GoogleLinker.min.js(cdp.vercel.com)
+1시간
+1 KiB
+…plugins/rsa-plugins-remote-StorageMigrator.min.js(cdp.vercel.com)
+1시간
+1 KiB
+…plugins/rsa-plugins-remote-ExternalAnonymousId.min.js(cdp.vercel.com)
+1시간
+1 KiB
+…plugins/rsa-plugins.js(cdp.vercel.com)
+1시간
+1 KiB
+…plugins/rsa-plugins-remote-StorageEncryption.min.js(cdp.vercel.com)
+1시간
+1 KiB
+레거시 JavaScript 예상 절감 용량: 27KiB
+폴리필 및 변환을 통해 이전 브라우저에서 새로운 JavaScript 기능을 사용할 수 있습니다. 하지만 최신 브라우저에서는 대부분 필요하지 않습니다. 이전 브라우저를 지원해야 하는 경우가 아니라면 Baseline 기능을 트랜스파일하지 않도록 JavaScript 빌드 프로세스를 수정해 보세요. 대부분의 사이트에서 트랜스파일링 없이 ES6+ 코드를 배포할 수 있는 이유 알아보기LCPFCP점수에 포함되지 않음
+URL
+낭비된 바이트
+vercel.com 퍼스트 파티
+27.2 KiB
+…chunks/52626b562024ee21.js?dpl=dpl_8qz6b…(vercel.com)
+14.2 KiB
+…chunks/52626b562024ee21.js?dpl=dpl_8qz6b…:73:6369(vercel.com)
+Array.prototype.at
+…chunks/52626b562024ee21.js?dpl=dpl_8qz6b…:73:5757(vercel.com)
+Array.prototype.flat
+…chunks/52626b562024ee21.js?dpl=dpl_8qz6b…:73:5870(vercel.com)
+Array.prototype.flatMap
+…chunks/52626b562024ee21.js?dpl=dpl_8qz6b…:73:6246(vercel.com)
+Object.fromEntries
+…chunks/52626b562024ee21.js?dpl=dpl_8qz6b…:73:6504(vercel.com)
+Object.hasOwn
+…chunks/52626b562024ee21.js?dpl=dpl_8qz6b…:73:5499(vercel.com)
+String.prototype.trimEnd
+…chunks/52626b562024ee21.js?dpl=dpl_8qz6b…:73:5414(vercel.com)
+String.prototype.trimStart
+…chunks/801d67f796591aa5.js?dpl=dpl_8qz6b…(vercel.com)
+13.0 KiB
+…chunks/801d67f796591aa5.js?dpl=dpl_8qz6b…:2:9310(vercel.com)
+Object.keys
+LCP 분석
+각 하위 파트에는 해당 파트에 맞는 개선 전략이 있습니다. 이상적으로는 대부분의 LCP 시간이 지연이 아닌 리소스 로드에 소요되어야 합니다.LCP점수에 포함되지 않음
+하위 파트
+시간
+첫 바이트까지의 시간
+0ms
+요소 렌더링 지연
+950ms
+Log in to Vercel
+<h1 class="text-heading-32" style="letter-spacing:-0.96px">
+서드 파티
+서드 파티 코드는 로드 성능에 크게 영향을 미칠 수 있습니다. 서드 파티 코드의 로드를 줄이고 연기하여 페이지 콘텐츠에 우선순위를 지정하세요.점수에 포함되지 않음
+서드 파티
+전송 크기
+기본 스레드 시간
+Other Google APIs/SDKs utility 
+91 KiB	30ms
+/gsi/client(accounts.google.com)
+90 KiB
+30ms
+/gsi/style(accounts.google.com)
+1 KiB
+0ms
+Sentry utility 
+2 KiB	0ms
+…1323670/envelope?sentry_key=…(o205439.ingest.sentry.io)
+2 KiB
+0ms
+이러한 통계는 Chrome DevTools 성능 패널에서도 확인할 수 있습니다. 트레이스를 기록하여 자세한 정보를 확인하세요.
+진단
+사용하지 않는 CSS 줄이기 예상 절감 용량: 171KiB
+스타일시트에서 사용되지 않는 규칙을 줄이고 스크롤 없이 볼 수 있는 콘텐츠의 경우 사용되지 않는 CSS의 로딩을 지연시켜 네트워크 활동에 소비되는 용량을 줄이세요. 사용되지 않는 CSS를 줄이는 방법 알아보기LCPFCP점수에 포함되지 않음
+URL
+전송 크기
+예상 절감 용량
+vercel.com 퍼스트 파티
+176.9 KiB	170.7 KiB
+…chunks/2f41719c84185e1c.css?dpl=dpl_8qz6b…(vercel.com)
+74.4 KiB
+73.1 KiB
+…chunks/c69b4761d9377ba6.css?dpl=dpl_8qz6b…(vercel.com)
+21.7 KiB
+21.7 KiB
+…chunks/0a8e9ea43e37c0cc.css?dpl=dpl_8qz6b…(vercel.com)
+21.1 KiB
+21.1 KiB
+…chunks/40344f6720694f0f.css?dpl=dpl_8qz6b…(vercel.com)
+21.0 KiB
+20.1 KiB
+…chunks/8b82b198ec976d2f.css?dpl=dpl_8qz6b…(vercel.com)
+18.0 KiB
+18.0 KiB
+…chunks/f05607d6b67c44ee.css?dpl=dpl_8qz6b…(vercel.com)
+20.5 KiB
+16.7 KiB
+사용하지 않는 자바스크립트 줄이기 예상 절감 용량: 302KiB
+사용되지 않는 자바스크립트를 줄이고 스크립트가 필요할 때까지 로딩을 지연시켜 네트워크 활동에 소비되는 용량을 줄이세요. 사용되지 않는 자바스크립트를 줄이는 방법 알아보기LCPFCP점수에 포함되지 않음
+URL
+전송 크기
+예상 절감 용량
+vercel.com 퍼스트 파티
+342.0 KiB	235.7 KiB
+…chunks/5968c97b83bb5c15.js?dpl=dpl_8qz6b…(vercel.com)
+54.1 KiB
+44.8 KiB
+…chunks/ccc4f06f125f85d6.js?dpl=dpl_8qz6b…(vercel.com)
+47.6 KiB
+34.5 KiB
+…chunks/94034f13e7906826.js?dpl=dpl_8qz6b…(vercel.com)
+31.2 KiB
+31.0 KiB
+…chunks/33381189e2d0e0ab.js?dpl=dpl_8qz6b…(vercel.com)
+48.2 KiB
+29.8 KiB
+…chunks/b6f22359355ee06d.js?dpl=dpl_8qz6b…(vercel.com)
+26.8 KiB
+26.7 KiB
+…chunks/52626b562024ee21.js?dpl=dpl_8qz6b…(vercel.com)
+78.2 KiB
+24.3 KiB
+…chunks/4d9e93e3e99c07d0.js?dpl=dpl_8qz6b…(vercel.com)
+26.0 KiB
+23.2 KiB
+…chunks/d78c79c61064d8f3.js?dpl=dpl_8qz6b…(vercel.com)
+29.8 KiB
+21.3 KiB
+Other Google APIs/SDKs utility 
+88.8 KiB	66.6 KiB
+/gsi/client(accounts.google.com)
+88.8 KiB
+66.6 KiB
+긴 기본 스레드 작업 피하기 긴 작업 6개 발견
+기본 스레드의 가장 긴 작업을 열거합니다. 입력 지연을 가장 많이 유발하는 작업을 찾을 때 용이합니다. 긴 기본 스레드 작업을 방지하는 방법 알아보기TBT점수에 포함되지 않음
+URL
+시작 시간
+시간
+vercel.com 퍼스트 파티
+520ms
+…chunks/52626b562024ee21.js?dpl=dpl_8qz6b…(vercel.com)
+1,872ms
+175ms
+…chunks/172…e65e90.js?dpl=dpl_8qz6b…(vercel.com)
+2,241ms
+88ms
+…chunks/turbopack….js?dpl=dpl_8qz6b…(vercel.com)
+900ms
+86ms
+…chunks/52626b562024ee21.js?dpl=dpl_8qz6b…(vercel.com)
+1,011ms
+66ms
+…chunks/52626b562024ee21.js?dpl=dpl_8qz6b…(vercel.com)
+1,441ms
+54ms
+…chunks/2130ed9bc436d928.js?dpl=dpl_8qz6b…(vercel.com)
+2,057ms
+51ms
+
+
+[user-scalable="no"]이(가) <meta name="viewport"> 요소에서 사용되거나 [maximum-scale] 속성이 5보다 작음
+확대/축소를 사용 중지하면 저시력으로 인해 웹페이지의 콘텐츠를 제대로 확인하기 위해 화면 확대를 사용하는 사용자에게 문제가 될 수 있습니다. viewport meta 태그에 관해 자세히 알아보기
+통과하지 못한 요소
+head > meta
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+백그라운드 및 포그라운드 색상의 대비율이 충분하지 않습니다
+많은 사용자가 저대비 텍스트를 읽는 데 어려움을 겪거나 전혀 읽지 못합니다. 충분한 색상 대비를 제공하는 방법 알아보기
+통과하지 못한 요소
+Sign Up
+<a data-zone="same" class="link-module__Q1NRQq__link link-module__Q1NRQq__highlight" href="/signup?next=%2Fsso-api%3Furl%3Dhttps%3A%2F%2Fsonaverse-dt6d3s7kk-trendsca…">
+Log in to Vercel Continue with Email Continue with Google Continue with GitHub …
+<main class="min-h-[calc(100vh-var(--header-height)-var(--footer-height))] text-[14px] …">
+Terms
+<a href="/legal/terms" data-zone="6a379c" class="link-module__Q1NRQq__link text-xs text-[var(--accents-4)] hover:text-[var(…" data-prefetch="true">
+Log in to Vercel Continue with Email Continue with Google Continue with GitHub …
+<main class="min-h-[calc(100vh-var(--header-height)-var(--footer-height))] text-[14px] …">
+Privacy Policy
+<a href="/legal/privacy-policy" data-zone="6a379c" class="link-module__Q1NRQq__link text-xs text-[var(--accents-4)] hover:text-[var(…" data-prefetch="true">
+Log in to Vercel Continue with Email Continue with Google Continue with GitHub …
+<main class="min-h-[calc(100vh-var(--header-height)-var(--footer-height))] text-[14px] …">
+콘솔에 로그된 오류는 해결되지 않은 문제를 의미합니다. 네트워크 요청 실패를 비롯한 기타 브라우저 문제로 인해 발생할 수 있습니다. 콘솔 진단 감사에서 이 오류에 관해 자세히 알아보기
+소스
+설명
+vercel.com 퍼스트 파티
+…chunks/7282b9ef3c072e9b.js?dpl=dpl_8qz6b…:3:78177(vercel.com)
+[GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token.
+…chunks/52626b562024ee21.js?dpl=dpl_8qz6b…:73:46977(vercel.com)
+Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings. at rJ (https://vercel.com/_next/static/chunks/52626b562024ee21.js?dpl=dpl_8qz6b3kfJgdsUFqB4tz1RfvBxoc2:73:46978) at is (https://vercel.com/_next/static/chunks/52626b562024ee21.js?dpl=dpl_8qz6b3kfJgdsUFqB4tz1RfvBxoc2:73:90997) at ik (https://vercel.com/_next/static/chunks/52626b562024ee21.js?dpl=dpl_8qz6b3kfJgdsUFqB4tz1RfvBxoc2:73:100882) at sA (https://vercel.com/_next/static/chunks/52626b562024ee21.js?dpl=dpl_8qz6b3kfJgdsUFqB4tz1RfvBxoc2:73:140377) at https://vercel.com/_next/static/chunks/52626b562024ee21.js?dpl=dpl_8qz6b3kfJgdsUFqB4tz1RfvBxoc2:73:135223 at sN (https://vercel.com/_next/static/chunks/52626b562024ee21.js?dpl=dpl_8qz6b3kfJgdsUFqB4tz1RfvBxoc2:73:135324) at cu (https://vercel.com/_next/static/chunks/52626b562024ee21.js?dpl=dpl_8qz6b3kfJgdsUFqB4tz1RfvBxoc2:73:169840) at MessagePort.T (https://vercel.com/_next/static/chunks/52626b562024ee21.js?dpl=dpl_8qz6b3kfJgdsUFqB4tz1RfvBxoc2:73:8527)
+/login?next=…:1:0(vercel.com)
+The fetch of the config file resulted in a network error: ERR_NAME_NOT_RESOLVED
+/login?next=…:1:0(vercel.com)
+The provider's FedCM config file fetch resulted in an error response code.
+Sentry utility 
+…1323670/envelope?sentry_key=…:1:0(o205439.ingest.sentry.io)
+Failed to load resource: the server responded with a status of 429 (Too Many Requests)
+문서에 메타 설명이 없음
+검색결과에 페이지 콘텐츠를 간략하게 요약하기 위한 메타 설명이 포함될 수 있습니다. 메타 설명 자세히 알아보기

@@ -78,6 +78,9 @@ export default async function RootLayout({
   return (
     <html lang="ko" className={`${inter.variable} ${notoSansKr.variable}`}>
       <head>
+        {/* Viewport 설정 최적화 (maximum-scale 제거로 접근성 개선) */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
         {/* Material Symbols 아이콘 폰트 */}
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" />
 

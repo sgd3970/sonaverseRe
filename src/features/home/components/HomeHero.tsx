@@ -27,6 +27,7 @@ export function HomeHero() {
             {/* Background Image - Priority loading for LCP */}
             <OptimizedImage
                 alt="Happy senior lifestyle"
+                title="시니어의 더 나은 일상을 위한 소나버스"
                 className="scale-105"
                 src="https://images.unsplash.com/photo-1516307365426-bea591f05011?q=80&w=2070&auto=format&fit=crop"
                 fill

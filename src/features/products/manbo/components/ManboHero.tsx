@@ -57,6 +57,7 @@ function HeroImage({ src, alt, color = "manbo-green" }: HeroImageProps) {
             <div className="relative aspect-square w-full overflow-hidden rounded-3xl md:rounded-[4rem] bg-white shadow-2xl border border-white/50 p-4 md:p-6">
                 <OptimizedImage
                     alt={alt}
+                    title={alt}
                     src={src}
                     fill
                     className="rounded-2xl md:rounded-[3rem]"

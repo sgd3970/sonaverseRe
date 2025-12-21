@@ -80,6 +80,7 @@ export function StoryHighlight() {
                         <div className="absolute inset-0 opacity-70 group-hover:opacity-60 transition-all duration-1000 group-hover:scale-105">
                             <OptimizedImage 
                                 alt="만보 워크메이트 개발 비하인드" 
+                                title="만보 워크메이트 개발 비하인드 스토리"
                                 src="https://picsum.photos/800/600?random=1" 
                                 fill 
                                 priority
@@ -107,7 +108,7 @@ export function StoryHighlight() {
                         <div key={story.id} className="group cursor-pointer flex flex-col">
                             <Link href={`/stories/${story.id}`}>
                                 <div className="aspect-[16/10] rounded-[2.5rem] overflow-hidden mb-8 shadow-sm relative bg-gray-100">
-                                    <OptimizedImage alt={story.title} className="transition-transform duration-700 group-hover:scale-110" src={`https://picsum.photos/800/600?random=${20 + i}`} fill objectFit="cover" />
+                                    <OptimizedImage alt={story.title} title={story.title} className="transition-transform duration-700 group-hover:scale-110" src={`https://picsum.photos/800/600?random=${20 + i}`} fill objectFit="cover" />
                                     <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-xl px-4 py-1.5 rounded-full text-[10px] font-black text-gray-900 shadow-sm uppercase tracking-widest">{story.category}</div>
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors line-clamp-2 leading-tight">{story.title}</h3>

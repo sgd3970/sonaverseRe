@@ -136,6 +136,7 @@ export function PressClient({ initialPressItems = [] }: PressClientProps) {
                                                 <OptimizedImage
                                                     src={item.thumbnailUrl}
                                                     alt={item.title}
+                                                    title={item.title}
                                                     fill
                                                     className="transition-transform duration-500 group-hover:scale-105"
                                                     objectFit="cover"

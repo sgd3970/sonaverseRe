@@ -34,6 +34,38 @@ const nextConfig: NextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production' ? { exclude: ['error'] } : false,
   },
+  // 캐시 헤더 설정 (정적 자산 최적화)
+  async headers() {
+    return [
+      {
+        source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/images/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/logo/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+    ];
+  },
   // 메모리 사용 최적화를 위한 웹팩 설정
   webpack: (config, { isServer, dev }) => {
     // 개발 모드에서 캐시 비활성화 (메모리 부족 문제 해결)
@@ -47,6 +79,9 @@ const nextConfig: NextConfig = {
         ...config.optimization,
         moduleIds: 'deterministic',
         runtimeChunk: 'single',
+        // Tree shaking 최적화
+        usedExports: true,
+        sideEffects: false,
         splitChunks: {
           chunks: 'all',
           cacheGroups: {
@@ -93,6 +128,8 @@ const nextConfig: NextConfig = {
     return config;
   },
   experimental: {
+    // CSS 최적화 활성화
+    optimizeCss: true,
     // serverActions: true, // Default in newer Next.js
   }
 };

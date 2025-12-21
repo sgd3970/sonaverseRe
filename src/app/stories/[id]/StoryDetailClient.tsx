@@ -100,6 +100,7 @@ export default function StoryDetailClient({ params }: StoryDetailClientProps) {
                             <ThumbnailImage
                                 src={story.thumbnailUrl}
                                 alt={story.title}
+                                title={story.title}
                                 aspectRatio="16/9"
                                 priority
                             />
@@ -171,6 +172,7 @@ export default function StoryDetailClient({ params }: StoryDetailClientProps) {
                                         <ThumbnailImage
                                             src={related.thumbnailUrl}
                                             alt={related.title}
+                                            title={related.title}
                                             aspectRatio="16/9"
                                             className="group-hover:scale-105 transition-transform duration-500"
                                         />

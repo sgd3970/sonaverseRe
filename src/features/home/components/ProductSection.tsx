@@ -95,6 +95,7 @@ export function ProductSection() {
                         <div className="aspect-[4/3] w-full bg-gray-50 relative overflow-hidden">
                             <OptimizedImage 
                                 alt="Manbo" 
+                                title="만보 워크메이트 - 자유로운 이동을 위한 테크놀로지의 집약"
                                 className="transition-transform duration-1000 group-hover:scale-110" 
                                 src="https://picsum.photos/800/600?random=10" 
                                 fill 
@@ -127,6 +128,7 @@ export function ProductSection() {
                         <div className="aspect-[4/3] w-full bg-gray-50 relative overflow-hidden">
                             <OptimizedImage 
                                 alt="Bodeum" 
+                                title="보듬 기저귀 - 최상의 편안함과 위생을 향한 고집"
                                 className="transition-transform duration-1000 group-hover:scale-110" 
                                 src="https://picsum.photos/800/600?random=11" 
                                 fill 

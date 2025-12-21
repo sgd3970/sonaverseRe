@@ -165,6 +165,7 @@ export function StoriesClient({ initialStories = [] }: StoriesClientProps) {
                                                 <OptimizedImage
                                                     src={featuredStory.thumbnailUrl}
                                                     alt={featuredStory.title}
+                                                    title={featuredStory.title}
                                                     fill
                                                     className="transition-transform duration-700 group-hover:scale-105"
                                                     objectFit="cover"
@@ -204,6 +205,7 @@ export function StoriesClient({ initialStories = [] }: StoriesClientProps) {
                                                     <OptimizedImage
                                                         src={story.thumbnailUrl}
                                                         alt={story.title}
+                                                        title={story.title}
                                                         fill
                                                         className="transition-transform duration-500 group-hover:scale-105"
                                                         objectFit="cover"

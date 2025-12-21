@@ -63,6 +63,7 @@ export function PressSection() {
                                 {mainPress.thumbnailUrl ? (
                                     <OptimizedImage 
                                         alt={mainPress.title} 
+                                        title={mainPress.title}
                                         className="transition-transform duration-1000 group-hover:scale-110" 
                                         src={mainPress.thumbnailUrl} 
                                         fill 
@@ -72,6 +73,7 @@ export function PressSection() {
                                 ) : (
                                     <OptimizedImage 
                                         alt={mainPress.title} 
+                                        title={mainPress.title}
                                         className="transition-transform duration-1000 group-hover:scale-110" 
                                         src="https://picsum.photos/800/600?random=10" 
                                         fill 
@@ -103,6 +105,7 @@ export function PressSection() {
                                             {article.thumbnailUrl ? (
                                                 <OptimizedImage 
                                                     alt={article.title} 
+                                                    title={article.title}
                                                     className="group-hover:scale-110 transition-transform duration-500" 
                                                     src={article.thumbnailUrl} 
                                                     fill 
@@ -112,6 +115,7 @@ export function PressSection() {
                                             ) : (
                                                 <OptimizedImage 
                                                     alt={article.title} 
+                                                    title={article.title}
                                                     className="group-hover:scale-110 transition-transform duration-500" 
                                                     src={`https://picsum.photos/800/600?random=${11 + idx}`} 
                                                     fill 
