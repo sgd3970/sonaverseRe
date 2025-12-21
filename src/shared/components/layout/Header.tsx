@@ -100,7 +100,7 @@ export function Header() {
         >
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 {/* Logo */}
-                <Logo type="full" size="md" linkToHome priority />
+                <Logo type="full" size="md" linkToHome priority={true} />
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-8 lg:gap-10 h-full">

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
-import "material-symbols/outlined.css";
+// import "material-symbols/outlined.css"; // Removed for performance optimization
 import { LanguageProvider } from "@/lib/i18n";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -20,7 +20,7 @@ const inter = Inter({
 const notoSansKr = Noto_Sans_KR({
   variable: "--font-noto-sans-kr",
   subsets: ["latin"],
-  weight: ["400", "700"], // 필요한 웨이트만 (기본 + 볼드)
+  weight: ["400", "700", "900"], // Added 900 for font-black
   display: "swap", // 폰트 로딩 최적화
   preload: true, // 폰트 preload 활성화
   fallback: ['system-ui', 'arial'], // 폰트 로드 실패 시 대체 폰트
@@ -85,14 +85,14 @@ export default async function RootLayout({
       <head>
         {/* Viewport 설정 최적화 (maximum-scale 제거로 접근성 개선) */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
+
         {/* Material Symbols는 material-symbols 패키지로 로드되므로 외부 링크 제거 */}
         {/* 외부 Google Fonts 링크 제거 - 3.7MB 폰트 파일 문제 해결 */}
-        
-        {/* 사전 연결: 중요한 리소스에 대한 연결 사전 설정 */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
+
+        {/* 사전 연결: 중요한 리소스에 대한 연결 사전 설정 - next/font가 자동으로 처리하므로 제거 */}
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
+        {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" /> */}
+
         {/* Schema.org 구조화 데이터 */}
         <OrganizationSchema
           name="Sonaverse"

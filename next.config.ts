@@ -66,59 +66,6 @@ const nextConfig: NextConfig = {
     if (dev) {
       config.cache = false; // 캐시 완전 비활성화
     }
-
-    if (!isServer) {
-      // 클라이언트 빌드 최적화
-      config.optimization = {
-        ...config.optimization,
-        moduleIds: 'deterministic',
-        runtimeChunk: 'single',
-        // Tree shaking 최적화
-        usedExports: true,
-        sideEffects: false,
-        splitChunks: {
-          chunks: 'all',
-          cacheGroups: {
-            default: false,
-            vendors: false,
-            // 프레임워크 코드 분리
-            framework: {
-              name: 'framework',
-              chunks: 'all',
-              test: /(?<!node_modules.*)[\\/]node_modules[\\/](react|react-dom|scheduler|prop-types|use-subscription)[\\/]/,
-              priority: 40,
-              enforce: true,
-            },
-            // 공통 라이브러리 분리
-            lib: {
-              test(module: { size: () => number; identifier: () => string }) {
-                return module.size() > 160000 && /node_modules[/\\]/.test(module.identifier());
-              },
-              name(module: { identifier: () => string }) {
-                const hash = require('crypto').createHash('sha1');
-                hash.update(module.identifier());
-                return hash.digest('hex').substring(0, 8);
-              },
-              priority: 30,
-              minChunks: 1,
-              reuseExistingChunk: true,
-            },
-            // 공통 모듈
-            commons: {
-              name: 'commons',
-              minChunks: 2,
-              priority: 20,
-            },
-            // 공유 모듈
-            shared: {
-              name: false,
-              priority: 10,
-              reuseExistingChunk: true,
-            },
-          },
-        },
-      };
-    }
     return config;
   },
   experimental: {
