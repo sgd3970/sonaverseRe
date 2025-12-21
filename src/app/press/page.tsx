@@ -6,7 +6,28 @@ import Image from "@/lib/models/Image" // Import Image model for population
 import { PressItem } from "@/lib/hooks/usePress"
 import { generateMetadata as genMeta } from "@/lib/seo/metadata"
 
-export const revalidate = 3600 // 1 hour
+export const revalidate = 3600; // 1 hour
+export const dynamicParams = true; // 새 보도자료는 동적 생성
+
+// 인기 보도자료 정적 생성
+export async function generateStaticParams() {
+  try {
+    await dbConnect();
+    const pressItems = await PressRelease.find({ 
+      is_published: true,
+      is_featured: true, // 피처된 항목만
+    })
+      .sort({ view_count: -1, published_date: -1 })
+      .limit(10)
+      .select('slug')
+      .lean();
+    
+    return pressItems.map((p: any) => ({ slug: p.slug }));
+  } catch (error) {
+    console.error('Error generating static params for press:', error);
+    return [];
+  }
+}
 
 export const metadata = genMeta({
   title: "언론보도",
@@ -19,11 +40,12 @@ export const metadata = genMeta({
 export default async function PressPage() {
     await dbConnect()
 
-    // Fetch initial press items
+    // Fetch initial press items - 최적화된 쿼리
     const pressDocs = await PressRelease.find({ is_published: true })
         .sort({ published_date: -1 })
         .limit(8)
-        .populate('thumbnail_image_id')
+        .populate('thumbnail_image_id', 'url public_url') // 필요한 필드만
+        .select('slug press_name title excerpt thumbnail_image_id external_url tags published_date') // 필요한 필드만
         .lean()
 
     // Transform to PressItem interface

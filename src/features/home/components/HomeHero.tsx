@@ -24,12 +24,14 @@ export function HomeHero() {
 
     return (
         <section className="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
-            {/* Background Image */}
+            {/* Background Image - Priority loading for LCP */}
             <OptimizedImage
                 alt="Happy senior lifestyle"
                 className="scale-105"
                 src="https://images.unsplash.com/photo-1516307365426-bea591f05011?q=80&w=2070&auto=format&fit=crop"
                 fill
+                priority
+                sizes="100vw"
                 objectFit="cover"
             />
 

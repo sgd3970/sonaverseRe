@@ -78,7 +78,14 @@ export function StoryHighlight() {
                     {/* Featured Story (Large Card) */}
                     <div className="lg:col-span-2 group cursor-pointer relative overflow-hidden rounded-[3.5rem] bg-gray-900 shadow-3xl h-[600px]">
                         <div className="absolute inset-0 opacity-70 group-hover:opacity-60 transition-all duration-1000 group-hover:scale-105">
-                            <OptimizedImage alt="만보 워크메이트 개발 비하인드" src="https://picsum.photos/800/600?random=1" fill objectFit="cover" />
+                            <OptimizedImage 
+                                alt="만보 워크메이트 개발 비하인드" 
+                                src="https://picsum.photos/800/600?random=1" 
+                                fill 
+                                priority
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                objectFit="cover" 
+                            />
                         </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
                         <div className="relative p-12 md:p-20 flex flex-col justify-end h-full">

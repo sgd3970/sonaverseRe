@@ -15,6 +15,7 @@ export async function GET(request: NextRequest) {
       deleted_at: { $exists: false }
     })
       .sort({ year: 1, order: 1 })
+      .select('year title subtitle items badge_color text_color position') // 필요한 필드만
       .lean();
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -32,10 +33,18 @@ export async function GET(request: NextRequest) {
       position: history.position,
     }));
 
-    return NextResponse.json({
+    const response = NextResponse.json({
       success: true,
       data: formattedHistories,
     });
+
+    // 캐싱 헤더 추가 (연혁은 자주 변경되지 않음)
+    response.headers.set(
+      'Cache-Control',
+      'public, s-maxage=7200, stale-while-revalidate=86400'
+    );
+
+    return response;
   } catch (error) {
     console.error('History API Error:', error);
     return NextResponse.json(

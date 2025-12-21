@@ -6,7 +6,28 @@ import Image from "@/lib/models/Image" // Import Image model for population
 import { Story } from "@/lib/hooks/useStories"
 import { generateMetadata as genMeta } from "@/lib/seo/metadata"
 
-export const revalidate = 3600 // 1 hour
+export const revalidate = 3600; // 1 hour
+export const dynamicParams = true; // 새 스토리는 동적 생성
+
+// 인기 스토리 정적 생성
+export async function generateStaticParams() {
+  try {
+    await dbConnect();
+    const stories = await SonaverseStory.find({ 
+      is_published: true,
+      is_main_story: true, // 메인 스토리만
+    })
+      .sort({ view_count: -1, published_date: -1 })
+      .limit(10)
+      .select('slug')
+      .lean();
+    
+    return stories.map((s: any) => ({ slug: s.slug }));
+  } catch (error) {
+    console.error('Error generating static params for stories:', error);
+    return [];
+  }
+}
 
 export const metadata = genMeta({
   title: "소나버스 스토리",
@@ -19,11 +40,12 @@ export const metadata = genMeta({
 export default async function StoriesPage() {
     await dbConnect()
 
-    // Fetch initial stories
+    // Fetch initial stories - 최적화된 쿼리
     const storiesDocs = await SonaverseStory.find({ is_published: true })
         .sort({ published_date: -1 })
         .limit(50)
-        .populate('thumbnail_image_id')
+        .populate('thumbnail_image_id', 'url public_url') // 필요한 필드만
+        .select('slug category title subtitle excerpt thumbnail_image_id youtube_url tags is_main_story published_date') // 필요한 필드만
         .lean()
 
     // Transform to Story interface

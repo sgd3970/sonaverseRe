@@ -58,19 +58,14 @@ export async function GET(
     const { searchParams } = new URL(request.url);
     const locale = searchParams.get('locale') || 'ko';
 
-    // slug 또는 _id로 조회
-    let press;
-    if (mongoose.Types.ObjectId.isValid(slug)) {
-      press = await Press.findOne({ 
-        _id: slug,
-        is_active: true 
-      }).lean();
-    } else {
-      press = await Press.findOne({ 
-        slug,
-        is_active: true 
-      }).lean();
-    }
+    // slug 또는 _id로 조회 - 최적화된 쿼리
+    const query = mongoose.Types.ObjectId.isValid(slug)
+      ? { _id: slug, is_active: true }
+      : { slug, is_active: true };
+
+    const press = await Press.findOne(query)
+      .select('slug press_name content thumbnail external_link tags created_at last_updated') // 필요한 필드만
+      .lean();
 
     if (!press) {
       return NextResponse.json(
@@ -102,14 +97,18 @@ export async function GET(
       locale,
     };
 
-    // 관련 언론보도 조회
-    const relatedPress = await Press.find({
-      _id: { $ne: pressData._id },
-      is_active: true,
-    })
-      .sort({ created_at: -1 })
-      .limit(3)
-      .lean();
+    // 관련 언론보도 조회 - 최적화된 쿼리 (병렬 처리)
+    const [pressResult, relatedPress] = await Promise.all([
+      Promise.resolve(press),
+      Press.find({
+        _id: { $ne: pressData._id },
+        is_active: true,
+      })
+        .sort({ created_at: -1 })
+        .limit(3)
+        .select('slug press_name content thumbnail created_at') // 필요한 필드만
+        .lean(),
+    ]);
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const formattedRelated = relatedPress.map((p: any) => {
@@ -126,11 +125,19 @@ export async function GET(
       };
     });
 
-    return NextResponse.json({
+    const response = NextResponse.json({
       success: true,
       data: formattedPress,
       relatedPress: formattedRelated,
     });
+
+    // 캐싱 헤더 추가
+    response.headers.set(
+      'Cache-Control',
+      'public, s-maxage=3600, stale-while-revalidate=86400'
+    );
+
+    return response;
   } catch (error) {
     console.error('Press Detail API Error:', error);
     return NextResponse.json(

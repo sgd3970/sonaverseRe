@@ -80,7 +80,8 @@ export function useStories(options?: {
     fetcher,
     {
       revalidateOnFocus: false,
-      dedupingInterval: 60000, // 1분 캐싱
+      revalidateOnReconnect: false,
+      dedupingInterval: 3600000, // 1시간 캐싱 (서버 캐시와 일치)
     }
   );
 
@@ -103,7 +104,8 @@ export function useStory(slug: string) {
     fetcher,
     {
       revalidateOnFocus: false,
-      dedupingInterval: 60000,
+      revalidateOnReconnect: false,
+      dedupingInterval: 3600000, // 1시간 캐싱
     }
   );
 

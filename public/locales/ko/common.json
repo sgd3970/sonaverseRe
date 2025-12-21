@@ -1,87 +1,65 @@
 {
-  "site": {
-    "title": "소나버스",
-    "description": "시니어의 더 나은 일상을 위한 혁신"
-  },
   "nav": {
     "home": "홈",
-    "products": "제품소개",
-    "manbo": "만보 보행기",
-    "bodume": "BO DUME 기저귀",
-    "stories": "소나버스 스토리",
-    "press": "언론보도",
-    "inquiry": "구매/제휴 문의"
+    "about": "소개",
+    "products": "제품",
+    "bodume": "보듬이",
+    "manbo": "만보기",
+    "stories": "스토리",
+    "press": "보도자료",
+    "inquiry": "문의하기"
   },
-  "language": {
-    "ko": "한국어",
-    "en": "English",
-    "switch": "언어 전환"
+  "footer": {
+    "company": "회사",
+    "aboutUs": "회사 소개",
+    "history": "연혁",
+    "contact": "연락처",
+    "support": "지원",
+    "faq": "자주 묻는 질문",
+    "termsOfService": "서비스 약관",
+    "privacyPolicy": "개인정보처리방침",
+    "followUs": "팔로우",
+    "copyright": "© {{year}} Sonaverse. All rights reserved.",
+    "address": "서울특별시 강남구 테헤란로 123",
+    "phone": "전화",
+    "email": "이메일"
   },
-  "common": {
-    "viewMore": "더 보기",
-    "viewAll": "전체보기",
-    "viewDetail": "자세히 보기",
-    "readMore": "더 읽기",
-    "readMoreNews": "뉴스 더 보기",
-    "learnMore": "자세히 알아보기",
-    "contactUs": "문의하기",
-    "submit": "제출하기",
+  "buttons": {
+    "submit": "제출",
     "cancel": "취소",
     "save": "저장",
     "delete": "삭제",
     "edit": "수정",
+    "create": "생성",
+    "close": "닫기",
+    "confirm": "확인",
+    "back": "뒤로",
+    "next": "다음",
+    "previous": "이전",
     "search": "검색",
     "filter": "필터",
-    "sort": "정렬",
+    "reset": "초기화",
     "loading": "로딩 중...",
-    "error": "오류가 발생했습니다",
-    "noData": "데이터가 없습니다",
-    "comingSoon": "곧 만나요"
+    "viewMore": "더보기",
+    "learnMore": "자세히 보기"
   },
-  "footer": {
-    "company": {
-      "title": "회사 정보",
-      "companyName": "상호명:",
-      "companyNameValue": "(주)소나버스",
-      "ceoName": "대표자명:",
-      "ceoNameValue": "이수진",
-      "address": "사업장 주소:",
-      "addressValue": "(24232) 강원특별자치도 춘천시 후석로462번길 7 춘천ICT벤처센터 319호",
-      "phone": "대표 전화:",
-      "phoneValue": "010-5703-8899",
-      "businessNumber": "사업자등록번호:",
-      "businessNumberValue": "697-87-02555",
-      "salesNumber": "통신판매업 신고 번호:",
-      "salesNumberValue": "2023-강원춘천-0688"
-    },
-    "links": {
-      "title": "SONAVERSE",
-      "manbo": "만보 보행기",
-      "bodume": "BO DUME 기저귀",
-      "stories": "소나버스 스토리",
-      "press": "언론보도",
-      "inquiry": "구매/제휴 문의"
-    },
-    "support": {
-      "title": "고객지원",
-      "customerCenter": "고객센터",
-      "customerPhone": "010-5703-8899",
-      "email": "이메일",
-      "emailValue": "shop@sonaverse.kr",
-      "hours": "운영시간",
-      "hoursValue": "평일 09:30 ~ 18:30",
-      "hoursNote": "(주말·공휴일 휴무)",
-      "privacy": "개인정보처리방침",
-      "terms": "이용약관",
-      "catalog": "제품 카탈로그 다운로드"
-    },
-    "social": {
-      "title": "SNS",
-      "naver": "네이버",
-      "youtube": "유튜브",
-      "instagram": "인스타그램",
-      "kakaotalk": "카카오톡"
-    },
-    "copyright": "© 2025 Sonaverse Inc. All rights reserved."
+  "messages": {
+    "success": "성공적으로 완료되었습니다",
+    "error": "오류가 발생했습니다",
+    "loading": "로딩 중입니다...",
+    "noData": "데이터가 없습니다",
+    "confirmDelete": "정말 삭제하시겠습니까?",
+    "saved": "저장되었습니다",
+    "deleted": "삭제되었습니다",
+    "updated": "업데이트되었습니다",
+    "created": "생성되었습니다"
+  },
+  "validation": {
+    "required": "필수 항목입니다",
+    "email": "올바른 이메일 주소를 입력해주세요",
+    "phone": "올바른 전화번호를 입력해주세요",
+    "minLength": "최소 {{min}}자 이상 입력해주세요",
+    "maxLength": "최대 {{max}}자 이하로 입력해주세요",
+    "invalidFormat": "형식이 올바르지 않습니다"
   }
 }

@@ -93,7 +93,15 @@ export function ProductSection() {
                             <p className="text-gray-600 text-lg font-light leading-relaxed">자유로운 이동을 위한 테크놀로지의 집약</p>
                         </div>
                         <div className="aspect-[4/3] w-full bg-gray-50 relative overflow-hidden">
-                            <OptimizedImage alt="Manbo" className="transition-transform duration-1000 group-hover:scale-110" src="https://picsum.photos/800/600?random=10" fill objectFit="cover" />
+                            <OptimizedImage 
+                                alt="Manbo" 
+                                className="transition-transform duration-1000 group-hover:scale-110" 
+                                src="https://picsum.photos/800/600?random=10" 
+                                fill 
+                                priority
+                                sizes="(max-width: 1024px) 85vw, 50vw"
+                                objectFit="cover" 
+                            />
                             <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-0 group-hover:opacity-40 transition-opacity"></div>
                         </div>
                         <div className="p-10 pt-4 mt-auto flex gap-5">
@@ -117,7 +125,14 @@ export function ProductSection() {
                             <p className="text-gray-600 text-lg font-light leading-relaxed">최상의 편안함과 위생을 향한 고집</p>
                         </div>
                         <div className="aspect-[4/3] w-full bg-gray-50 relative overflow-hidden">
-                            <OptimizedImage alt="Bodeum" className="transition-transform duration-1000 group-hover:scale-110" src="https://picsum.photos/800/600?random=11" fill objectFit="cover" />
+                            <OptimizedImage 
+                                alt="Bodeum" 
+                                className="transition-transform duration-1000 group-hover:scale-110" 
+                                src="https://picsum.photos/800/600?random=11" 
+                                fill 
+                                sizes="(max-width: 1024px) 85vw, 50vw"
+                                objectFit="cover" 
+                            />
                             <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-0 group-hover:opacity-40 transition-opacity"></div>
                         </div>
                         <div className="p-10 pt-4 mt-auto flex gap-5">

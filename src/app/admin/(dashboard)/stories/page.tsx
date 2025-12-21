@@ -2,46 +2,57 @@
 
 import { useRouter } from "next/navigation"
 import { useState } from "react"
+import useSWR from "swr"
 import { OptimizedImage } from "@/shared/components/ui/OptimizedImage"
+
+const fetcher = (url: string) => fetch(url).then(res => res.json())
+
+// 카테고리 라벨 매핑
+const categoryLabels: Record<string, string> = {
+    product_story: '제품 스토리',
+    usage: '사용 방법',
+    health_info: '건강 정보',
+    welfare_info: '복지 정보',
+    company_news: '회사 소식',
+    interview: '인터뷰',
+}
 
 export default function AdminStoriesPage() {
     const router = useRouter()
+    const [isDeleting, setIsDeleting] = useState<string | null>(null)
 
-    // 임시 데이터
-    const [stories] = useState([
-        {
-            id: 1,
-            thumbnail: "https://picsum.photos/800/600?random=1",
-            title: "만보 워크메이트 개발 비하인드",
-            category: "제품스토리",
-            date: "2023. 10. 25",
-            viewCount: 1234
-        },
-        {
-            id: 2,
-            thumbnail: "https://picsum.photos/800/600?random=2",
-            title: "시니어 걷기 운동의 중요성",
-            category: "건강정보",
-            date: "2023. 11. 02",
-            viewCount: 1234
-        },
-        {
-            id: 3,
-            thumbnail: "https://picsum.photos/800/600?random=3",
-            title: "2024년 노인장기요양보험 혜택",
-            category: "복지정보",
-            date: "2023. 12. 10",
-            viewCount: 1234
-        }
-    ])
+    // API에서 데이터 가져오기
+    const { data, isLoading, mutate } = useSWR('/api/admin/stories', fetcher, {
+        revalidateOnFocus: false,
+        revalidateOnReconnect: false,
+        dedupingInterval: 30000, // 30초 캐싱
+    })
 
-    const handleEdit = (id: number) => {
-        router.push(`/admin/stories/${id}/edit`)
+    const stories = data?.data || []
+
+    const handleEdit = (id: string) => {
+        router.push(`/admin/stories/${id}`)
     }
 
-    const handleDelete = (id: number) => {
-        if (confirm('정말 삭제하시겠습니까?')) {
-            console.log('Delete:', id)
+    const handleDelete = async (id: string) => {
+        if (!confirm('정말 삭제하시겠습니까?')) return
+
+        setIsDeleting(id)
+        try {
+            const res = await fetch(`/api/admin/stories/${id}`, {
+                method: 'DELETE',
+            })
+
+            if (res.ok) {
+                mutate()
+                alert('삭제되었습니다.')
+            } else {
+                alert('삭제에 실패했습니다.')
+            }
+        } catch (error) {
+            alert('삭제에 실패했습니다.')
+        } finally {
+            setIsDeleting(null)
         }
     }
 
@@ -67,49 +78,87 @@ export default function AdminStoriesPage() {
                     </button>
                 </div>
 
+                {/* 로딩 상태 */}
+                {isLoading && (
+                    <div className="flex items-center justify-center py-20">
+                        <div className="animate-spin w-8 h-8 border-2 border-admin-primary border-t-transparent rounded-full" />
+                    </div>
+                )}
+
+                {/* 데이터 없음 */}
+                {!isLoading && stories.length === 0 && (
+                    <div className="text-center py-20">
+                        <span className="material-symbols-outlined text-5xl text-admin-text-secondary mb-4">article</span>
+                        <p className="text-admin-text-secondary">등록된 스토리가 없습니다.</p>
+                    </div>
+                )}
+
                 {/* 카드 그리드 */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {stories.map((story) => (
-                        <div
-                            key={story.id}
-                            className="bg-admin-surface border border-admin-border rounded-2xl p-5 flex gap-4 hover:border-admin-primary/40 transition-all group"
-                        >
-                            <div className="size-20 md:size-24 rounded-xl overflow-hidden shrink-0 bg-admin-bg relative">
-                                <OptimizedImage
-                                    alt={story.title}
-                                    fill
-                                    className="object-cover"
-                                    src={story.thumbnail}
-                                />
-                            </div>
-                            <div className="flex-1 min-w-0">
-                                <span className="text-[10px] font-black text-admin-primary uppercase tracking-widest mb-1 block">
-                                    {story.category}
-                                </span>
-                                <h3 className="text-admin-text-main font-bold text-sm md:text-base line-clamp-1 mb-1">
-                                    {story.title}
-                                </h3>
-                                <p className="text-admin-text-secondary text-xs mb-3">
-                                    {story.date}
-                                </p>
-                                <div className="flex gap-2">
-                                    <button
-                                        onClick={() => handleEdit(story.id)}
-                                        className="text-admin-primary text-[11px] font-bold hover:underline"
-                                    >
-                                        수정
-                                    </button>
-                                    <button
-                                        onClick={() => handleDelete(story.id)}
-                                        className="text-admin-danger text-[11px] font-bold hover:underline"
-                                    >
-                                        삭제
-                                    </button>
+                {!isLoading && stories.length > 0 && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {stories.map((story: any) => {
+                            const thumbnailUrl = story.thumbnailUrl || story.thumbnail_url || '/images/placeholder.png'
+                            const category = categoryLabels[story.category] || story.category || '카테고리'
+                            const title = story.title?.ko || story.title || '제목 없음'
+                            const publishedDate = story.publishedDate || story.published_date
+                                ? new Date(story.publishedDate || story.published_date).toLocaleDateString('ko-KR', {
+                                    year: 'numeric',
+                                    month: '2-digit',
+                                    day: '2-digit',
+                                  })
+                                : story.createdAt
+                                ? new Date(story.createdAt).toLocaleDateString('ko-KR', {
+                                    year: 'numeric',
+                                    month: '2-digit',
+                                    day: '2-digit',
+                                  })
+                                : '날짜 없음'
+                            const viewCount = story.viewCount || story.view_count || 0
+
+                            return (
+                                <div
+                                    key={story.id}
+                                    className="bg-admin-surface border border-admin-border rounded-2xl p-5 flex gap-4 hover:border-admin-primary/40 transition-all group"
+                                >
+                                    <div className="size-20 md:size-24 rounded-xl overflow-hidden shrink-0 bg-admin-bg relative">
+                                        <OptimizedImage
+                                            alt={title}
+                                            fill
+                                            className="object-cover"
+                                            src={thumbnailUrl}
+                                        />
+                                    </div>
+                                    <div className="flex-1 min-w-0">
+                                        <span className="text-[10px] font-black text-admin-primary uppercase tracking-widest mb-1 block">
+                                            {category}
+                                        </span>
+                                        <h3 className="text-admin-text-main font-bold text-sm md:text-base line-clamp-1 mb-1">
+                                            {title}
+                                        </h3>
+                                        <p className="text-admin-text-secondary text-xs mb-3">
+                                            {publishedDate} · 조회 {viewCount}
+                                        </p>
+                                        <div className="flex gap-2">
+                                            <button
+                                                onClick={() => handleEdit(story.id)}
+                                                className="text-admin-primary text-[11px] font-bold hover:underline"
+                                            >
+                                                수정
+                                            </button>
+                                            <button
+                                                onClick={() => handleDelete(story.id)}
+                                                disabled={isDeleting === story.id}
+                                                className="text-admin-danger text-[11px] font-bold hover:underline disabled:opacity-50"
+                                            >
+                                                {isDeleting === story.id ? '삭제 중...' : '삭제'}
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+                            )
+                        })}
+                    </div>
+                )}
             </div>
         </div>
     )

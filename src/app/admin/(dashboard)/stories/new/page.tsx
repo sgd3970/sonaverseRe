@@ -2,6 +2,16 @@
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
+import dynamic from "next/dynamic"
+
+// RichTextEditor 동적 임포트 (관리자 페이지에서만 필요)
+const RichTextEditor = dynamic(
+  () => import("@/shared/components/ui/RichTextEditor").then(mod => mod.RichTextEditor),
+  { 
+    ssr: false,
+    loading: () => <div className="h-64 bg-admin-bg border border-admin-border rounded-xl animate-pulse" />
+  }
+)
 
 // 카테고리 옵션
 const categoryOptions = [
@@ -284,33 +294,31 @@ export default function AdminStoryNewPage() {
                             </div>
                         </div>
 
-                        {/* 상세 본문 (한국어, HTML) */}
+                        {/* 상세 본문 (한국어) */}
                         <div className="md:col-span-2">
                             <div className="space-y-2">
                                 <label className="text-xs font-bold text-admin-text-secondary uppercase tracking-widest flex items-center gap-1">
-                                    상세 본문(HTML) <span className="text-admin-danger">*</span>
+                                    상세 본문 <span className="text-admin-danger">*</span>
                                 </label>
-                                <textarea
-                                    className="w-full h-60 bg-admin-bg border border-admin-border rounded-xl p-4 text-sm font-mono"
-                                    placeholder="스토리 본문 내용을 HTML 형식으로 작성할 수 있습니다."
-                                    value={formData.content}
-                                    onChange={(e) => setFormData(prev => ({ ...prev, content: e.target.value }))}
-                                ></textarea>
+                                <RichTextEditor
+                                    content={formData.content}
+                                    onChange={(content) => setFormData(prev => ({ ...prev, content }))}
+                                    placeholder="스토리 본문 내용을 작성하세요."
+                                />
                             </div>
                         </div>
 
-                        {/* 상세 본문 (English, HTML) */}
+                        {/* 상세 본문 (English) */}
                         <div className="md:col-span-2">
                             <div className="space-y-2">
                                 <label className="text-xs font-bold text-admin-text-secondary uppercase tracking-widest flex items-center gap-1">
-                                    상세 본문 (English, HTML)
+                                    상세 본문 (English)
                                 </label>
-                                <textarea
-                                    className="w-full h-60 bg-admin-bg border border-admin-border rounded-xl p-4 text-sm font-mono"
-                                    placeholder="Story content in HTML format"
-                                    value={formData.contentEn}
-                                    onChange={(e) => setFormData(prev => ({ ...prev, contentEn: e.target.value }))}
-                                ></textarea>
+                                <RichTextEditor
+                                    content={formData.contentEn}
+                                    onChange={(content) => setFormData(prev => ({ ...prev, contentEn: content }))}
+                                    placeholder="Story content"
+                                />
                             </div>
                         </div>
 

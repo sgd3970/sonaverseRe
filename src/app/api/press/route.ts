@@ -21,11 +21,12 @@ export async function GET(request: NextRequest) {
     // 전체 개수
     const total = await PressRelease.countDocuments(query);
 
-    // 데이터 조회
+    // 데이터 조회 - 최적화된 쿼리
     const pressItems = await PressRelease.find(query)
       .sort({ published_date: -1 })
       .skip((page - 1) * limit)
       .limit(limit)
+      .select('slug press_name title excerpt content thumbnail thumbnail_image_id external_link external_url tags published_date created_at') // 필요한 필드만
       .lean();
 
     // 이미지 ID 수집
@@ -34,8 +35,9 @@ export async function GET(request: NextRequest) {
       .map((item: any) => item.thumbnail_image_id)
       .filter(Boolean);
 
-    // 이미지 조회
+    // 이미지 조회 - 필요한 필드만
     const images = await Image.find({ _id: { $in: imageIds } })
+      .select('url public_url')
       .lean();
 
     // 이미지 맵 생성
@@ -122,7 +124,7 @@ export async function GET(request: NextRequest) {
       };
     });
 
-    return NextResponse.json({
+    const response = NextResponse.json({
       success: true,
       data: formattedPress,
       pagination: {
@@ -132,6 +134,14 @@ export async function GET(request: NextRequest) {
         totalPages: Math.ceil(total / limit),
       },
     });
+
+    // 캐싱 헤더 추가
+    response.headers.set(
+      'Cache-Control',
+      'public, s-maxage=3600, stale-while-revalidate=86400'
+    );
+
+    return response;
   } catch (error) {
     console.error('Press API Error:', error);
     return NextResponse.json(

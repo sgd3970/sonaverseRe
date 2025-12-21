@@ -1,15 +1,58 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import useSWR from "swr"
+
+const fetcher = (url: string) => fetch(url).then(res => res.json())
 
 export default function AdminSettingsPage() {
     const [isSaving, setIsSaving] = useState(false)
+    const [formData, setFormData] = useState({
+        siteName: '',
+        sitePhone: '',
+        siteAddress: '',
+        socialLinks: {
+            youtube: '',
+            instagram: '',
+        },
+    })
+
+    const { data, isLoading, mutate } = useSWR('/api/admin/settings', fetcher, {
+        revalidateOnFocus: false,
+        revalidateOnReconnect: false,
+        dedupingInterval: 60000, // 1분 캐싱 (설정은 자주 변경되지 않음)
+    })
+
+    useEffect(() => {
+        if (data?.data) {
+            setFormData({
+                siteName: data.data.siteName || '',
+                sitePhone: data.data.sitePhone || '',
+                siteAddress: data.data.siteAddress || '',
+                socialLinks: {
+                    youtube: data.data.socialLinks?.youtube || '',
+                    instagram: data.data.socialLinks?.instagram || '',
+                },
+            })
+        }
+    }, [data])
 
     const handleSave = async () => {
         setIsSaving(true)
         try {
-            await new Promise(resolve => setTimeout(resolve, 1000))
-            alert('설정이 저장되었습니다.')
+            const res = await fetch('/api/admin/settings', {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            })
+
+            const result = await res.json()
+            if (result.success) {
+                mutate()
+                alert('설정이 저장되었습니다.')
+            } else {
+                alert('저장에 실패했습니다.')
+            }
         } catch (error) {
             alert('저장에 실패했습니다.')
         } finally {
@@ -38,22 +81,28 @@ export default function AdminSettingsPage() {
                             <div className="space-y-2">
                                 <label className="text-xs font-bold text-admin-text-secondary">사이트 이름</label>
                                 <input
+                                    value={formData.siteName}
+                                    onChange={(e) => setFormData(prev => ({ ...prev, siteName: e.target.value }))}
                                     className="w-full bg-admin-bg border border-admin-border rounded-xl h-12 px-4 text-sm focus:border-admin-primary focus:outline-none"
-                                    defaultValue="Sonaverse"
+                                    placeholder="Sonaverse"
                                 />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-xs font-bold text-admin-text-secondary">대표번호</label>
                                 <input
+                                    value={formData.sitePhone}
+                                    onChange={(e) => setFormData(prev => ({ ...prev, sitePhone: e.target.value }))}
                                     className="w-full bg-admin-bg border border-admin-border rounded-xl h-12 px-4 text-sm focus:border-admin-primary focus:outline-none"
-                                    defaultValue="010-5703-8899"
+                                    placeholder="010-5703-8899"
                                 />
                             </div>
                             <div className="space-y-2 md:col-span-2">
                                 <label className="text-xs font-bold text-admin-text-secondary">사업장 주소</label>
                                 <input
+                                    value={formData.siteAddress}
+                                    onChange={(e) => setFormData(prev => ({ ...prev, siteAddress: e.target.value }))}
                                     className="w-full bg-admin-bg border border-admin-border rounded-xl h-12 px-4 text-sm focus:border-admin-primary focus:outline-none"
-                                    defaultValue="강원특별자치도 춘천시 후석로462번길 7 춘천ICT벤처센터 319호"
+                                    placeholder="강원특별자치도 춘천시 후석로462번길 7 춘천ICT벤처센터 319호"
                                 />
                             </div>
                         </div>
@@ -69,14 +118,24 @@ export default function AdminSettingsPage() {
                             <div className="space-y-2">
                                 <label className="text-xs font-bold text-admin-text-secondary">YouTube</label>
                                 <input
-                                    className="w-full bg-admin-bg border border-admin-border rounded-xl h-12 px-4 text-sm"
+                                    value={formData.socialLinks.youtube}
+                                    onChange={(e) => setFormData(prev => ({
+                                        ...prev,
+                                        socialLinks: { ...prev.socialLinks, youtube: e.target.value }
+                                    }))}
+                                    className="w-full bg-admin-bg border border-admin-border rounded-xl h-12 px-4 text-sm focus:border-admin-primary focus:outline-none"
                                     placeholder="https://youtube.com/..."
                                 />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-xs font-bold text-admin-text-secondary">Instagram</label>
                                 <input
-                                    className="w-full bg-admin-bg border border-admin-border rounded-xl h-12 px-4 text-sm"
+                                    value={formData.socialLinks.instagram}
+                                    onChange={(e) => setFormData(prev => ({
+                                        ...prev,
+                                        socialLinks: { ...prev.socialLinks, instagram: e.target.value }
+                                    }))}
+                                    className="w-full bg-admin-bg border border-admin-border rounded-xl h-12 px-4 text-sm focus:border-admin-primary focus:outline-none"
                                     placeholder="https://instagram.com/..."
                                 />
                             </div>

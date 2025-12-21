@@ -7,7 +7,11 @@ const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
 export default function AdminDashboardPage() {
     const router = useRouter()
-    const { data, error } = useSWR('/api/admin/dashboard/stats', fetcher)
+    const { data, error } = useSWR('/api/admin/dashboard/stats', fetcher, {
+        revalidateOnFocus: false,
+        revalidateOnReconnect: false,
+        dedupingInterval: 30000, // 30초 캐싱
+    })
 
     const isLoading = !data && !error
     const statsData = data?.data?.counts

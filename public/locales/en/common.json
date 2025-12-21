@@ -1,87 +1,65 @@
 {
-  "site": {
-    "title": "Sonaverse",
-    "description": "Innovation for Better Senior Living"
-  },
   "nav": {
     "home": "Home",
+    "about": "About",
     "products": "Products",
-    "manbo": "MANBO Walker",
-    "bodume": "BO DUME Diaper",
-    "stories": "Sonaverse Story",
+    "bodume": "Bodume",
+    "manbo": "Manbo",
+    "stories": "Stories",
     "press": "Press",
-    "inquiry": "Purchase/Partnership"
+    "inquiry": "Contact"
   },
-  "language": {
-    "ko": "한국어",
-    "en": "English",
-    "switch": "Switch Language"
+  "footer": {
+    "company": "Company",
+    "aboutUs": "About Us",
+    "history": "History",
+    "contact": "Contact",
+    "support": "Support",
+    "faq": "FAQ",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "followUs": "Follow Us",
+    "copyright": "© {{year}} Sonaverse. All rights reserved.",
+    "address": "123 Teheran-ro, Gangnam-gu, Seoul, Korea",
+    "phone": "Phone",
+    "email": "Email"
   },
-  "common": {
-    "viewMore": "View More",
-    "viewAll": "View All",
-    "viewDetail": "View Details",
-    "readMore": "Read More",
-    "readMoreNews": "Read More News",
-    "learnMore": "Learn More",
-    "contactUs": "Contact Us",
+  "buttons": {
     "submit": "Submit",
     "cancel": "Cancel",
     "save": "Save",
     "delete": "Delete",
     "edit": "Edit",
+    "create": "Create",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "이전",
     "search": "Search",
     "filter": "Filter",
-    "sort": "Sort",
+    "reset": "Reset",
     "loading": "Loading...",
-    "error": "An error occurred",
-    "noData": "No data available",
-    "comingSoon": "Coming Soon"
+    "viewMore": "View More",
+    "learnMore": "Learn More"
   },
-  "footer": {
-    "company": {
-      "title": "Company Info",
-      "companyName": "Company:",
-      "companyNameValue": "Sonaverse Inc.",
-      "ceoName": "CEO:",
-      "ceoNameValue": "Soojin Lee",
-      "address": "Address:",
-      "addressValue": "319, Chuncheon ICT Venture Center, 7 Huseok-ro 462beon-gil, Chuncheon-si, Gangwon-do, 24232, Korea",
-      "phone": "Phone:",
-      "phoneValue": "+82-10-5703-8899",
-      "businessNumber": "Business Number:",
-      "businessNumberValue": "697-87-02555",
-      "salesNumber": "Sales License:",
-      "salesNumberValue": "2023-Gangwon-Chuncheon-0688"
-    },
-    "links": {
-      "title": "SONAVERSE",
-      "manbo": "MANBO Walker",
-      "bodume": "BO DUME Diaper",
-      "stories": "Sonaverse Story",
-      "press": "Press",
-      "inquiry": "Purchase/Partnership"
-    },
-    "support": {
-      "title": "Customer Support",
-      "customerCenter": "Customer Center",
-      "customerPhone": "+82-10-5703-8899",
-      "email": "Email",
-      "emailValue": "shop@sonaverse.kr",
-      "hours": "Hours",
-      "hoursValue": "Weekdays 09:30 ~ 18:30",
-      "hoursNote": "(Closed on weekends/holidays)",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
-      "catalog": "Download Product Catalog"
-    },
-    "social": {
-      "title": "SNS",
-      "naver": "Naver",
-      "youtube": "YouTube",
-      "instagram": "Instagram",
-      "kakaotalk": "KakaoTalk"
-    },
-    "copyright": "© 2025 Sonaverse Inc. All rights reserved."
+  "messages": {
+    "success": "Successfully completed",
+    "error": "An error occurred",
+    "loading": "Loading...",
+    "noData": "No data available",
+    "confirmDelete": "Are you sure you want to delete?",
+    "saved": "Saved successfully",
+    "deleted": "Deleted successfully",
+    "updated": "Updated successfully",
+    "created": "Created successfully"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "phone": "Please enter a valid phone number",
+    "minLength": "Please enter at least {{min}} characters",
+    "maxLength": "Please enter no more than {{max}} characters",
+    "invalidFormat": "Invalid format"
   }
 }

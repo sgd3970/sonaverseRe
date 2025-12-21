@@ -54,19 +54,14 @@ export async function GET(
     const { searchParams } = new URL(request.url);
     const locale = searchParams.get('locale') || 'ko';
 
-    // slug 또는 _id로 조회
-    let story;
-    if (mongoose.Types.ObjectId.isValid(slug)) {
-      story = await Story.findOne({ 
-        _id: slug,
-        is_published: true 
-      }).lean();
-    } else {
-      story = await Story.findOne({ 
-        slug,
-        is_published: true 
-      }).lean();
-    }
+    // slug 또는 _id로 조회 - 최적화된 쿼리
+    const query = mongoose.Types.ObjectId.isValid(slug)
+      ? { _id: slug, is_published: true }
+      : { slug, is_published: true };
+
+    const story = await Story.findOne(query)
+      .select('slug category content thumbnail_url youtube_url tags is_main created_at updated_at') // 필요한 필드만
+      .lean();
 
     if (!story) {
       return NextResponse.json(
@@ -96,15 +91,19 @@ export async function GET(
       locale,
     };
 
-    // 관련 스토리 조회 (같은 카테고리)
-    const relatedStories = await Story.find({
-      _id: { $ne: storyData._id },
-      category: storyData.category,
-      is_published: true,
-    })
-      .sort({ created_at: -1 })
-      .limit(3)
-      .lean();
+    // 관련 스토리 조회 - 최적화된 쿼리 (병렬 처리)
+    const [storyResult, relatedStories] = await Promise.all([
+      Promise.resolve(story),
+      Story.find({
+        _id: { $ne: storyData._id },
+        category: storyData.category,
+        is_published: true,
+      })
+        .sort({ created_at: -1 })
+        .limit(3)
+        .select('slug content thumbnail_url category created_at') // 필요한 필드만
+        .lean(),
+    ]);
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const formattedRelated = relatedStories.map((s: any) => ({
@@ -116,11 +115,19 @@ export async function GET(
       publishedAt: s.created_at,
     }));
 
-    return NextResponse.json({
+    const response = NextResponse.json({
       success: true,
       data: formattedStory,
       relatedStories: formattedRelated,
     });
+
+    // 캐싱 헤더 추가
+    response.headers.set(
+      'Cache-Control',
+      'public, s-maxage=3600, stale-while-revalidate=86400'
+    );
+
+    return response;
   } catch (error) {
     console.error('Story Detail API Error:', error);
     return NextResponse.json(

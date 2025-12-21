@@ -8,6 +8,9 @@ import { PressSection } from "@/features/home/components/PressSection"
 import { generateMetadata as genMeta } from "@/lib/seo/metadata"
 import { OrganizationStructuredData } from "@/lib/seo/structured-data"
 
+export const revalidate = 3600; // 1시간마다 재생성
+export const dynamic = 'force-static'; // 가능한 경우 정적 생성
+
 export const metadata = genMeta({
   title: "Sonaverse - 시니어의 더 나은 일상을 위한 혁신",
   description: "만보 워크메이트와 보듬 기저귀를 통해 시니어의 삶의 질을 향상시키는 혁신적인 솔루션을 제공합니다. Innovation for Better Senior Living.",

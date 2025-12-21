@@ -61,9 +61,23 @@ export function PressSection() {
                         <Link href={mainPress.externalUrl || `/press/${mainPress.slug}`}>
                             <div className="w-full aspect-video rounded-[3rem] overflow-hidden shadow-2xl mb-10 relative">
                                 {mainPress.thumbnailUrl ? (
-                                    <OptimizedImage alt={mainPress.title} className="transition-transform duration-1000 group-hover:scale-110" src={mainPress.thumbnailUrl} fill objectFit="cover" />
+                                    <OptimizedImage 
+                                        alt={mainPress.title} 
+                                        className="transition-transform duration-1000 group-hover:scale-110" 
+                                        src={mainPress.thumbnailUrl} 
+                                        fill 
+                                        sizes="(max-width: 1024px) 100vw, 65vw"
+                                        objectFit="cover" 
+                                    />
                                 ) : (
-                                    <OptimizedImage alt={mainPress.title} className="transition-transform duration-1000 group-hover:scale-110" src="https://picsum.photos/800/600?random=10" fill objectFit="cover" />
+                                    <OptimizedImage 
+                                        alt={mainPress.title} 
+                                        className="transition-transform duration-1000 group-hover:scale-110" 
+                                        src="https://picsum.photos/800/600?random=10" 
+                                        fill 
+                                        sizes="(max-width: 1024px) 100vw, 65vw"
+                                        objectFit="cover" 
+                                    />
                                 )}
                                 <div className="absolute top-10 left-10 bg-white/95 backdrop-blur-xl px-6 py-3 rounded-2xl text-[10px] font-black text-gray-900 shadow-sm uppercase tracking-[0.2em]">Latest Release</div>
                             </div>
@@ -87,9 +101,23 @@ export function PressSection() {
                                     <Link href={article.externalUrl || `/press/${article.slug}`} className="flex gap-6 w-full">
                                         <div className="w-32 h-24 rounded-3xl overflow-hidden flex-shrink-0 bg-gray-50 border border-gray-100">
                                             {article.thumbnailUrl ? (
-                                                <OptimizedImage alt={article.title} className="group-hover:scale-110 transition-transform duration-500" src={article.thumbnailUrl} fill objectFit="cover" />
+                                                <OptimizedImage 
+                                                    alt={article.title} 
+                                                    className="group-hover:scale-110 transition-transform duration-500" 
+                                                    src={article.thumbnailUrl} 
+                                                    fill 
+                                                    sizes="128px"
+                                                    objectFit="cover" 
+                                                />
                                             ) : (
-                                                <OptimizedImage alt={article.title} className="group-hover:scale-110 transition-transform duration-500" src={`https://picsum.photos/800/600?random=${11 + idx}`} fill objectFit="cover" />
+                                                <OptimizedImage 
+                                                    alt={article.title} 
+                                                    className="group-hover:scale-110 transition-transform duration-500" 
+                                                    src={`https://picsum.photos/800/600?random=${11 + idx}`} 
+                                                    fill 
+                                                    sizes="128px"
+                                                    objectFit="cover" 
+                                                />
                                             )}
                                         </div>
                                         <div className="flex flex-col justify-center">

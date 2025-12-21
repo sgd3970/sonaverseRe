@@ -44,8 +44,17 @@ export default function SeoSettingsPage() {
         try {
             const res = await fetch('/api/admin/seo-settings')
             const data = await res.json()
-            if (data.success) {
-                setSettings(data.data)
+            if (data.success && data.data) {
+                setSettings({
+                    site_name: data.data.siteName || '',
+                    site_url: data.data.siteUrl || '',
+                    default_title: data.data.defaultTitle || { ko: '', en: '' },
+                    default_description: data.data.defaultDescription || { ko: '', en: '' },
+                    default_keywords: data.data.defaultKeywords || { ko: [], en: [] },
+                    default_og_image: data.data.defaultOgImage || '',
+                    social_links: data.data.socialLinks || {},
+                    contact: data.data.contact || { email: '', phone: '' },
+                })
             }
         } catch (error) {
             console.error('Failed to fetch SEO settings:', error)
@@ -62,7 +71,16 @@ export default function SeoSettingsPage() {
             const res = await fetch('/api/admin/seo-settings', {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(settings),
+                body: JSON.stringify({
+                    siteName: settings.site_name,
+                    siteUrl: settings.site_url,
+                    defaultTitle: settings.default_title,
+                    defaultDescription: settings.default_description,
+                    defaultKeywords: settings.default_keywords,
+                    defaultOgImage: settings.default_og_image,
+                    socialLinks: settings.social_links,
+                    contact: settings.contact,
+                }),
             })
 
             const data = await res.json()

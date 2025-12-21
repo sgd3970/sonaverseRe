@@ -2,65 +2,33 @@
 
 import { useRouter } from "next/navigation"
 import { useState } from "react"
+import useSWR from "swr"
 import { OptimizedImage } from "@/shared/components/ui/OptimizedImage"
+
+const fetcher = (url: string) => fetch(url).then(res => res.json())
+
+// 제품 유형 라벨 매핑
+const typeLabels: Record<string, string> = {
+    manbo: '만보',
+    bodume: '보듬',
+    accessory: '액세서리',
+    other: '기타',
+}
 
 export default function AdminProductsPage() {
     const router = useRouter()
 
-    // 임시 데이터
-    const [products] = useState([
-        {
-            id: 1,
-            image: "https://picsum.photos/500/500?random=201",
-            category: "팬티형",
-            name: "보듬 팬티형 대형",
-            price: "18,000원",
-            description: "혼자서도 입고 벗기 편한 팬티형 기저귀. 활동량이 많은 분들에게 추천합니다.",
-            specs: [
-                { label: "흡수량", value: "1400ml" },
-                { label: "사이즈", value: "대형 (허리 30~39인치)" }
-            ]
-        },
-        {
-            id: 2,
-            image: "https://picsum.photos/500/500?random=202",
-            category: "팬티형",
-            name: "보듬 팬티형 중형",
-            price: "18,000원",
-            description: "부드러운 허리 밴드로 편안한 착용감을 제공합니다.",
-            specs: [
-                { label: "흡수량", value: "1200ml" },
-                { label: "사이즈", value: "중형 (허리 24~33인치)" }
-            ]
-        },
-        {
-            id: 3,
-            image: "https://picsum.photos/500/500?random=203",
-            category: "속기저귀",
-            name: "보듬 속기저귀 일반형",
-            price: "12,000원",
-            description: "팬티형과 함께 사용하면 더욱 경제적인 교체형 속기저귀.",
-            specs: [
-                { label: "흡수량", value: "800ml" },
-                { label: "사이즈", value: "25cm x 50cm" }
-            ]
-        },
-        {
-            id: 4,
-            image: "https://picsum.photos/500/500?random=204",
-            category: "깔개매트",
-            name: "보듬 깔개매트",
-            price: "15,000원",
-            description: "침구 오염을 방지하는 위생적인 일회용 매트.",
-            specs: [
-                { label: "사이즈", value: "60cm x 90cm" },
-                { label: "매수", value: "10매" }
-            ]
-        }
-    ])
+    // API에서 데이터 가져오기
+    const { data, isLoading, mutate } = useSWR('/api/admin/products', fetcher, {
+        revalidateOnFocus: false,
+        revalidateOnReconnect: false,
+        dedupingInterval: 30000, // 30초 캐싱
+    })
 
-    const handleEdit = (id: number) => {
-        router.push(`/admin/products/${id}/edit`)
+    const products = data?.data || []
+
+    const handleEdit = (id: string) => {
+        router.push(`/admin/products/${id}`)
     }
 
     const handleAdd = () => {
@@ -85,59 +53,94 @@ export default function AdminProductsPage() {
                     </button>
                 </div>
 
+                {/* 로딩 상태 */}
+                {isLoading && (
+                    <div className="flex items-center justify-center py-20">
+                        <div className="animate-spin w-8 h-8 border-2 border-admin-primary border-t-transparent rounded-full" />
+                    </div>
+                )}
+
+                {/* 데이터 없음 */}
+                {!isLoading && products.length === 0 && (
+                    <div className="text-center py-20">
+                        <span className="material-symbols-outlined text-5xl text-admin-text-secondary mb-4">inventory_2</span>
+                        <p className="text-admin-text-secondary">등록된 제품이 없습니다.</p>
+                    </div>
+                )}
+
                 {/* 제품 그리드 */}
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                    {products.map((product) => (
-                        <div
-                            key={product.id}
-                            className="bg-admin-surface border border-admin-border rounded-2xl p-6 flex flex-col shadow-xl"
-                        >
-                            <div className="flex items-start justify-between mb-4">
-                                <div className="size-16 rounded-xl bg-white p-2 flex items-center justify-center relative">
-                                    <OptimizedImage
-                                        alt={product.name}
-                                        fill
-                                        className="object-contain"
-                                        src={product.image}
-                                    />
-                                </div>
-                                <div className="text-right">
-                                    <span className="px-2 py-0.5 rounded bg-admin-primary/10 text-admin-primary text-[10px] font-bold uppercase">
-                                        {product.category}
-                                    </span>
-                                    <p className="text-admin-text-main font-black text-lg mt-1">
-                                        {product.price}
+                {!isLoading && products.length > 0 && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                        {products.map((product: any) => {
+                            const imageUrl = product.thumbnailUrl || product.thumbnail_url || '/images/placeholder.png'
+                            const typeLabel = typeLabels[product.type] || product.type || '제품'
+                            const name = product.name || product.nameKo || '제품명 없음'
+                            const price = product.salePrice || product.sale_price 
+                                ? `${(product.salePrice || product.sale_price).toLocaleString()}원`
+                                : product.retailPrice || product.retail_price
+                                ? `${(product.retailPrice || product.retail_price).toLocaleString()}원`
+                                : '가격 문의'
+                            const inStock = product.inStock !== undefined ? product.inStock : product.in_stock !== undefined ? product.in_stock : true
+                            const quantity = product.quantity || 0
+
+                            return (
+                                <div
+                                    key={product.id}
+                                    className="bg-admin-surface border border-admin-border rounded-2xl p-6 flex flex-col shadow-xl"
+                                >
+                                    <div className="flex items-start justify-between mb-4">
+                                        <div className="size-16 rounded-xl bg-white p-2 flex items-center justify-center relative">
+                                            <OptimizedImage
+                                                alt={name}
+                                                fill
+                                                className="object-contain"
+                                                src={imageUrl}
+                                            />
+                                        </div>
+                                        <div className="text-right">
+                                            <span className="px-2 py-0.5 rounded bg-admin-primary/10 text-admin-primary text-[10px] font-bold uppercase">
+                                                {typeLabel}
+                                            </span>
+                                            <p className="text-admin-text-main font-black text-lg mt-1">
+                                                {price}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <h3 className="text-admin-text-main font-bold mb-1">
+                                        {name}
+                                    </h3>
+                                    <p className="text-admin-text-secondary text-xs line-clamp-2 mb-6 leading-relaxed">
+                                        {product.shortDescription || product.short_description || product.description || ''}
                                     </p>
+                                    <div className="mt-auto pt-4 border-t border-admin-border flex items-center justify-between">
+                                        <div className="flex flex-col">
+                                            <span className="text-[10px] text-admin-text-secondary uppercase">Stock</span>
+                                            <span className={`text-sm font-bold ${inStock ? 'text-admin-success' : 'text-admin-danger'}`}>
+                                                {inStock ? `재고 ${quantity > 0 ? quantity : '있음'}` : '품절'}
+                                            </span>
+                                        </div>
+                                        <div className="flex gap-2">
+                                            <button
+                                                onClick={() => handleEdit(product.id)}
+                                                className="size-9 rounded-lg bg-admin-surface-hover flex items-center justify-center text-admin-text-secondary hover:text-white transition-colors"
+                                            >
+                                                <span className="material-symbols-outlined select-none text-sm">settings</span>
+                                            </button>
+                                            <a
+                                                href={`/products/${product.slug}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="size-9 rounded-lg bg-admin-surface-hover flex items-center justify-center text-admin-text-secondary hover:text-white transition-colors"
+                                            >
+                                                <span className="material-symbols-outlined select-none text-sm">visibility</span>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <h3 className="text-admin-text-main font-bold mb-1">
-                                {product.name}
-                            </h3>
-                            <p className="text-admin-text-secondary text-xs line-clamp-2 mb-6 leading-relaxed">
-                                {product.description}
-                            </p>
-                            <div className="mt-auto pt-4 border-t border-admin-border flex items-center justify-between">
-                                <div className="flex flex-col">
-                                    <span className="text-[10px] text-admin-text-secondary uppercase">Stock</span>
-                                    <span className="text-sm font-bold text-admin-success">
-                                        {product.specs.find(s => s.label === "매수")?.value || "재고관리"}
-                                    </span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <button
-                                        onClick={() => handleEdit(product.id)}
-                                        className="size-9 rounded-lg bg-admin-surface-hover flex items-center justify-center text-admin-text-secondary hover:text-white transition-colors"
-                                    >
-                                        <span className="material-symbols-outlined select-none text-sm">settings</span>
-                                    </button>
-                                    <button className="size-9 rounded-lg bg-admin-surface-hover flex items-center justify-center text-admin-text-secondary hover:text-white transition-colors">
-                                        <span className="material-symbols-outlined select-none text-sm">visibility</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+                            )
+                        })}
+                    </div>
+                )}
             </div>
         </div>
     )

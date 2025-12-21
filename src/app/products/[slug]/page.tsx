@@ -11,13 +11,39 @@ type Props = {
     params: Promise<{ slug: string }>
 }
 
-export const revalidate = 3600 // 1 hour
+export const revalidate = 3600; // 1 hour
+export const dynamicParams = true; // 새 제품은 동적 생성
+
+// 인기 제품 정적 생성
+export async function generateStaticParams() {
+  try {
+    await dbConnect();
+    const products = await Product.find({ 
+      is_active: true,
+      is_featured: true, // 피처된 제품만
+    })
+      .sort({ view_count: -1, display_order: 1 })
+      .limit(20)
+      .select('slug')
+      .lean();
+    
+    return products.map((p: any) => ({ slug: p.slug }));
+  } catch (error) {
+    console.error('Error generating static params for products:', error);
+    return [];
+  }
+}
 
 export async function generateMetadata({ params }: Props) {
     await dbConnect()
     const { slug } = await params
 
-    const product = await Product.findOne({ slug, is_active: true }).lean()
+    const product = await Product.findOne({ slug, is_active: true })
+        .populate('hero_image_id', 'url public_url')
+        .populate('thumbnail_image_id', 'url public_url')
+        .populate('seo.og_image_id', 'url public_url')
+        .select('slug name subtitle short_description description seo thumbnail_image_id hero_image_id') // 메타데이터에 필요한 필드만
+        .lean()
 
     if (!product) {
         return genMeta({
@@ -26,12 +52,19 @@ export async function generateMetadata({ params }: Props) {
         })
     }
 
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sonaverse.kr"
+    const ogImage = product.seo?.og_image_id?.url 
+        || product.hero_image_id?.url 
+        || product.thumbnail_image_id?.url 
+        || `${siteUrl}/images/og-default.jpg`
+
     return genMeta({
         title: product.seo?.meta_title_ko || product.name?.ko || "제품 상세",
         description: product.seo?.meta_description_ko || product.short_description?.ko || product.description?.ko || "",
         keywords: product.seo?.keywords_ko || [],
+        ogImage,
         ogType: "product",
-        canonicalUrl: product.seo?.canonical_url || `${process.env.NEXT_PUBLIC_SITE_URL || "https://sonaverse.kr"}/products/${slug}`,
+        canonicalUrl: product.seo?.canonical_url || `${siteUrl}/products/${slug}`,
     })
 }
 
@@ -40,9 +73,10 @@ export default async function ProductDetailPage({ params }: Props) {
     const { slug } = await params
 
     const productDoc = await Product.findOne({ slug, is_active: true })
-        .populate('hero_image_id')
-        .populate('thumbnail_image_id')
-        .populate('gallery_image_ids')
+        .populate('hero_image_id', 'url public_url')
+        .populate('thumbnail_image_id', 'url public_url')
+        .populate('gallery_image_ids', 'url public_url')
+        .select('-__v -created_by -updated_by') // 불필요한 필드 제외
         .lean()
 
     if (!productDoc) {

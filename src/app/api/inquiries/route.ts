@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import dbConnect from '@/lib/db';
 import Inquiry from '@/lib/models/Inquiry';
 import { z } from 'zod';
+import { checkRateLimit, getClientIP } from '@/lib/rate-limit';
+import { successResponse, errorResponse, validationErrorResponse, rateLimitResponse } from '@/lib/api-response';
 
 // 문의 생성 스키마
 const createInquirySchema = z.object({
@@ -51,26 +53,29 @@ export async function POST(request: NextRequest) {
   try {
     await dbConnect();
 
+    // Rate limiting 체크
+    const ip = getClientIP(request);
+    const rateLimitResult = await checkRateLimit(ip);
+    
+    if (!rateLimitResult.allowed) {
+      return rateLimitResponse(
+        rateLimitResult.resetTime,
+        '요청이 너무 많습니다. 잠시 후 다시 시도해주세요.'
+      );
+    }
+
     const body = await request.json();
     
     // 유효성 검사
     const validationResult = createInquirySchema.safeParse(body);
     if (!validationResult.success) {
-      return NextResponse.json(
-        {
-          success: false,
-          error: 'Validation failed',
-          details: validationResult.error.issues
-        },
-        { status: 400 }
+      return validationErrorResponse(
+        validationResult.error.issues,
+        '입력 정보를 확인해주세요.'
       );
     }
 
     const data = validationResult.data;
-
-    // IP 주소 가져오기
-    const forwarded = request.headers.get('x-forwarded-for');
-    const ip = forwarded ? forwarded.split(',')[0] : request.headers.get('x-real-ip') || 'unknown';
 
     // 문의 생성
     const inquiry = await Inquiry.create({
@@ -95,21 +100,29 @@ export async function POST(request: NextRequest) {
       referrer: request.headers.get('referer') || '',
     });
 
-    return NextResponse.json({
-      success: true,
-      data: {
+    return successResponse(
+      {
         inquiryNumber: inquiry.inquiry_number,
         message: data.locale === 'en' 
           ? 'Your inquiry has been submitted successfully.'
           : '문의가 정상적으로 접수되었습니다.',
       },
-    }, { status: 201 });
+      201,
+      {
+        message: data.locale === 'en' 
+          ? 'Your inquiry has been submitted successfully.'
+          : '문의가 정상적으로 접수되었습니다.',
+      }
+    );
 
   } catch (error) {
     console.error('Inquiry API Error:', error);
-    return NextResponse.json(
-      { success: false, error: 'Failed to submit inquiry' },
-      { status: 500 }
+    return errorResponse(
+      error instanceof Error ? error : new Error('Failed to submit inquiry'),
+      500,
+      {
+        message: '문의 접수 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.',
+      }
     );
   }
 }

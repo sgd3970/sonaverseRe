@@ -17,7 +17,8 @@ const inter = Inter({
 const notoSansKr = Noto_Sans_KR({
   variable: "--font-noto-sans-kr",
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
+  weight: ["400", "700"], // 필요한 웨이트만 (기본 + 볼드)
+  display: "swap", // 폰트 로딩 최적화
 });
 
 export const metadata: Metadata = {
