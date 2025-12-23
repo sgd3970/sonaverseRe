@@ -73,91 +73,104 @@ export function ProductSection() {
         )
     }
 
+    const sectionBadge = t('home.products.section.badge') || 'The Collection'
+    const sectionTitle = t('home.products.section.title') || '삶의 품격을 높이는 프리미엄 라인업'
+    const manboBadge = t('home.products.section.manbo.badge') || 'Innovative Smart Walker'
+    const manboName = t('home.products.section.manbo.name') || '만보 워크메이트'
+    const manboDescription = t('home.products.section.manbo.description') || '자유로운 이동을 위한 테크놀로지의 집약'
+    const manboViewDetail = t('home.products.section.manbo.viewDetail') || 'View Detail'
+    const manboInquiryNow = t('home.products.section.manbo.inquiryNow') || 'Inquiry Now'
+    const bodumeBadge = t('home.products.section.bodume.badge') || 'Premium Care Diaper'
+    const bodumeName = t('home.products.section.bodume.name') || '보듬 기저귀'
+    const bodumeDescription = t('home.products.section.bodume.description') || '최상의 편안함과 위생을 향한 고집'
+    const bodumeExplore = t('home.products.section.bodume.explore') || 'Explore'
+    const bodumePurchaseOnline = t('home.products.section.bodume.purchaseOnline') || 'Purchase Online'
+
     return (
-        <section id="products" className="py-16 md:py-24 bg-[#f5f2f0] relative overflow-hidden">
+        <section id="products" className="py-20 md:py-48 bg-[#f5f2f0] relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-                <div className="mb-12 md:mb-16 text-center">
-                    <span className="inline-block py-1.5 px-4 rounded-full bg-gray-100 text-gray-600 text-[10px] md:text-xs font-black tracking-[0.2em] uppercase mb-6 border border-gray-200/50">The Collection</span>
-                    <h2 className="text-4xl md:text-6xl font-black text-gray-900 tracking-tight mb-6 leading-[1.15]">삶의 품격을 높이는 <br className="md:hidden" />프리미엄 라인업</h2>
+                <div className="mb-12 md:mb-28 text-center">
+                    <span className="inline-block py-1 px-3 md:py-1.5 md:px-4 rounded-full bg-gray-100 text-gray-600 text-[10px] md:text-xs font-black tracking-[0.2em] uppercase mb-4 md:mb-6 border border-gray-200/50">{sectionBadge}</span>
+                    <h2 className="text-3xl md:text-6xl font-black text-gray-900 tracking-tight mb-4 md:mb-6 leading-[1.2] md:leading-[1.15]">{sectionTitle}</h2>
                 </div>
 
                 <div ref={scrollContainerRef} className="flex overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-2 lg:gap-12 lg:overflow-visible lg:pb-0 no-scrollbar scroll-smooth">
                     {/* Manbo Card */}
-                    <div className="min-w-[85vw] md:min-w-[45vw] lg:min-w-0 snap-center group relative rounded-[3rem] bg-white shadow-2xl transition-all duration-700 flex flex-col overflow-hidden hover:shadow-[0_60px_100px_-30px_rgba(0,0,0,0.15)] mr-6 lg:mr-0">
-                        <div className="p-12 pb-8">
-                            <div className="flex items-center gap-3 mb-6">
-                                <div className="h-[2px] w-10 bg-manbo-green"></div>
-                                <span className="text-manbo-green-dark font-black tracking-[0.2em] text-[10px] uppercase">Innovative Smart Walker</span>
+                    <div className="min-w-full md:min-w-[45vw] lg:min-w-0 snap-center group relative rounded-[2.5rem] md:rounded-[3rem] bg-white shadow-2xl transition-all duration-700 flex flex-col overflow-hidden mr-6 lg:mr-0">
+                        <div className="p-8 md:p-12 pb-6">
+                            <div className="flex items-center gap-3 mb-4 md:mb-6">
+                                <div className="h-[2px] w-8 md:w-10 bg-manbo-green"></div>
+                                <span className="text-[#1d7a3f] font-black tracking-[0.2em] text-[9px] md:text-[10px] uppercase">{manboBadge}</span>
                             </div>
-                            <h3 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">만보 워크메이트</h3>
-                            <p className="text-gray-600 text-lg font-light leading-relaxed">자유로운 이동을 위한 테크놀로지의 집약</p>
+                            <h3 className="text-3xl md:text-5xl font-black text-gray-900 mb-2 md:mb-4 tracking-tight">{manboName}</h3>
+                            <p className="text-gray-600 text-base md:text-lg font-light leading-relaxed">{manboDescription}</p>
                         </div>
-                        <div className="aspect-[4/3] w-full bg-gray-50 relative overflow-hidden">
-                            <OptimizedImage 
-                                alt="Manbo" 
+                        <div className="aspect-[4/3] w-full bg-gray-50 relative overflow-hidden" style={{ position: 'relative', height: 'auto' }}>
+                            <OptimizedImage
+                                alt="Manbo"
                                 title="만보 워크메이트 - 자유로운 이동을 위한 테크놀로지의 집약"
-                                className="transition-transform duration-1000 group-hover:scale-110" 
+                                className="transition-transform duration-1000 group-hover:scale-110"
                                 src="/images/product/manbo/product2.webp"
-                                fill 
+                                fill
                                 priority
                                 sizes="(max-width: 1024px) 85vw, 50vw"
-                                objectFit="cover" 
+                                objectFit="cover"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-0 group-hover:opacity-40 transition-opacity"></div>
                         </div>
-                        <div className="p-10 pt-4 mt-auto flex gap-5">
-                            <button className="flex-1 py-5 rounded-2xl border-2 border-gray-100 text-gray-500 font-black hover:border-manbo-green hover:text-manbo-green transition-all duration-300 uppercase tracking-widest text-xs">
-                                <Link href="/products/manbo">View Detail</Link>
-                            </button>
-                            <button className="flex-1 py-5 rounded-2xl bg-gradient-to-br from-manbo-green to-[#1d8e4a] text-white font-black shadow-[0_15px_35px_-5px_rgba(46,184,101,0.4)] hover:shadow-[0_25px_50px_-10px_rgba(46,184,101,0.6)] hover:-translate-y-1 transition-all duration-500 tracking-widest text-xs uppercase">
-                                <Link href="/inquiry">Inquiry Now</Link>
-                            </button>
+                        <div className="p-8 md:p-10 pt-4 mt-auto flex gap-3 md:gap-5">
+                            <Link href="/products/manbo" className="flex-1 py-4 md:py-5 rounded-2xl border-2 border-gray-100 text-gray-600 font-medium hover:border-manbo-green hover:text-manbo-green transition-all duration-300 tracking-widest text-xs md:text-sm flex items-center justify-center">
+                                {manboViewDetail}
+                            </Link>
+                            <Link href="/inquiry" className="flex-1 py-4 md:py-5 rounded-2xl text-white font-medium shadow-lg hover:-translate-y-1 transition-all duration-500 tracking-widest text-xs md:text-sm flex items-center justify-center" style={{ background: 'linear-gradient(to bottom right, #2eb865, #1d7a3f)' }}>
+                                {manboInquiryNow}
+                            </Link>
                         </div>
                     </div>
 
                     {/* Bodume Card */}
-                    <div className="min-w-[85vw] md:min-w-[45vw] lg:min-w-0 snap-center group relative rounded-[3rem] bg-white shadow-2xl transition-all duration-700 flex flex-col overflow-hidden hover:shadow-[0_60px_100px_-30px_rgba(0,0,0,0.15)]">
-                        <div className="p-12 pb-8">
-                            <div className="flex items-center gap-3 mb-6">
-                                <div className="h-[2px] w-10 bg-bodeum-green"></div>
-                                <span className="text-bodume-green-dark font-black tracking-[0.2em] text-[10px] uppercase">Premium Care Diaper</span>
+                    <div className="min-w-full md:min-w-[45vw] lg:min-w-0 snap-center group relative rounded-[2.5rem] md:rounded-[3rem] bg-white shadow-2xl transition-all duration-700 flex flex-col overflow-hidden">
+                        <div className="p-8 md:p-12 pb-6">
+                            <div className="flex items-center gap-3 mb-4 md:mb-6">
+                                <div className="h-[2px] w-8 md:w-10" style={{ backgroundColor: '#5eba7d' }}></div>
+                                <span className="text-[#3a7a4f] font-black tracking-[0.2em] text-[9px] md:text-[10px] uppercase">{bodumeBadge}</span>
                             </div>
-                            <h3 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">보듬 기저귀</h3>
-                            <p className="text-gray-600 text-lg font-light leading-relaxed">최상의 편안함과 위생을 향한 고집</p>
+                            <h3 className="text-3xl md:text-5xl font-black text-gray-900 mb-2 md:mb-4 tracking-tight">{bodumeName}</h3>
+                            <p className="text-gray-600 text-base md:text-lg font-light leading-relaxed">{bodumeDescription}</p>
                         </div>
-                        <div className="aspect-[4/3] w-full bg-gray-50 relative overflow-hidden">
-                            <OptimizedImage 
-                                alt="Bodeum" 
+                        <div className="aspect-[4/3] w-full bg-gray-50 relative overflow-hidden" style={{ position: 'relative', height: 'auto' }}>
+                            <OptimizedImage
+                                alt="Bodeum"
                                 title="보듬 기저귀 - 최상의 편안함과 위생을 향한 고집"
-                                className="transition-transform duration-1000 group-hover:scale-110" 
+                                className="transition-transform duration-1000 group-hover:scale-110"
                                 src="/images/product/bodume/product1.webp"
-                                fill 
+                                fill
                                 sizes="(max-width: 1024px) 85vw, 50vw"
-                                objectFit="cover" 
+                                objectFit="cover"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-0 group-hover:opacity-40 transition-opacity"></div>
                         </div>
-                        <div className="p-10 pt-4 mt-auto flex gap-5">
-                            <button className="flex-1 py-5 rounded-2xl border-2 border-gray-100 text-gray-500 font-black hover:border-bodeum-green hover:text-bodeum-green transition-all duration-300 uppercase tracking-widest text-xs">
-                                <Link href="/products/bodume">Explore</Link>
-                            </button>
-                            <button className="flex-1 py-5 rounded-2xl bg-gradient-to-br from-bodeum-green to-[#469e66] text-white font-black shadow-[0_15px_35px_-5px_rgba(94,186,125,0.4)] hover:shadow-[0_25px_50px_-10px_rgba(94,186,125,0.6)] hover:-translate-y-1 transition-all duration-500 tracking-widest text-xs uppercase">
-                                <Link href="/products/bodume">Purchase Online</Link>
-                            </button>
+                        <div className="p-8 md:p-10 pt-4 mt-auto flex gap-3 md:gap-5">
+                            <Link href="/products/bodume" className="flex-1 py-4 md:py-5 rounded-2xl border-2 border-gray-100 text-gray-600 font-medium hover:border-bodeum-green hover:text-bodeum-green transition-all duration-300 tracking-widest text-xs md:text-sm flex items-center justify-center">
+                                {bodumeExplore}
+                            </Link>
+                            <Link href="/products/bodume" className="flex-1 py-4 md:py-5 rounded-2xl text-white font-medium shadow-lg hover:-translate-y-1 transition-all duration-500 tracking-widest text-xs md:text-sm flex items-center justify-center" style={{ background: 'linear-gradient(to bottom right, #5eba7d, #3a7a4f)' }}>
+                                {bodumePurchaseOnline}
+                            </Link>
                         </div>
                     </div>
                 </div>
 
                 {/* Pagination Indicators - Mobile Only */}
-                <div className="flex justify-center gap-3 mt-10 lg:hidden">
+                <div className="flex justify-center gap-4 mt-12 lg:hidden">
                     <button
                         onClick={() => scrollToProduct(0)}
-                        className={`size-3 rounded-full transition-all duration-300 ${activeIndex === 0 ? 'bg-primary w-8' : 'bg-gray-300 hover:bg-gray-400'}`}
+                        className={`size-4 rounded-full transition-all duration-500 ${activeIndex === 0 ? 'bg-primary scale-125 shadow-lg ring-4 ring-primary/20' : 'bg-gray-300'}`}
                         aria-label="Go to product 1"
                     />
                     <button
                         onClick={() => scrollToProduct(1)}
-                        className={`size-3 rounded-full transition-all duration-300 ${activeIndex === 1 ? 'bg-primary w-8' : 'bg-gray-300 hover:bg-gray-400'}`}
+                        className={`size-4 rounded-full transition-all duration-500 ${activeIndex === 1 ? 'bg-primary scale-125 shadow-lg ring-4 ring-primary/20' : 'bg-gray-300'}`}
                         aria-label="Go to product 2"
                     />
                 </div>

@@ -14,27 +14,27 @@ export function StoryHighlight() {
             id: 1,
             category: "Press",
             categoryKey: "stories.categories.company_news",
-            title: "소나버스, 시니어 통합 케어 플랫폼 '소나버스' 런칭",
+            title: t('home.stories.featured.0.title'),
             date: "2024.12.10",
-            excerpt: "시니어의 일상을 혁신하는 통합 케어 플랫폼 소나버스가 정식 런칭했습니다.",
+            excerpt: t('home.stories.featured.0.excerpt'),
             image: "bg-gray-100",
         },
         {
             id: 2,
             category: "Product Story",
             categoryKey: "stories.categories.product_story",
-            title: "Manbo Walker 개발 비하인드 스토리",
+            title: t('home.stories.featured.1.title'),
             date: "2024.11.25",
-            excerpt: "수백 번의 실패 끝에 탄생한 스마트 워커 Manbo의 개발 과정을 공개합니다.",
+            excerpt: t('home.stories.featured.1.excerpt'),
             image: "bg-gray-200",
         },
         {
             id: 3,
             category: "Interview",
             categoryKey: "stories.categories.interview",
-            title: "사용자와 함께 만든 혁신, BO DUME 기저귀",
+            title: t('home.stories.featured.2.title'),
             date: "2024.11.10",
-            excerpt: "실제 요양 현장의 목소리를 담아 만든 BO DUME 기저귀 개발 인터뷰.",
+            excerpt: t('home.stories.featured.2.excerpt'),
             image: "bg-gray-300",
         },
     ]
@@ -66,17 +66,17 @@ export function StoryHighlight() {
                 {/* Header */}
                 <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 md:mb-16 gap-6 md:gap-10">
                     <div className="text-left space-y-4 items-start flex flex-col">
-                        <span className="text-primary/80 font-black tracking-[0.3em] text-[10px] md:text-xs uppercase block">Insights &amp; Heritage</span>
-                        <h2 className="text-4xl md:text-7xl font-black text-primary leading-[1.1] tracking-tighter">소나버스 <br />스토리</h2>
+                        <span className="text-primary/80 font-black tracking-[0.3em] text-[10px] md:text-xs uppercase block">{t('home.stories.section.badge') || 'Insights & Heritage'}</span>
+                        <h2 className="text-4xl md:text-7xl font-black text-primary leading-[1.1] tracking-tighter">{t('home.stories.section.title') || '소나버스 스토리'}</h2>
                     </div>
-                    <Link href="/stories" className="group flex items-center gap-4 text-gray-400 font-black hover:text-primary transition-all text-sm tracking-widest uppercase p-2">
-                        View All Stories <span className="material-symbols-outlined select-none transition-transform group-hover:translate-x-2 text-xl">east</span>
+                    <Link href="/stories" className="group flex items-center gap-4 text-gray-500 font-black hover:text-primary transition-all text-sm tracking-widest uppercase p-2 min-h-[48px]">
+                        {t('home.stories.section.viewAll') || 'View All Stories'} <span className="material-symbols-outlined select-none transition-transform group-hover:translate-x-2 text-xl">east</span>
                     </Link>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {/* Featured Story (Large Card) */}
-                    <div className="lg:col-span-2 group cursor-pointer relative overflow-hidden rounded-[3.5rem] bg-gray-900 shadow-3xl h-[600px]">
+                    <div className="lg:col-span-2 group cursor-pointer relative overflow-hidden rounded-[3.5rem] bg-gray-900 shadow-3xl h-[600px]" style={{ position: 'relative', height: '600px' }}>
                         <div className="absolute inset-0 opacity-70 group-hover:opacity-60 transition-all duration-1000 group-hover:scale-105">
                             <OptimizedImage
                                 alt="만보 워크메이트 개발 비하인드"
@@ -91,13 +91,13 @@ export function StoryHighlight() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
                         <div className="relative p-12 md:p-20 flex flex-col justify-end h-full">
                             <Link href={`/stories/${stories[0].id}`}>
-                                <span className="inline-block px-4 py-1.5 bg-accent text-white text-[10px] font-black rounded-full mb-6 w-fit uppercase tracking-widest">제품스토리</span>
+                                <span className="inline-block px-4 py-1.5 bg-accent text-white text-[10px] font-black rounded-full mb-6 w-fit uppercase tracking-widest">{t(`stories.categories.${stories[0].categoryKey.split('.').pop()}`) || stories[0].category}</span>
                                 <h3 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight max-w-4xl group-hover:translate-x-2 transition-transform duration-500">{stories[0].title}</h3>
                                 <p className="text-white/60 text-xl font-light line-clamp-2 mb-10 max-w-2xl">{stories[0].excerpt}</p>
                                 <div className="flex items-center text-white/40 text-sm font-bold tracking-widest uppercase">
                                     <span>{stories[0].date}</span>
                                     <span className="mx-4">•</span>
-                                    <span className="group-hover:text-white transition-colors">Read Full Story</span>
+                                    <span className="group-hover:text-white transition-colors">{t('home.stories.section.readFullStory') || 'Read Full Story'}</span>
                                 </div>
                             </Link>
                         </div>
@@ -114,12 +114,13 @@ export function StoryHighlight() {
                                         className="transition-transform duration-700 group-hover:scale-110"
                                         src={i === 0 ? "/images/stories/story-thumb-2.webp" : "/images/stories/story-thumb-3.webp"}
                                         fill
+                                        sizes="(max-width: 1024px) 100vw, 50vw"
                                         objectFit="cover"
                                     />
                                     <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-xl px-4 py-1.5 rounded-full text-[10px] font-black text-gray-900 shadow-sm uppercase tracking-widest">{story.category}</div>
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors line-clamp-2 leading-tight">{story.title}</h3>
-                                <span className="text-xs text-gray-400 font-black tracking-widest uppercase">{story.date}</span>
+                                <span className="text-xs text-gray-500 font-black tracking-widest uppercase">{story.date}</span>
                             </Link>
                         </div>
                     ))}

@@ -78,11 +78,11 @@ export function CompanyHistory() {
 
     return (
         <section className="py-16 md:py-24 bg-[#fdfcfb] border-y border-gray-100 relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none select-none text-[20vw] font-black text-gray-900 flex items-center justify-center whitespace-nowrap">HISTORY HISTORY HISTORY</div>
+            <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none select-none text-[20vw] font-black text-gray-800 flex items-center justify-center whitespace-nowrap">HISTORY HISTORY HISTORY</div>
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="mb-12 md:mb-16 text-center">
-                    <span className="inline-block py-1.5 px-4 rounded-full bg-gray-100 text-gray-600 text-[10px] md:text-xs font-black tracking-[0.2em] uppercase mb-6 border border-gray-200/50">Heritage</span>
-                    <h2 className="text-4xl md:text-6xl font-black text-gray-900 tracking-tight mb-6 leading-[1.15]">소나버스가 걸어온 <br />신뢰의 <span className="font-serif italic text-primary">발자취</span></h2>
+                    <span className="inline-block py-1.5 px-4 rounded-full bg-gray-100 text-gray-600 text-[10px] md:text-xs font-black tracking-[0.2em] uppercase mb-6 border border-gray-200/50">{t('home.history.section.badge') || 'Heritage'}</span>
+                    <h2 className="text-4xl md:text-6xl font-black text-gray-900 tracking-tight mb-6 leading-[1.15]">{t('home.history.section.title') || '소나버스가 걸어온 신뢰의 발자취'}</h2>
                 </div>
 
                 <div className="relative mt-24">
@@ -141,7 +141,7 @@ export function CompanyHistory() {
                                 onClick={() => setIsExpanded(!isExpanded)}
                                 className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white border border-gray-200 text-gray-900 font-bold hover:bg-gray-50 hover:border-gray-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                             >
-                                <span className="text-lg">{isExpanded ? "접기" : "전체 연혁 보기"}</span>
+                                <span className="text-lg">{isExpanded ? t('home.history.buttons.collapse') || '접기' : t('home.history.buttons.expand') || '전체 연혁 보기'}</span>
                                 <div className={`w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
                                 </div>

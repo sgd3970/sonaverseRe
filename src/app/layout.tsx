@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
-import "material-symbols/outlined.css";
+import "./material-icons.css";
 import { LanguageProvider } from "@/lib/i18n";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -81,17 +81,15 @@ export default async function RootLayout({
   const dictionary = await getDictionary("ko");
 
   return (
-    <html lang="ko" className={`${inter.variable} ${notoSansKr.variable}`}>
+    <html lang="ko" className={`${inter.variable} ${notoSansKr.variable}`} suppressHydrationWarning>
       <head>
         {/* Viewport 설정 최적화 (maximum-scale 제거로 접근성 개선) */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {/* Material Symbols는 material-symbols 패키지로 로드되므로 외부 링크 제거 */}
-        {/* 외부 Google Fonts 링크 제거 - 3.7MB 폰트 파일 문제 해결 */}
-
-        {/* 사전 연결: 중요한 리소스에 대한 연결 사전 설정 - next/font가 자동으로 처리하므로 제거 */}
-        {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
-        {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" /> */}
+        {/* Material Symbols 폰트 로드 */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
 
         {/* Schema.org 구조화 데이터 */}
         <OrganizationSchema

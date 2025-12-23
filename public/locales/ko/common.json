@@ -2,29 +2,66 @@
   "nav": {
     "home": "홈",
     "about": "소개",
-    "products": "제품",
-    "bodume": "보듬이",
-    "manbo": "만보기",
-    "stories": "스토리",
-    "press": "보도자료",
-    "inquiry": "문의하기"
+    "products": "제품소개",
+    "bodume": "BO DUME 기저귀",
+    "manbo": "만보 보행기",
+    "stories": "소나버스 스토리",
+    "press": "언론보도",
+    "inquiry": "구매/제휴 문의"
   },
   "footer": {
-    "company": "회사",
+    "company": {
+      "companyNameValue": "(주)소나버스",
+      "ceoNameValue": "이수진",
+      "addressValue": "(24232) 강원특별자치도 춘천시 후석로462번길 7 춘천ICT벤처센터 319호",
+      "phoneValue": "010-5703-8899",
+      "businessNumberValue": "697-87-02555",
+      "salesNumberValue": "2023-강원춘천-0688"
+    },
+    "links": {
+      "manbo": "만보 보행기",
+      "bodume": "BO DUME 기저귀",
+      "stories": "소나버스 스토리",
+      "press": "언론보도",
+      "inquiry": "구매/제휴 문의"
+    },
+    "support": {
+      "privacy": "개인정보처리방침",
+      "catalog": "제품 카탈로그 다운로드",
+      "customerPhone": "010-5703-8899",
+      "emailValue": "shop@sonaverse.kr",
+      "hoursValue": "평일 09:30 ~ 18:30",
+      "hoursNote": "(주말·공휴일 휴무)"
+    },
+    "social": {
+      "naver": "네이버",
+      "youtube": "유튜브",
+      "instagram": "인스타그램",
+      "kakaotalk": "카카오톡"
+    },
     "aboutUs": "회사 소개",
     "history": "연혁",
     "contact": "연락처",
-    "support": "지원",
     "faq": "자주 묻는 질문",
     "termsOfService": "서비스 약관",
     "privacyPolicy": "개인정보처리방침",
     "followUs": "팔로우",
     "copyright": "© {{year}} Sonaverse. All rights reserved.",
     "address": "서울특별시 강남구 테헤란로 123",
-    "phone": "전화",
-    "email": "이메일"
-  },
-  "buttons": {
+          "phone": "전화",
+          "email": "이메일",
+          "companyName": "상호명",
+          "ceoName": "대표자명",
+          "addressLabel": "사업장 주소",
+          "phoneLabel": "대표 전화",
+          "businessNumber": "사업자등록번호",
+          "salesNumber": "통신판매업 신고 번호",
+          "customerCenter": "고객센터",
+          "operatingHours": "운영시간"
+        },
+        "privacy": {
+            "title": "개인정보처리방침"
+        },  "buttons": {
     "submit": "제출",
     "cancel": "취소",
     "save": "저장",
@@ -61,5 +98,10 @@
     "minLength": "최소 {{min}}자 이상 입력해주세요",
     "maxLength": "최대 {{max}}자 이하로 입력해주세요",
     "invalidFormat": "형식이 올바르지 않습니다"
+  },
+  "language": {
+    "korean": "한국어",
+    "english": "English",
+    "select": "언어 선택"
   }
 }

@@ -51,8 +51,8 @@ export function PressSection() {
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="mb-12 md:mb-16 text-left">
-                    <span className="inline-block py-1.5 px-4 rounded-full bg-gray-100 text-gray-600 text-[10px] md:text-xs font-black tracking-[0.2em] uppercase mb-6 border border-gray-200/50">Global Voice</span>
-                    <h2 className="text-4xl md:text-6xl font-black text-gray-900 tracking-tight mb-6 leading-[1.15]">미디어가 주목하는 소나버스</h2>
+                    <span className="inline-block py-1.5 px-4 rounded-full bg-gray-100 text-gray-600 text-[10px] md:text-xs font-black tracking-[0.2em] uppercase mb-6 border border-gray-200/50">{t('home.press.section.badge') || 'Global Voice'}</span>
+                    <h2 className="text-4xl md:text-6xl font-black text-gray-900 tracking-tight mb-6 leading-[1.15]">{t('home.press.section.title') || '미디어가 주목하는 소나버스'}</h2>
                 </div>
 
                 <div className="flex flex-col lg:flex-row gap-16">
@@ -61,37 +61,37 @@ export function PressSection() {
                         <Link href={mainPress.externalUrl || `/press/${mainPress.slug}`}>
                             <div className="w-full aspect-video rounded-[3rem] overflow-hidden shadow-2xl mb-10 relative">
                                 {mainPress.thumbnailUrl ? (
-                                    <OptimizedImage 
-                                        alt={mainPress.title} 
+                                    <OptimizedImage
+                                        alt={mainPress.title}
                                         title={mainPress.title}
-                                        className="transition-transform duration-1000 group-hover:scale-110" 
-                                        src={mainPress.thumbnailUrl} 
-                                        fill 
+                                        className="transition-transform duration-1000 group-hover:scale-110"
+                                        src={mainPress.thumbnailUrl}
+                                        fill
                                         sizes="(max-width: 1024px) 100vw, 65vw"
-                                        objectFit="cover" 
+                                        objectFit="cover"
                                     />
                                 ) : (
-                                    <OptimizedImage 
-                                        alt={mainPress.title} 
+                                    <OptimizedImage
+                                        alt={mainPress.title}
                                         title={mainPress.title}
-                                        className="transition-transform duration-1000 group-hover:scale-110" 
+                                        className="transition-transform duration-1000 group-hover:scale-110"
                                         src="/images/press/press-thumb-1.webp"
-                                        fill 
+                                        fill
                                         sizes="(max-width: 1024px) 100vw, 65vw"
-                                        objectFit="cover" 
+                                        objectFit="cover"
                                     />
                                 )}
-                                <div className="absolute top-10 left-10 bg-white/95 backdrop-blur-xl px-6 py-3 rounded-2xl text-[10px] font-black text-gray-900 shadow-sm uppercase tracking-[0.2em]">Latest Release</div>
+                                <div className="absolute top-10 left-10 bg-white/95 backdrop-blur-xl px-6 py-3 rounded-2xl text-[10px] font-black text-gray-900 shadow-sm uppercase tracking-[0.2em]">{t('home.press.section.latestRelease') || 'Latest Release'}</div>
                             </div>
 
-                            <div className="flex items-center gap-4 text-xs font-black tracking-widest text-gray-400 mb-6 uppercase">
+                            <div className="flex items-center gap-4 text-xs font-black tracking-widest text-gray-500 mb-6 uppercase">
                                 <span className="text-primary">{mainPress.pressName}</span>
                                 <span className="w-1.5 h-1.5 rounded-full bg-gray-200"></span>
                                 <span>{formatDate(mainPress.publishedAt)}</span>
                             </div>
 
                             <h3 className="text-4xl font-black text-gray-900 mb-6 group-hover:text-primary transition-colors leading-tight tracking-tight">{mainPress.title}</h3>
-                            <p className="text-gray-400 font-light leading-relaxed text-xl line-clamp-2">{mainPress.excerpt || mainPress.subtitle}</p>
+                            <p className="text-gray-500 font-light leading-relaxed text-xl line-clamp-2">{mainPress.excerpt || mainPress.subtitle}</p>
                         </Link>
                     </div>
 
@@ -103,31 +103,31 @@ export function PressSection() {
                                     <Link href={article.externalUrl || `/press/${article.slug}`} className="flex gap-6 w-full">
                                         <div className="w-32 h-24 rounded-3xl overflow-hidden flex-shrink-0 bg-gray-50 border border-gray-100">
                                             {article.thumbnailUrl ? (
-                                                <OptimizedImage 
-                                                    alt={article.title} 
+                                                <OptimizedImage
+                                                    alt={article.title}
                                                     title={article.title}
-                                                    className="group-hover:scale-110 transition-transform duration-500" 
-                                                    src={article.thumbnailUrl} 
-                                                    fill 
+                                                    className="group-hover:scale-110 transition-transform duration-500"
+                                                    src={article.thumbnailUrl}
+                                                    fill
                                                     sizes="128px"
-                                                    objectFit="cover" 
+                                                    objectFit="cover"
                                                 />
                                             ) : (
-                                                <OptimizedImage 
-                                                    alt={article.title} 
+                                                <OptimizedImage
+                                                    alt={article.title}
                                                     title={article.title}
-                                                    className="group-hover:scale-110 transition-transform duration-500" 
+                                                    className="group-hover:scale-110 transition-transform duration-500"
                                                     src={idx === 0 ? "/images/press/press-thumb-2.webp" : idx === 1 ? "/images/press/press-thumb-3.webp" : "/images/press/press-thumb-4.webp"}
-                                                    fill 
+                                                    fill
                                                     sizes="128px"
-                                                    objectFit="cover" 
+                                                    objectFit="cover"
                                                 />
                                             )}
                                         </div>
                                         <div className="flex flex-col justify-center">
                                             <span className="text-[10px] font-black text-accent uppercase tracking-widest mb-2">{article.pressName}</span>
                                             <h4 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-primary transition-colors leading-snug">{article.title}</h4>
-                                            <span className="text-[10px] text-gray-400 font-black tracking-widest">{formatDate(article.publishedAt)}</span>
+                                            <span className="text-[10px] text-gray-500 font-black tracking-widest">{formatDate(article.publishedAt)}</span>
                                         </div>
                                     </Link>
                                 </div>
@@ -135,8 +135,8 @@ export function PressSection() {
                         </div>
 
                         {/* Read More Button */}
-                        <button className="mt-16 w-full py-6 rounded-3xl border-2 border-gray-100 text-gray-900 font-black hover:bg-gray-50 hover:border-primary/20 transition-all flex items-center justify-center gap-3 uppercase text-xs tracking-[0.2em]">
-                            <Link href="/press">Read More News</Link> <span className="material-symbols-outlined select-none text-lg">arrow_outward</span>
+                        <button className="mt-16 w-full py-6 min-h-[48px] rounded-3xl border-2 border-gray-100 text-gray-900 font-black hover:bg-gray-50 hover:border-primary/20 transition-all flex items-center justify-center gap-3 uppercase text-xs tracking-[0.2em]">
+                            <Link href="/press">{t('home.press.section.readMore') || 'Read More News'}</Link> <span className="material-symbols-outlined select-none text-lg">arrow_outward</span>
                         </button>
                     </div>
                 </div>

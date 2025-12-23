@@ -55,22 +55,28 @@ export function ProblemSection() {
         image: index === 0 ? "bg-gray-200" : index === 1 ? "bg-gray-300" : "bg-gray-400",
     }))
 
+    const features = [
+        { key: 'safety', icon: 'warning', color: 'bg-red-500' },
+        { key: 'ergonomics', icon: 'accessibility_new', color: 'bg-blue-500' },
+        { key: 'psychology', icon: 'psychology_alt', color: 'bg-orange-500' },
+        { key: 'tech_gap', icon: 'wifi_off', color: 'bg-purple-500' },
+    ].map(item => ({
+        ...item,
+        title: t(`home.problems.features.${item.key}.title`),
+        description: t(`home.problems.features.${item.key}.description`),
+    }))
+
     return (
         <section className="py-16 md:py-24 bg-white">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="mb-12 md:mb-16 text-center">
-                    <span className="inline-block py-1.5 px-4 rounded-full bg-gray-100 text-gray-600 text-[10px] md:text-xs font-black tracking-[0.2em] uppercase mb-6 border border-gray-200/50">Our Mission</span>
-                    <h2 className="text-4xl md:text-6xl font-black text-gray-900 tracking-tight mb-6 leading-[1.15]">우리가 해결하고자 하는 <br />새로운 <span className="text-primary italic font-serif">표준</span></h2>
-                    <p className="text-lg md:text-xl text-gray-500 max-w-2xl leading-relaxed font-light mx-auto">단순한 도구를 넘어 시니어의 삶에 자부심을 더하는 프리미엄 솔루션을 제공합니다.</p>
+                    <span className="inline-block py-1.5 px-4 rounded-full bg-gray-100 text-gray-600 text-[10px] md:text-xs font-black tracking-[0.2em] uppercase mb-6 border border-gray-200/50">{t('home.problems.section.badge') || 'Our Mission'}</span>
+                    <h2 className="text-4xl md:text-6xl font-black text-gray-900 tracking-tight mb-6 leading-[1.15]">{t('home.problems.section.title') || '우리가 해결하고자 하는 새로운 표준'}</h2>
+                    <p className="text-lg md:text-xl text-gray-500 max-w-2xl leading-relaxed font-light mx-auto">{t('home.problems.section.subtitle') || '단순한 도구를 넘어 시니어의 삶에 자부심을 더하는 프리미엄 솔루션을 제공합니다.'}</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {[
-                        { icon: 'warning', title: '안전성 문제', description: '단순 보조기를 넘어 능동적인 제어로 낙상 위험을 획기적으로 줄입니다.', color: 'bg-red-500' },
-                        { icon: 'accessibility_new', title: '인체공학 설계', description: '사용자의 신체 구조를 고려한 설계로 장시간 사용에도 편안함을 제공합니다.', color: 'bg-blue-500' },
-                        { icon: 'psychology_alt', title: '심리적 만족감', description: '시니어의 자존감을 높여주는 세련된 디자인과 사용자 경험을 제공합니다.', color: 'bg-orange-500' },
-                        { icon: 'wifi_off', title: '기술 사각지대', description: '디지털 소외 계층도 쉽게 사용할 수 있는 직관적인 인터페이스를 연구합니다.', color: 'bg-purple-500' },
-                    ].map((card, idx) => (
+                    {features.map((card, idx) => (
                         <div key={idx} className="group relative overflow-hidden rounded-[2.5rem] bg-gray-50 p-10 transition-all duration-500 hover:bg-white hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.08)] hover:-translate-y-3">
                             <div className={cn("mb-8 flex size-16 items-center justify-center rounded-2xl", card.color, "bg-opacity-10 transition-all duration-500 group-hover:scale-110 group-hover:bg-opacity-100 group-hover:text-white")}>
                                 <span className={cn("material-symbols-outlined select-none text-3xl", card.color.replace('bg-', 'text-'), "group-hover:text-white")}>{card.icon}</span>

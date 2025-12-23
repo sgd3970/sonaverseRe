@@ -62,7 +62,7 @@ export default function StoryDetailClient({ params }: StoryDetailClientProps) {
                             요청하신 스토리가 존재하지 않거나 삭제되었습니다.
                         </p>
                         <Button asChild variant="outline">
-                            <Link href="/stories">{t('common.common.viewMore')}</Link>
+                            <Link href="/stories">{t('common.buttons.viewMore')}</Link>
                         </Button>
                     </div>
                 </article>

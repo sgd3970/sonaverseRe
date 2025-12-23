@@ -65,12 +65,12 @@ export function PressClient({ initialPressItems = [] }: PressClientProps) {
                 {/* 헤더 */}
                 <div className="mb-12">
                     <h1 className="text-4xl md:text-5xl font-black text-primary mb-4">
-                        {locale === "en" ? "Press Coverage" : "언론보도"}
+                        {t('press.title') || (locale === "en" ? "Press Coverage" : "언론보도")}
                     </h1>
                     <p className="text-xl text-gray-600">
-                        {locale === "en"
+                        {t('press.description') || (locale === "en"
                             ? "Latest news and press releases about Sonaverse."
-                            : "소나버스의 새로운 소식과 언론에 비친 우리의 모습을 전해드립니다."}
+                            : "소나버스의 새로운 소식과 언론에 비친 우리의 모습을 전해드립니다.")}
                     </p>
                 </div>
 
@@ -81,7 +81,7 @@ export function PressClient({ initialPressItems = [] }: PressClientProps) {
                     </div>
                     <input
                         type="text"
-                        placeholder={locale === "en" ? "Search for companies, press, or news" : "기사 제목 또는 언론사를 검색하세요"}
+                        placeholder={t('press.searchPlaceholder') || (locale === "en" ? "Search for companies, press, or news" : "기사 제목 또는 언론사를 검색하세요")}
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         className="w-full pl-12 pr-4 py-4 rounded-xl border-none bg-white shadow-sm ring-1 ring-gray-200 text-lg focus:ring-2 focus:ring-primary focus:outline-none transition-shadow"
@@ -108,7 +108,7 @@ export function PressClient({ initialPressItems = [] }: PressClientProps) {
                 {isError && (
                     <div className="text-center py-12">
                         <span className="material-symbols-outlined text-gray-400 text-6xl mb-4">error</span>
-                        <p className="text-gray-600">{t('common.common.error')}</p>
+                        <p className="text-gray-600">{t('common.messages.error')}</p>
                     </div>
                 )}
 
@@ -119,7 +119,7 @@ export function PressClient({ initialPressItems = [] }: PressClientProps) {
                             <div className="text-center py-20">
                                 <span className="material-symbols-outlined text-gray-300 text-6xl mb-4">newspaper</span>
                                 <p className="text-gray-500">
-                                    {searchQuery ? (locale === "en" ? "No results found" : "검색 결과가 없습니다") : (locale === "en" ? "No press coverage yet" : "언론보도가 없습니다")}
+                                    {searchQuery ? (t('press.noResults') || (locale === "en" ? "No results found" : "검색 결과가 없습니다")) : (t('press.noPress') || (locale === "en" ? "No press coverage yet" : "언론보도가 없습니다"))}
                                 </p>
                             </div>
                         ) : (
@@ -166,7 +166,7 @@ export function PressClient({ initialPressItems = [] }: PressClientProps) {
                                                 {item.excerpt}
                                             </p>
                                             <div className="mt-auto flex items-center text-sm font-bold text-gray-400 group-hover:text-primary transition-colors">
-                                                {locale === "en" ? "Read more" : "자세히 보기"}
+                                                {t('press.readMore') || (locale === "en" ? "Read more" : "자세히 보기")}
                                                 <span className="material-symbols-outlined select-none ml-1 text-base">
                                                     arrow_forward
                                                 </span>

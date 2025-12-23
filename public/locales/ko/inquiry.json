@@ -60,8 +60,8 @@
     "submitting": "전송 중..."
   },
   "success": {
-    "title": "문의가 접수되었습니다",
-    "message": "빠른 시일 내에 답변 드리겠습니다.",
+    "title": "문의가 성공적으로 접수되었습니다!",
+    "message": "빠른 시일 내에 담당자가 연락드리겠습니다.",
     "inquiryNumber": "문의 번호"
   },
   "error": {

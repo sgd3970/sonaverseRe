@@ -48,27 +48,27 @@ export function Footer() {
 
                     {/* Grid Layout for Perfect Alignment */}
                     <div className="grid grid-cols-1 sm:grid-cols-[150px_1fr] gap-x-4 gap-y-3 text-gray-600">
-                        <div className="font-bold text-gray-800">상호명</div>
-                        <div>{getText('common.footer.company.companyNameValue', '(주)소나버스')}</div>
+                        <div className="font-bold text-gray-800">{t('common.footer.companyName')}</div>
+                        <div>{t('common.footer.company.companyNameValue')}</div>
 
-                        <div className="font-bold text-gray-800">대표자명</div>
-                        <div>{getText('common.footer.company.ceoNameValue', '이수진')}</div>
+                        <div className="font-bold text-gray-800">{t('common.footer.ceoName')}</div>
+                        <div>{t('common.footer.company.ceoNameValue')}</div>
 
-                        <div className="font-bold text-gray-800">사업장 주소</div>
-                        <div>{getText('common.footer.company.addressValue', '(24232) 강원특별자치도 춘천시 후석로462번길 7 춘천ICT벤처센터 319호')}</div>
+                        <div className="font-bold text-gray-800">{t('common.footer.addressLabel')}</div>
+                        <div>{t('common.footer.company.addressValue')}</div>
 
-                        <div className="font-bold text-gray-800">대표 전화</div>
+                        <div className="font-bold text-gray-800">{t('common.footer.phoneLabel')}</div>
                         <div>
                             <a href="tel:010-5703-8899" className="hover:text-primary">
-                                {getText('common.footer.company.phoneValue', '010-5703-8899')}
+                                {t('common.footer.company.phoneValue')}
                             </a>
                         </div>
 
-                        <div className="font-bold text-gray-800">사업자등록번호</div>
-                        <div>{getText('common.footer.company.businessNumberValue', '697-87-02555')}</div>
+                        <div className="font-bold text-gray-800">{t('common.footer.businessNumber')}</div>
+                        <div>{t('common.footer.company.businessNumberValue')}</div>
 
-                        <div className="font-bold text-gray-800">통신판매업 신고 번호</div>
-                        <div>{getText('common.footer.company.salesNumberValue', '2023-강원춘천-0688')}</div>
+                        <div className="font-bold text-gray-800">{t('common.footer.salesNumber')}</div>
+                        <div>{t('common.footer.company.salesNumberValue')}</div>
                     </div>
 
                     <div className="flex flex-col gap-2 font-bold text-gray-700 pt-4">
@@ -76,10 +76,10 @@ export function Footer() {
                             onClick={() => setShowPrivacyModal(true)}
                             className="text-left hover:text-primary transition-colors"
                         >
-                            {getText('common.footer.support.privacy', '개인정보처리방침')}
+                            {t('common.footer.support.privacy')}
                         </button>
                         <Link href="/catalog" className="text-left hover:text-primary transition-colors">
-                            {getText('common.footer.support.catalog', '제품 카탈로그 다운로드')}
+                            {t('common.footer.support.catalog')}
                         </Link>
                     </div>
                 </div>
@@ -90,27 +90,27 @@ export function Footer() {
                     <ul className="space-y-4 text-gray-600 font-medium">
                         <li>
                             <Link href="/products/manbo" className="cursor-pointer hover:text-primary transition-colors">
-                                {getText('common.footer.links.manbo', '만보 보행기')}
+                                {t('common.footer.links.manbo')}
                             </Link>
                         </li>
                         <li>
                             <Link href="/products/bodume" className="cursor-pointer hover:text-primary transition-colors">
-                                {getText('common.footer.links.bodume', 'BO DUME 기저귀')}
+                                {t('common.footer.links.bodume')}
                             </Link>
                         </li>
                         <li>
                             <Link href="/stories" className="cursor-pointer hover:text-primary transition-colors">
-                                {getText('common.footer.links.stories', '소나버스 스토리')}
+                                {t('common.footer.links.stories')}
                             </Link>
                         </li>
                         <li>
                             <Link href="/press" className="cursor-pointer hover:text-primary transition-colors">
-                                {getText('common.footer.links.press', '언론보도')}
+                                {t('common.footer.links.press')}
                             </Link>
                         </li>
                         <li>
                             <Link href="/inquiry" className="cursor-pointer hover:text-primary transition-colors">
-                                {getText('common.footer.links.inquiry', '구매/제휴 문의')}
+                                {t('common.footer.links.inquiry')}
                             </Link>
                         </li>
                     </ul>
@@ -119,26 +119,26 @@ export function Footer() {
                 {/* Right Column: Customer Support & SNS */}
                 <div className="lg:col-span-3 space-y-10">
                     <div>
-                        <h4 className="font-black text-primary text-lg mb-6">고객지원</h4>
+                        <h4 className="font-black text-primary text-lg mb-6">{t('common.footer.customerCenter')}</h4>
                         <div className="space-y-6 text-gray-600">
                             <div>
-                                <p className="font-bold text-gray-800 mb-1">고객센터</p>
+                                <p className="font-bold text-gray-800 mb-1">{t('common.footer.customerCenter')}</p>
                                 <a href="tel:010-5703-8899" className="text-lg hover:text-primary">
-                                    {getText('common.footer.support.customerPhone', '010-5703-8899')}
+                                    {t('common.footer.support.customerPhone')}
                                 </a>
                             </div>
                             <div>
-                                <p className="font-bold text-gray-800 mb-1">이메일</p>
+                                <p className="font-bold text-gray-800 mb-1">{t('common.footer.email')}</p>
                                 <a href="mailto:shop@sonaverse.kr" className="hover:text-primary">
-                                    {getText('common.footer.support.emailValue', 'shop@sonaverse.kr')}
+                                    {t('common.footer.support.emailValue')}
                                 </a>
                             </div>
                             <div>
-                                <p className="font-bold text-gray-800 mb-1">운영시간</p>
+                                <p className="font-bold text-gray-800 mb-1">{t('common.footer.operatingHours')}</p>
                                 <p className="leading-relaxed">
-                                    {getText('common.footer.support.hoursValue', '평일 09:30 ~ 18:30')}
+                                    {t('common.footer.support.hoursValue')}
                                     <br />
-                                    {getText('common.footer.support.hoursNote', '(주말·공휴일 휴무)')}
+                                    {t('common.footer.support.hoursNote')}
                                 </p>
                             </div>
                         </div>
@@ -207,7 +207,7 @@ export function Footer() {
                         {/* 모달 헤더 */}
                         <div className="flex items-center justify-between p-6 border-b border-gray-200">
                             <h3 className="text-xl font-bold text-gray-900">
-                                개인정보처리방침
+                                {t('common.privacy.title')}
                             </h3>
                             <button
                                 onClick={() => setShowPrivacyModal(false)}

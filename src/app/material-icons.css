@@ -1,0 +1,36 @@
+/**
+ * Material Symbols Outlined - 아이콘 스타일 정의
+ * 
+ * 폰트는 layout.tsx의 head에서 직접 로드됩니다.
+ * 이 파일은 Material Symbols 아이콘의 스타일만 정의합니다.
+ * 
+ * 사용 중인 아이콘 목록:
+ * - Navigation: expand_more, arrow_back, arrow_forward, east, chevron_left, chevron_right, language, menu, close
+ * - Actions: add, check, search, undo, redo, edit, delete, save, visibility, visibility_off
+ * - Content: article, newspaper, image, photo_camera, add_photo_alternate, play_arrow
+ * - Communication: chat_bubble, mail, support_agent
+ * - File: format_list_bulleted, format_list_numbered, format_quote, horizontal_rule
+ * - Status: error, info, warning, done, pending
+ * - Accessibility: accessibility_new
+ * - Psychology: psychology_alt
+ * - Network: wifi_off
+ * - Other: home, shopping_cart, keyboard_arrow_down, arrow_outward
+ */
+
+/* 폰트 패밀리 정의 */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}

@@ -22,16 +22,16 @@ export function InquirySuccess({ result, onReset }: InquirySuccessProps) {
                 <span className="material-symbols-outlined text-3xl">check</span>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                {locale === 'en' ? 'Inquiry Submitted Successfully!' : '문의가 성공적으로 접수되었습니다!'}
+                {t('inquiry.success.title') || (locale === 'en' ? 'Inquiry Submitted Successfully!' : '문의가 성공적으로 접수되었습니다!')}
             </h3>
             <p className="text-gray-600 mb-2">
-                {locale === 'en' ? 'We will review your inquiry and get back to you soon.' : '빠른 시일 내에 담당자가 연락드리겠습니다.'}
+                {t('inquiry.success.message') || (locale === 'en' ? 'We will review your inquiry and get back to you soon.' : '빠른 시일 내에 담당자가 연락드리겠습니다.')}
             </p>
             <p className="text-sm text-gray-500 mb-8">
-                {locale === 'en' ? 'Inquiry Number' : '문의 번호'}: <span className="font-mono font-bold">{result.inquiryNumber}</span>
+                {t('inquiry.success.inquiryNumber') || (locale === 'en' ? 'Inquiry Number' : '문의 번호')}: <span className="font-mono font-bold">{result.inquiryNumber}</span>
             </p>
             <Button onClick={onReset} variant="outline">
-                {locale === 'en' ? 'New Inquiry' : '새로운 문의하기'}
+                {t('common.buttons.create') || (locale === 'en' ? 'New Inquiry' : '새로운 문의하기')}
             </Button>
         </div>
     )

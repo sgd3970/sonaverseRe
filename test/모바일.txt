@@ -1,87 +1,44 @@
 측정항목
 뷰 접기
 First Contentful Paint
-22.3 초
+20.7 초
 콘텐츠가 포함된 첫 페인트는 첫 번째 텍스트 또는 이미지가 표시되는 시간을 나타냅니다. 콘텐츠가 포함된 첫 페인트 측정항목에 관해 자세히 알아보기
 Largest Contentful Paint
-27.2 초
+22.7 초
 최대 콘텐츠 렌더링 시간은 최대 텍스트 또는 이미지가 표시되는 시간을 나타냅니다. 최대 콘텐츠 렌더링 시간 측정항목 자세히 알아보기
 Total Blocking Time
-0 밀리초
+40 밀리초
 FCP와 상호작용 시간 사이의 모든 시간의 합으로, 작업 지속 시간이 50ms를 넘으면 밀리초 단위로 표현됩니다. 총 차단 시간 측정항목에 관해 자세히 알아보기
 Cumulative Layout Shift
-0
+0.001
 레이아웃 변경 횟수는 표시 영역 안에 보이는 요소의 이동을 측정합니다. 레이아웃 변경 횟수 측정항목에 관해 자세히 알아보기
 Speed Index
-22.3 초
-Speed Index는 페이지 콘텐츠가 얼마나 빨리 표시되는지 보여줍니다. Speed Index 측정항목에 관해 자세히 알아보기
-
+20.7 초
+Speed Index는 페이지 콘텐츠가 얼마나 빨리 표시되는지 보여줍니다. Speed Index 측정항목에 관해 자세히 알아보기1
 인사이트
-렌더링 차단 요청 예상 절감 시간: 1,200밀리초
+렌더링 차단 요청 예상 절감 시간: 20,740밀리초
 요청으로 인해 페이지의 초기 렌더링이 차단되어 LCP가 지연될 수 있습니다. 지연 또는 인라인 처리하면 이러한 네트워크 요청이 주요 경로에서 벗어날 수 있습니다.LCPFCP점수에 포함되지 않음
 URL
 전송 크기
 시간
 trend-scanner.com 퍼스트 파티
-41.0 KiB	1,700ms
-…css/73510d220598e4e4.css(www.trend-scanner.com)
+41.4 KiB	1,500ms
+…css/303a20b8b90f6dc0.css(www.trend-scanner.com)
+24.4 KiB
+750ms
+…css/8ae6507df9d9fb13.css(www.trend-scanner.com)
 1.5 KiB
-170ms
-…css/90bc4d6c63fa628f.css(www.trend-scanner.com)
-24.1 KiB
-850ms
-…css/cbbcf1416de158a3.css(www.trend-scanner.com)
-15.4 KiB
-680ms
-글꼴 표시 예상 절감 시간: 70밀리초
+150ms
+…css/a77b07b90bee252f.css(www.trend-scanner.com)
+15.5 KiB
+600ms
+글꼴 표시 예상 절감 시간: 560밀리초
 font-display를 swap 또는 optional로 설정하여 텍스트가 일관되게 표시되도록 하세요. swap은 글꼴 측정항목 재정의를 통해 레이아웃 변화를 완화하도록 추가로 최적화할 수 있습니다.FCP점수에 포함되지 않음
 URL
 예상 절감 용량
-Google Fonts cdn 
-…v303/kJEhBvYX7….woff2(fonts.gstatic.com)
-70ms
-강제 실행된 리플로우
-DOM 상태 변경으로 인해 스타일이 무효화된 후 JavaScript가 기하학적 속성(예: offsetWidth)을 쿼리하면 강제 리플로우가 발생합니다. 이로 인해 성능이 저하될 수 있습니다. 강제 리플로우 및 가능한 완화 조치에 관해 자세히 알아보세요.점수에 포함되지 않음
-상위 함수 호출
-총 리플로우 시간
-…chunks/3794-92dd28a8d143ad5e.js:2:45762(www.trend-scanner.com)
-309ms
-소스
-총 리플로우 시간
-…chunks/commons-5e40a2b6368d2da0.js:20:594(www.trend-scanner.com)
-309ms
-LCP 요청 탐색
-HTML에서 LCP 이미지를 즉시 검색 가능하게 만들고 지연 로드를 방지하여 LCP를 최적화합니다.LCP점수에 포함되지 않음
-지연 로드가 적용되지 않음
-fetchpriority=high가 적용되어야 합니다.
-초기 문서에서 요청을 검색할 수 있습니다
-소나버스 로고
-<img alt="소나버스 로고" width="120" height="40" decoding="async" data-nimg="1" class="object-contain h-auto w-full" srcset="/_next/image?url=%2Flogo%2Fko_logo.png&amp;w=128&amp;q=75 1x, /_next/image?url=%2F…" src="/_next/image?url=%2Flogo%2Fko_logo.png&amp;w=256&amp;q=75" style="color: transparent;">
-네트워크 종속 항목 트리
-체인의 길이를 줄이고, 리소스의 다운로드 크기를 줄이거나 불필요한 리소스의 다운로드를 지연하여 페이지 로드 속도를 개선하는 방식으로 크리티컬 요청 체이닝을 방지합니다.LCP점수에 포함되지 않음
-최상 경로 최대 지연 시간: 1,196ms
-초기 탐색
-https://www.trend-scanner.com - 171ms, 14.78 KiB
-…css/73510d220598e4e4.css(www.trend-scanner.com) - 266ms, 1.47 KiB
-…css/90bc4d6c63fa628f.css(www.trend-scanner.com) - 256ms, 24.06 KiB
-…media/a823e5e1467f9eea-s.woff2(www.trend-scanner.com) - 1,196ms, 18.33 KiB
-…media/274ff7c6b42f2317-s.woff2(www.trend-scanner.com) - 910ms, 17.77 KiB
-…media/f83637dc978f29fa-s.woff2(www.trend-scanner.com) - 909ms, 17.67 KiB
-…media/8ff8298e80f4d6be-s.woff2(www.trend-scanner.com) - 876ms, 16.68 KiB
-…media/072179cf16506c56-s.woff2(www.trend-scanner.com) - 878ms, 16.67 KiB
-…media/a41b0c1cd75dab4a-s.woff2(www.trend-scanner.com) - 879ms, 16.45 KiB
-…media/9c66200ef5e648da-s.woff2(www.trend-scanner.com) - 877ms, 16.51 KiB
-…media/2bdfc672bc6f2f48-s.woff2(www.trend-scanner.com) - 879ms, 16.40 KiB
-…media/7371b5eb2b380826-s.woff2(www.trend-scanner.com) - 876ms, 14.70 KiB
-…media/55f6335489b0e791-s.woff2(www.trend-scanner.com) - 875ms, 14.97 KiB
-…media/6ed8e415052af782-s.woff2(www.trend-scanner.com) - 875ms, 17.25 KiB
-…css/cbbcf1416de158a3.css(www.trend-scanner.com) - 248ms, 15.42 KiB
-사전 연결된 출처
-사전 연결 힌트는 브라우저가 페이지 로드 초기에 연결을 설정하도록 지원하여 해당 출처에 대한 첫 번째 요청이 이루어질 때 시간을 절약합니다. 다음은 페이지가 사전 연결된 출처입니다.
-사전 연결된 출처가 없습니다.
-후보 사전 연결
-가장 중요한 출처에 사전 연결 힌트를 추가하되 4개 이하로 사용하세요.
-사전 연결에 적합한 추가 출처가 없습니다.
+trend-scanner.com 퍼스트 파티
+…media/material-symbols-outlined.0c8182a1.woff2(www.trend-scanner.com)
+560ms
 레거시 JavaScript 예상 절감 용량: 12KiB
 폴리필 및 변환을 통해 이전 브라우저에서 새로운 JavaScript 기능을 사용할 수 있습니다. 하지만 최신 브라우저에서는 대부분 필요하지 않습니다. 이전 브라우저를 지원해야 하는 경우가 아니라면 Baseline 기능을 트랜스파일하지 않도록 JavaScript 빌드 프로세스를 수정해 보세요. 대부분의 사이트에서 트랜스파일링 없이 ES6+ 코드를 배포할 수 있는 이유 알아보기LCPFCP점수에 포함되지 않음
 URL
@@ -104,13 +61,70 @@ Object.hasOwn
 String.prototype.trimEnd
 …chunks/3794-92dd28a8d143ad5e.js:2:22309(www.trend-scanner.com)
 String.prototype.trimStart
+강제 실행된 리플로우
+DOM 상태 변경으로 인해 스타일이 무효화된 후 JavaScript가 기하학적 속성(예: offsetWidth)을 쿼리하면 강제 리플로우가 발생합니다. 이로 인해 성능이 저하될 수 있습니다. 강제 리플로우 및 가능한 완화 조치에 관해 자세히 알아보세요.점수에 포함되지 않음
+상위 함수 호출
+총 리플로우 시간
+…chunks/3794-92dd28a8d143ad5e.js:2:45762(www.trend-scanner.com)
+44ms
+소스
+총 리플로우 시간
+…chunks/8092-9ab772e84afe680a.js:1:2946(www.trend-scanner.com)
+44ms
+LCP 분석
+각 하위 파트에는 해당 파트에 맞는 개선 전략이 있습니다. 이상적으로는 대부분의 LCP 시간이 지연이 아닌 리소스 로드에 소요되어야 합니다.LCP점수에 포함되지 않음
+하위 파트
+시간
+첫 바이트까지의 시간
+0ms
+요소 렌더링 지연
+2,740ms
+Sonaverse
+<h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-tight track…">
+네트워크 종속 항목 트리
+체인의 길이를 줄이고, 리소스의 다운로드 크기를 줄이거나 불필요한 리소스의 다운로드를 지연하여 페이지 로드 속도를 개선하는 방식으로 크리티컬 요청 체이닝을 방지합니다.LCP점수에 포함되지 않음
+최상 경로 최대 지연 시간: 2,684ms
+초기 탐색
+https://www.trend-scanner.com - 171ms, 15.29 KiB
+…css/8ae6507df9d9fb13.css(www.trend-scanner.com) - 712ms, 1.48 KiB
+…media/material-symbols-outlined.0c8182a1.woff2(www.trend-scanner.com) - 1,589ms, 3,739.99 KiB
+…css/303a20b8b90f6dc0.css(www.trend-scanner.com) - 748ms, 24.42 KiB
+…media/a823e5e1467f9eea-s.woff2(www.trend-scanner.com) - 2,684ms, 18.32 KiB
+…media/274ff7c6b42f2317-s.woff2(www.trend-scanner.com) - 2,128ms, 17.77 KiB
+…media/f83637dc978f29fa-s.woff2(www.trend-scanner.com) - 1,535ms, 17.67 KiB
+…media/8ff8298e80f4d6be-s.woff2(www.trend-scanner.com) - 1,456ms, 16.68 KiB
+…media/072179cf16506c56-s.woff2(www.trend-scanner.com) - 1,458ms, 16.66 KiB
+…media/a41b0c1cd75dab4a-s.woff2(www.trend-scanner.com) - 1,457ms, 16.45 KiB
+…media/9c66200ef5e648da-s.woff2(www.trend-scanner.com) - 1,457ms, 16.51 KiB
+…media/2bdfc672bc6f2f48-s.woff2(www.trend-scanner.com) - 1,458ms, 16.40 KiB
+…media/7371b5eb2b380826-s.woff2(www.trend-scanner.com) - 1,455ms, 14.70 KiB
+…media/55f6335489b0e791-s.woff2(www.trend-scanner.com) - 1,459ms, 14.97 KiB
+…media/6ed8e415052af782-s.woff2(www.trend-scanner.com) - 1,456ms, 17.25 KiB
+…css/a77b07b90bee252f.css(www.trend-scanner.com) - 493ms, 15.50 KiB
+사전 연결된 출처
+사전 연결 힌트는 브라우저가 페이지 로드 초기에 연결을 설정하도록 지원하여 해당 출처에 대한 첫 번째 요청이 이루어질 때 시간을 절약합니다. 다음은 페이지가 사전 연결된 출처입니다.
+사전 연결된 출처가 없습니다.
+후보 사전 연결
+가장 중요한 출처에 사전 연결 힌트를 추가하되 4개 이하로 사용하세요.
+사전 연결에 적합한 추가 출처가 없습니다.
+레이아웃 변경 원인
+레이아웃 변경은 사용자 상호작용 없이 요소가 이동할 때 발생합니다. 페이지가 로드될 때 요소가 추가되거나 삭제되거나 글꼴이 변경되는 등 레이아웃이 변경되는 이유를 조사하세요.CLS점수에 포함되지 않음
+요소
+레이아웃 변경 점수
+합계
+0.001
+keyboard_arrow_down
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/30">
+0.001
+…media/274ff7c6b42f2317-s.woff2(www.trend-scanner.com)
+웹 글꼴
 DOM 크기 최적화
 DOM이 크면 스타일 계산 및 레이아웃 리플로우 시간이 길어져 페이지 반응성에 영향을 미칠 수 있습니다. DOM이 크면 메모리 사용량도 늘어납니다. 과도한 DOM 크기를 방지하는 방법 알아보기점수에 포함되지 않음
 통계
 요소
 값
 총 요소 수
-346
+335
 DOM 깊이
 div.w-32 > div.relative > div.absolute > div.w-8
 <div class="w-8 h-8 border-2 border-gray-300 border-t-primary rounded-full animate-spin">
@@ -119,140 +133,77 @@ div.w-32 > div.relative > div.absolute > div.w-8
 body.antialiased
 <body class="antialiased font-sans">
 15
-LCP 분석
-각 하위 파트에는 해당 파트에 맞는 개선 전략이 있습니다. 이상적으로는 대부분의 LCP 시간이 지연이 아닌 리소스 로드에 소요되어야 합니다.LCP점수에 포함되지 않음
-하위 파트
-시간
-첫 바이트까지의 시간
-0ms
-리소스 로드 지연
-860ms
-리소스 로드 시간
-40ms
-요소 렌더링 지연
-1,400ms
-소나버스 로고
-<img alt="소나버스 로고" width="120" height="40" decoding="async" data-nimg="1" class="object-contain h-auto w-full" srcset="/_next/image?url=%2Flogo%2Fko_logo.png&amp;w=128&amp;q=75 1x, /_next/image?url=%2F…" src="/_next/image?url=%2Flogo%2Fko_logo.png&amp;w=256&amp;q=75" style="color: transparent;">
-서드 파티
-서드 파티 코드는 로드 성능에 크게 영향을 미칠 수 있습니다. 서드 파티 코드의 로드를 줄이고 연기하여 페이지 콘텐츠에 우선순위를 지정하세요.점수에 포함되지 않음
-서드 파티
-전송 크기
-기본 스레드 시간
-Google Fonts cdn 
-3,741 KiB	0ms
-…v303/kJEhBvYX7….woff2(fonts.gstatic.com)
-3,740 KiB
-0ms
-/css2?family=…(fonts.googleapis.com)
-1 KiB
-0ms
-unsplash.com
-661 KiB	0ms
-/photo-151…-bea591f05011?q=80&w=2070&auto=format&fit=crop(images.unsplash.com)
-661 KiB
-0ms
-picsum.photos
-238 KiB	0ms
-…800/600.jpg?hmac=HEH4tUUWf…(fastly.picsum.photos)
-116 KiB
-0ms
-…800/600.jpg?hmac=2EsmxyzSu…(fastly.picsum.photos)
-85 KiB
-0ms
-…800/600.jpg?hmac=KqYCJUcib…(fastly.picsum.photos)
-37 KiB
-0ms
-
-
+이러한 통계는 Chrome DevTools 성능 패널에서도 확인할 수 있습니다. 트레이스를 기록하여 자세한 정보를 확인하세요.
 진단
-사용하지 않는 자바스크립트 줄이기 예상 절감 용량: 156KiB
+사용하지 않는 자바스크립트 줄이기 예상 절감 용량: 44KiB
 사용되지 않는 자바스크립트를 줄이고 스크립트가 필요할 때까지 로딩을 지연시켜 네트워크 활동에 소비되는 용량을 줄이세요. 사용되지 않는 자바스크립트를 줄이는 방법 알아보기LCPFCP점수에 포함되지 않음
 URL
 전송 크기
 예상 절감 용량
 trend-scanner.com 퍼스트 파티
-246.7 KiB	156.2 KiB
-…chunks/commons-5e40a2b6368d2da0.js(www.trend-scanner.com)
-133.6 KiB
-111.6 KiB
-…chunks/7038bb93-072b37932a3cda7d.js(www.trend-scanner.com)
+113.1 KiB	44.1 KiB
+…chunks/4bd1b696-183c3d94a1e703cf.js(www.trend-scanner.com)
 62.2 KiB
-23.4 KiB
+23.3 KiB
 …chunks/3794-92dd28a8d143ad5e.js(www.trend-scanner.com)
 50.9 KiB
-21.1 KiB
-사용하지 않는 CSS 줄이기 예상 절감 용량: 23KiB
+20.8 KiB
+사용하지 않는 CSS 줄이기 예상 절감 용량: 24KiB
 스타일시트에서 사용되지 않는 규칙을 줄이고 스크롤 없이 볼 수 있는 콘텐츠의 경우 사용되지 않는 CSS의 로딩을 지연시켜 네트워크 활동에 소비되는 용량을 줄이세요. 사용되지 않는 CSS를 줄이는 방법 알아보기LCPFCP점수에 포함되지 않음
 URL
 전송 크기
 예상 절감 용량
 trend-scanner.com 퍼스트 파티
-23.4 KiB	23.4 KiB
-…css/90bc4d6c63fa628f.css(www.trend-scanner.com)
-23.4 KiB
-23.4 KiB
-네트워크 페이로드가 커지지 않도록 관리하기 총 크기: 5,274KiB
+23.7 KiB	23.7 KiB
+…css/303a20b8b90f6dc0.css(www.trend-scanner.com)
+23.7 KiB
+23.7 KiB
+네트워크 페이로드가 커지지 않도록 관리하기 총 크기: 4,448KiB
 네트워크 페이로드가 커지면 사용자에게 실제 비용 부담이 되며 로드 시간이 길어질 수 있습니다. 페이로드 크기를 줄이는 방법 알아보기점수에 포함되지 않음
 URL
 전송 크기
-Google Fonts cdn 
-3,740.3 KiB
-…v303/kJEhBvYX7….woff2(fonts.gstatic.com)
-3,740.3 KiB
-unsplash.com
-660.8 KiB
-/photo-151…-bea591f05011?q=80&w=2070&auto=format&fit=crop(images.unsplash.com)
-660.8 KiB
 trend-scanner.com 퍼스트 파티
-323.9 KiB
-…chunks/commons-5e40a2b6368d2da0.js(www.trend-scanner.com)
-135.2 KiB
-…chunks/7038bb93-072b37932a3cda7d.js(www.trend-scanner.com)
+4,126.3 KiB
+…media/material-symbols-outlined.0c8182a1.woff2(www.trend-scanner.com)
+3,740.0 KiB
+…chunks/4bd1b696-183c3d94a1e703cf.js(www.trend-scanner.com)
 62.9 KiB
+/_next/image?url=%2Fimages%2Fhero%2Fhome-hero.webp&w=750&q=85(www.trend-scanner.com)
+62.3 KiB
 …chunks/3794-92dd28a8d143ad5e.js(www.trend-scanner.com)
 51.6 KiB
 …media/e4af272ccee01ff0-s.p.woff2(www.trend-scanner.com)
 47.9 KiB
+/_next/image?url=…(www.trend-scanner.com)
+47.2 KiB
+/_next/image?url=…(www.trend-scanner.com)
+32.5 KiB
+/_next/image?url=…(www.trend-scanner.com)
+31.3 KiB
 …media/45cca0c1391027f2-s.p.woff2(www.trend-scanner.com)
 26.3 KiB
-picsum.photos
-238.1 KiB
-…800/600.jpg?hmac=HEH4tUUWf…(fastly.picsum.photos)
-116.1 KiB
-…800/600.jpg?hmac=2EsmxyzSu…(fastly.picsum.photos)
-85.0 KiB
-…800/600.jpg?hmac=KqYCJUcib…(fastly.picsum.photos)
-37.0 KiB
-긴 기본 스레드 작업 피하기 긴 작업 4개 발견
+…css/303a20b8b90f6dc0.css(www.trend-scanner.com)
+24.4 KiB
+긴 기본 스레드 작업 피하기 긴 작업 2개 발견
 기본 스레드의 가장 긴 작업을 열거합니다. 입력 지연을 가장 많이 유발하는 작업을 찾을 때 용이합니다. 긴 기본 스레드 작업을 방지하는 방법 알아보기TBT점수에 포함되지 않음
 URL
 시작 시간
 시간
 trend-scanner.com 퍼스트 파티
-388ms
-…chunks/3794-92dd28a8d143ad5e.js(www.trend-scanner.com)
-11,854ms
-198ms
-…chunks/3794-92dd28a8d143ad5e.js(www.trend-scanner.com)
-11,403ms
-82ms
-…chunks/7038bb93-072b37932a3cda7d.js(www.trend-scanner.com)
-12,304ms
-58ms
-…chunks/commons-5e40a2b6368d2da0.js(www.trend-scanner.com)
-10,503ms
-50ms
+195ms
+https://www.trend-scanner.com
+957ms
+104ms
+…chunks/main-app-bca6650224fd7982.js(www.trend-scanner.com)
+21,617ms
+91ms
 
 대비
 백그라운드 및 포그라운드 색상의 대비율이 충분하지 않습니다
 많은 사용자가 저대비 텍스트를 읽는 데 어려움을 겪거나 전혀 읽지 못합니다. 충분한 색상 대비를 제공하는 방법 알아보기
 통과하지 못한 요소
-INSIGHTS & HERITAGE
-<span class="text-primary/40 font-black tracking-[0.3em] text-[10px] md:text-xs upperca…">
-INSIGHTS & HERITAGE 소나버스 스토리 VIEW ALL STORIES east 제품스토리 소나버스, 시니어 통합 케어 플랫폼 '소…
-<section class="py-16 md:py-24 bg-white">
-VIEW ALL STORIES
-<a href="/stories">
+VIEW ALL STORIES east
+<a class="group flex items-center gap-4 text-gray-400 font-black hover:text-primary …" href="/stories">
 INSIGHTS & HERITAGE 소나버스 스토리 VIEW ALL STORIES east 제품스토리 소나버스, 시니어 통합 케어 플랫폼 '소…
 <section class="py-16 md:py-24 bg-white">
 2024.11.25
@@ -312,22 +263,6 @@ GLOBAL VOICE 미디어가 주목하는 소나버스 LATEST RELEASE STARTUP TODAY
 터치 영역의 크기 또는 간격이 충분하지 않습니다.
 터치 영역의 크기와 간격이 충분한 경우 타겟을 활성화하는 컨트롤의 크기가 작아 조작에 어려움을 겪는 사용자에게 도움이 됩니다. 터치 영역에 대해 자세히 알아보기
 통과하지 못한 요소
-제품 보러가기
-<button class="h-16 px-12 rounded-full bg-white text-gray-900 font-black hover:bg-gray-10…">
-제품 보러가기
-<a href="/products/manbo">
-제품 보러가기
-<a href="/products/manbo">
-제품 보러가기
-<button class="h-16 px-12 rounded-full bg-white text-gray-900 font-black hover:bg-gray-10…">
-브랜드 스토리
-<button class="h-16 px-12 rounded-full border border-white/30 bg-white/5 backdrop-blur-xl…">
-브랜드 스토리
-<a href="/stories">
-브랜드 스토리
-<a href="/stories">
-브랜드 스토리
-<button class="h-16 px-12 rounded-full border border-white/30 bg-white/5 backdrop-blur-xl…">
 VIEW DETAIL
 <button class="flex-1 py-5 rounded-2xl border-2 border-gray-100 text-gray-500 font-black …">
 VIEW DETAIL
@@ -344,12 +279,7 @@ INQUIRY NOW
 <a href="/inquiry">
 INQUIRY NOW
 <button class="flex-1 py-5 rounded-2xl bg-gradient-to-br from-manbo-green to-[#1d8e4a] te…">
-VIEW ALL STORIES
-<a href="/stories">
-VIEW ALL STORIES east
-<button class="group flex items-center gap-4 text-gray-400 font-black hover:text-primary …">
 READ MORE NEWS
 <a href="/press">
 READ MORE NEWS arrow_outward
 <button class="mt-16 w-full py-6 rounded-3xl border-2 border-gray-100 text-gray-900 font-…">
-

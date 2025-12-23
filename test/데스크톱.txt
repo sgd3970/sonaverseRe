@@ -1,61 +1,70 @@
 측정항목
 뷰 접기
 First Contentful Paint
-0.3 초
+0.4 초
 콘텐츠가 포함된 첫 페인트는 첫 번째 텍스트 또는 이미지가 표시되는 시간을 나타냅니다. 콘텐츠가 포함된 첫 페인트 측정항목에 관해 자세히 알아보기
 Largest Contentful Paint
-0.8 초
+3.8 초
 최대 콘텐츠 렌더링 시간은 최대 텍스트 또는 이미지가 표시되는 시간을 나타냅니다. 최대 콘텐츠 렌더링 시간 측정항목 자세히 알아보기
 Total Blocking Time
-10 밀리초
+20 밀리초
 FCP와 상호작용 시간 사이의 모든 시간의 합으로, 작업 지속 시간이 50ms를 넘으면 밀리초 단위로 표현됩니다. 총 차단 시간 측정항목에 관해 자세히 알아보기
 Cumulative Layout Shift
-0.001
+0.007
 레이아웃 변경 횟수는 표시 영역 안에 보이는 요소의 이동을 측정합니다. 레이아웃 변경 횟수 측정항목에 관해 자세히 알아보기
 Speed Index
-0.9 초
+1.1 초
 Speed Index는 페이지 콘텐츠가 얼마나 빨리 표시되는지 보여줍니다. Speed Index 측정항목에 관해 자세히 알아보기
+
 인사이트
-렌더링 차단 요청 예상 절감 시간: 60밀리초
+렌더링 차단 요청 예상 절감 시간: 40밀리초
 요청으로 인해 페이지의 초기 렌더링이 차단되어 LCP가 지연될 수 있습니다. 지연 또는 인라인 처리하면 이러한 네트워크 요청이 주요 경로에서 벗어날 수 있습니다.LCPFCP점수에 포함되지 않음
 URL
 전송 크기
 시간
 trend-scanner.com 퍼스트 파티
-41.2 KiB	320ms
+41.4 KiB	320ms
 …css/303a20b8b90f6dc0.css(www.trend-scanner.com)
 24.4 KiB
 160ms
-…css/b7ff13a98211c205.css(www.trend-scanner.com)
+…css/a77b07b90bee252f.css(www.trend-scanner.com)
 15.5 KiB
 160ms
-…css/041aafb0eaf4613c.css(www.trend-scanner.com)
-1.3 KiB
+…css/8ae6507df9d9fb13.css(www.trend-scanner.com)
+1.5 KiB
+글꼴 표시 예상 절감 시간: 290밀리초
+font-display를 swap 또는 optional로 설정하여 텍스트가 일관되게 표시되도록 하세요. swap은 글꼴 측정항목 재정의를 통해 레이아웃 변화를 완화하도록 추가로 최적화할 수 있습니다.FCP점수에 포함되지 않음
+URL
+예상 절감 용량
+trend-scanner.com 퍼스트 파티
+…media/material-symbols-outlined.0c8182a1.woff2(www.trend-scanner.com)
+290ms
 강제 실행된 리플로우
 DOM 상태 변경으로 인해 스타일이 무효화된 후 JavaScript가 기하학적 속성(예: offsetWidth)을 쿼리하면 강제 리플로우가 발생합니다. 이로 인해 성능이 저하될 수 있습니다. 강제 리플로우 및 가능한 완화 조치에 관해 자세히 알아보세요.점수에 포함되지 않음
 소스
 총 리플로우 시간
 [출처 불명]
-91ms
+60ms
 네트워크 종속 항목 트리
 체인의 길이를 줄이고, 리소스의 다운로드 크기를 줄이거나 불필요한 리소스의 다운로드를 지연하여 페이지 로드 속도를 개선하는 방식으로 크리티컬 요청 체이닝을 방지합니다.LCP점수에 포함되지 않음
-최상 경로 최대 지연 시간: 3,331ms
+최상 경로 최대 지연 시간: 1,810ms
 초기 탐색
-https://www.trend-scanner.com - 178ms, 15.28 KiB
-…css/041aafb0eaf4613c.css(www.trend-scanner.com) - 689ms, 1.26 KiB
-…css/303a20b8b90f6dc0.css(www.trend-scanner.com) - 771ms, 24.42 KiB
-…media/a823e5e1467f9eea-s.woff2(www.trend-scanner.com) - 3,331ms, 18.32 KiB
-…media/274ff7c6b42f2317-s.woff2(www.trend-scanner.com) - 1,170ms, 17.77 KiB
-…media/f83637dc978f29fa-s.woff2(www.trend-scanner.com) - 1,169ms, 17.67 KiB
-…media/8ff8298e80f4d6be-s.woff2(www.trend-scanner.com) - 1,106ms, 16.68 KiB
-…media/072179cf16506c56-s.woff2(www.trend-scanner.com) - 1,168ms, 16.66 KiB
-…media/a41b0c1cd75dab4a-s.woff2(www.trend-scanner.com) - 1,107ms, 16.45 KiB
-…media/9c66200ef5e648da-s.woff2(www.trend-scanner.com) - 1,168ms, 16.51 KiB
-…media/2bdfc672bc6f2f48-s.woff2(www.trend-scanner.com) - 1,169ms, 16.40 KiB
-…media/7371b5eb2b380826-s.woff2(www.trend-scanner.com) - 1,167ms, 14.70 KiB
-…media/55f6335489b0e791-s.woff2(www.trend-scanner.com) - 1,105ms, 14.97 KiB
-…media/6ed8e415052af782-s.woff2(www.trend-scanner.com) - 1,169ms, 17.25 KiB
-…css/b7ff13a98211c205.css(www.trend-scanner.com) - 766ms, 15.49 KiB
+https://www.trend-scanner.com - 131ms, 15.29 KiB
+…css/8ae6507df9d9fb13.css(www.trend-scanner.com) - 145ms, 1.48 KiB
+…media/material-symbols-outlined.0c8182a1.woff2(www.trend-scanner.com) - 806ms, 3,739.99 KiB
+…css/303a20b8b90f6dc0.css(www.trend-scanner.com) - 191ms, 24.42 KiB
+…media/a823e5e1467f9eea-s.woff2(www.trend-scanner.com) - 1,810ms, 18.32 KiB
+…media/274ff7c6b42f2317-s.woff2(www.trend-scanner.com) - 1,262ms, 17.77 KiB
+…media/f83637dc978f29fa-s.woff2(www.trend-scanner.com) - 654ms, 17.67 KiB
+…media/8ff8298e80f4d6be-s.woff2(www.trend-scanner.com) - 572ms, 16.68 KiB
+…media/072179cf16506c56-s.woff2(www.trend-scanner.com) - 573ms, 16.66 KiB
+…media/a41b0c1cd75dab4a-s.woff2(www.trend-scanner.com) - 572ms, 16.45 KiB
+…media/9c66200ef5e648da-s.woff2(www.trend-scanner.com) - 571ms, 16.51 KiB
+…media/2bdfc672bc6f2f48-s.woff2(www.trend-scanner.com) - 573ms, 16.40 KiB
+…media/7371b5eb2b380826-s.woff2(www.trend-scanner.com) - 570ms, 14.70 KiB
+…media/55f6335489b0e791-s.woff2(www.trend-scanner.com) - 574ms, 14.97 KiB
+…media/6ed8e415052af782-s.woff2(www.trend-scanner.com) - 570ms, 17.25 KiB
+…css/a77b07b90bee252f.css(www.trend-scanner.com) - 156ms, 15.50 KiB
 사전 연결된 출처
 사전 연결 힌트는 브라우저가 페이지 로드 초기에 연결을 설정하도록 지원하여 해당 출처에 대한 첫 번째 요청이 이루어질 때 시간을 절약합니다. 다음은 페이지가 사전 연결된 출처입니다.
 사전 연결된 출처가 없습니다.
@@ -89,11 +98,18 @@ String.prototype.trimStart
 요소
 레이아웃 변경 점수
 합계
-0.001
-제품 보러가기 브랜드 스토리
-<div class="flex flex-col sm:flex-row gap-5 mt-6">
+0.007
+홈 제품 expand_more 스토리 보도자료 문의하기
+<nav class="hidden md:flex items-center gap-8 lg:gap-10 h-full">
+0.007
+…media/material-symbols-outlined.0c8182a1.woff2(www.trend-scanner.com)
+웹 글꼴
+홈 제품 expand_more 스토리 보도자료 문의하기
+<nav class="hidden md:flex items-center gap-8 lg:gap-10 h-full">
 0.000
 …media/6ed8e415052af782-s.woff2(www.trend-scanner.com)
+웹 글꼴
+…media/55f6335489b0e791-s.woff2(www.trend-scanner.com)
 웹 글꼴
 …media/7371b5eb2b380826-s.woff2(www.trend-scanner.com)
 웹 글꼴
@@ -101,20 +117,11 @@ String.prototype.trimStart
 웹 글꼴
 …media/072179cf16506c56-s.woff2(www.trend-scanner.com)
 웹 글꼴
-…media/2bdfc672bc6f2f48-s.woff2(www.trend-scanner.com)
-웹 글꼴
-…media/f83637dc978f29fa-s.woff2(www.trend-scanner.com)
-웹 글꼴
-…media/274ff7c6b42f2317-s.woff2(www.trend-scanner.com)
-웹 글꼴
-홈 제품 expand_more 스토리 보도자료 문의하기
-<nav class="hidden md:flex items-center gap-8 lg:gap-10 h-full">
-0.000
-…media/55f6335489b0e791-s.woff2(www.trend-scanner.com)
-웹 글꼴
 …media/8ff8298e80f4d6be-s.woff2(www.trend-scanner.com)
 웹 글꼴
 …media/a41b0c1cd75dab4a-s.woff2(www.trend-scanner.com)
+웹 글꼴
+…media/2bdfc672bc6f2f48-s.woff2(www.trend-scanner.com)
 웹 글꼴
 DOM 크기 최적화
 DOM이 크면 스타일 계산 및 레이아웃 리플로우 시간이 길어져 페이지 반응성에 영향을 미칠 수 있습니다. DOM이 크면 메모리 사용량도 늘어납니다. 과도한 DOM 크기를 방지하는 방법 알아보기점수에 포함되지 않음
@@ -122,7 +129,7 @@ DOM이 크면 스타일 계산 및 레이아웃 리플로우 시간이 길어져
 요소
 값
 총 요소 수
-334
+331
 DOM 깊이
 div.w-32 > div.relative > div.absolute > div.w-8
 <div class="w-8 h-8 border-2 border-gray-300 border-t-primary rounded-full animate-spin">
@@ -138,26 +145,11 @@ LCP 분석
 첫 바이트까지의 시간
 0ms
 요소 렌더링 지연
-1,280ms
+790ms
 Sonaverse
 <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-tight track…">
+이러한 통계는 Chrome DevTools 성능 패널에서도 확인할 수 있습니다. 트레이스를 기록하여 자세한 정보를 확인하세요.
 진단
-사용하지 않는 자바스크립트 줄이기 예상 절감 용량: 78KiB
-사용되지 않는 자바스크립트를 줄이고 스크립트가 필요할 때까지 로딩을 지연시켜 네트워크 활동에 소비되는 용량을 줄이세요. 사용되지 않는 자바스크립트를 줄이는 방법 알아보기LCPFCP점수에 포함되지 않음
-URL
-전송 크기
-예상 절감 용량
-trend-scanner.com 퍼스트 파티
-150.6 KiB	77.7 KiB
-…chunks/3006-31f9be70300c5dc0.js(www.trend-scanner.com)
-37.5 KiB
-33.0 KiB
-…chunks/4bd1b696-183c3d94a1e703cf.js(www.trend-scanner.com)
-62.2 KiB
-23.6 KiB
-…chunks/3794-92dd28a8d143ad5e.js(www.trend-scanner.com)
-50.9 KiB
-21.1 KiB
 사용하지 않는 CSS 줄이기 예상 절감 용량: 24KiB
 스타일시트에서 사용되지 않는 규칙을 줄이고 스크롤 없이 볼 수 있는 콘텐츠의 경우 사용되지 않는 CSS의 로딩을 지연시켜 네트워크 활동에 소비되는 용량을 줄이세요. 사용되지 않는 CSS를 줄이는 방법 알아보기LCPFCP점수에 포함되지 않음
 URL
@@ -168,45 +160,77 @@ trend-scanner.com 퍼스트 파티
 …css/303a20b8b90f6dc0.css(www.trend-scanner.com)
 23.7 KiB
 23.7 KiB
-긴 기본 스레드 작업 피하기 긴 작업 3개 발견
+사용하지 않는 자바스크립트 줄이기 예상 절감 용량: 77KiB
+사용되지 않는 자바스크립트를 줄이고 스크립트가 필요할 때까지 로딩을 지연시켜 네트워크 활동에 소비되는 용량을 줄이세요. 사용되지 않는 자바스크립트를 줄이는 방법 알아보기LCPFCP점수에 포함되지 않음
+URL
+전송 크기
+예상 절감 용량
+trend-scanner.com 퍼스트 파티
+150.6 KiB	77.3 KiB
+…chunks/3006-31f9be70300c5dc0.js(www.trend-scanner.com)
+37.5 KiB
+33.0 KiB
+…chunks/4bd1b696-183c3d94a1e703cf.js(www.trend-scanner.com)
+62.2 KiB
+23.6 KiB
+…chunks/3794-92dd28a8d143ad5e.js(www.trend-scanner.com)
+50.9 KiB
+20.8 KiB
+네트워크 페이로드가 커지지 않도록 관리하기 총 크기: 4,693KiB
+네트워크 페이로드가 커지면 사용자에게 실제 비용 부담이 되며 로드 시간이 길어질 수 있습니다. 페이로드 크기를 줄이는 방법 알아보기점수에 포함되지 않음
+URL
+전송 크기
+trend-scanner.com 퍼스트 파티
+4,260.7 KiB
+…media/material-symbols-outlined.0c8182a1.woff2(www.trend-scanner.com)
+3,740.0 KiB
+/_next/image?url=%2Fimages%2Fhero%2Fhome-hero.webp&w=1920&q=85(www.trend-scanner.com)
+157.2 KiB
+…chunks/4bd1b696-183c3d94a1e703cf.js(www.trend-scanner.com)
+62.9 KiB
+…chunks/3794-92dd28a8d143ad5e.js(www.trend-scanner.com)
+51.6 KiB
+…media/e4af272ccee01ff0-s.p.woff2(www.trend-scanner.com)
+47.9 KiB
+/_next/image?url=…(www.trend-scanner.com)
+47.2 KiB
+/_next/image?url=…(www.trend-scanner.com)
+38.8 KiB
+/_next/image?url=…(www.trend-scanner.com)
+38.5 KiB
+/_next/image?url=…(www.trend-scanner.com)
+38.5 KiB
+…chunks/3006-31f9be70300c5dc0.js(www.trend-scanner.com)
+38.2 KiB
+긴 기본 스레드 작업 피하기 긴 작업 2개 발견
 기본 스레드의 가장 긴 작업을 열거합니다. 입력 지연을 가장 많이 유발하는 작업을 찾을 때 용이합니다. 긴 기본 스레드 작업을 방지하는 방법 알아보기TBT점수에 포함되지 않음
 URL
 시작 시간
 시간
 trend-scanner.com 퍼스트 파티
-223ms
+210ms
 https://www.trend-scanner.com
-264ms
+263ms
+114ms
+…chunks/main-app-bca6650224fd7982.js(www.trend-scanner.com)
+3,820ms
 96ms
-…chunks/webpack-4ce327291fa9ddf2.js(www.trend-scanner.com)
-995ms
-71ms
-…chunks/3794-92dd28a8d143ad5e.js(www.trend-scanner.com)
-841ms
-56ms
+
 대비
 백그라운드 및 포그라운드 색상의 대비율이 충분하지 않습니다
 많은 사용자가 저대비 텍스트를 읽는 데 어려움을 겪거나 전혀 읽지 못합니다. 충분한 색상 대비를 제공하는 방법 알아보기
 통과하지 못한 요소
-INSIGHTS & HERITAGE
-<span class="text-primary/60 font-black tracking-[0.3em] text-[10px] md:text-xs upperca…">
-INSIGHTS & HERITAGE 소나버스 스토리 VIEW ALL STORIES EAST 제품스토리 소나버스, 시니어 통합 케어 플랫폼 '소…
-<section class="py-16 md:py-24 bg-white">
-VIEW ALL STORIES
-<a href="/stories">
-INSIGHTS & HERITAGE 소나버스 스토리 VIEW ALL STORIES EAST 제품스토리 소나버스, 시니어 통합 케어 플랫폼 '소…
-<section class="py-16 md:py-24 bg-white">
-EAST
-<span class="material-symbols-outlined select-none transition-transform group-hover:tra…">
-INSIGHTS & HERITAGE 소나버스 스토리 VIEW ALL STORIES EAST 제품스토리 소나버스, 시니어 통합 케어 플랫폼 '소…
+VIEW ALL STORIES east
+<a class="group flex items-center gap-4 text-gray-400 font-black hover:text-primary …" href="/stories">
+INSIGHTS & HERITAGE 소나버스 스토리 VIEW ALL STORIES east 제품스토리 소나버스, 시니어 통합 케어 플랫폼 '소…
 <section class="py-16 md:py-24 bg-white">
 2024.11.25
 <span class="text-xs text-gray-400 font-black tracking-widest uppercase">
-INSIGHTS & HERITAGE 소나버스 스토리 VIEW ALL STORIES EAST 제품스토리 소나버스, 시니어 통합 케어 플랫폼 '소…
+INSIGHTS & HERITAGE 소나버스 스토리 VIEW ALL STORIES east 제품스토리 소나버스, 시니어 통합 케어 플랫폼 '소…
 <section class="py-16 md:py-24 bg-white">
 2024.11.10
 <span class="text-xs text-gray-400 font-black tracking-widest uppercase">
-INSIGHTS & HERITAGE 소나버스 스토리 VIEW ALL STORIES EAST 제품스토리 소나버스, 시니어 통합 케어 플랫폼 '소…
+INSIGHTS & HERITAGE 소나버스 스토리 VIEW ALL STORIES east 제품스토리 소나버스, 시니어 통합 케어 플랫폼 '소…
 <section class="py-16 md:py-24 bg-white">
 2022
 <span class="text-6xl md:text-8xl font-black text-gray-100 mb-6 block tabular-nums trac…">
@@ -257,22 +281,6 @@ GLOBAL VOICE 미디어가 주목하는 소나버스 LATEST RELEASE STARTUP TODAY
 터치 영역의 크기 또는 간격이 충분하지 않습니다.
 터치 영역의 크기와 간격이 충분한 경우 타겟을 활성화하는 컨트롤의 크기가 작아 조작에 어려움을 겪는 사용자에게 도움이 됩니다. 터치 영역에 대해 자세히 알아보기
 통과하지 못한 요소
-제품 보러가기
-<button class="h-16 px-12 rounded-full bg-white text-gray-900 font-black hover:bg-gray-10…">
-제품 보러가기
-<a href="/products/manbo">
-제품 보러가기
-<a href="/products/manbo">
-제품 보러가기
-<button class="h-16 px-12 rounded-full bg-white text-gray-900 font-black hover:bg-gray-10…">
-브랜드 스토리
-<button class="h-16 px-12 rounded-full border border-white/30 bg-white/5 backdrop-blur-xl…">
-브랜드 스토리
-<a href="/stories">
-브랜드 스토리
-<a href="/stories">
-브랜드 스토리
-<button class="h-16 px-12 rounded-full border border-white/30 bg-white/5 backdrop-blur-xl…">
 VIEW DETAIL
 <button class="flex-1 py-5 rounded-2xl border-2 border-gray-100 text-gray-500 font-black …">
 VIEW DETAIL
@@ -305,11 +313,7 @@ PURCHASE ONLINE
 <a href="/products/bodume">
 PURCHASE ONLINE
 <button class="flex-1 py-5 rounded-2xl bg-gradient-to-br from-bodeum-green to-[#469e66] t…">
-VIEW ALL STORIES
-<a href="/stories">
-VIEW ALL STORIES EAST
-<button class="group flex items-center gap-4 text-gray-400 font-black hover:text-primary …">
 READ MORE NEWS
 <a href="/press">
-READ MORE NEWS ARROW_OUTWARD
+READ MORE NEWS arrow_outward
 <button class="mt-16 w-full py-6 rounded-3xl border-2 border-gray-100 text-gray-900 font-…">

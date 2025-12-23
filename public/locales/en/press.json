@@ -1,6 +1,11 @@
 {
   "title": "Press Coverage",
   "subtitle": "Sonaverse's innovation is being recognized worldwide",
+  "description": "Latest news and press releases about Sonaverse.",
+  "searchPlaceholder": "Search for companies, press, or news",
+  "noResults": "No results found",
+  "noPress": "No press coverage yet",
+  "readMore": "Read more",
   "pressName": "Media Outlet",
   "publishedDate": "Published",
   "viewCount": "Views",
@@ -9,8 +14,7 @@
   "featured": "Featured News",
   "recent": "Recent News",
   "loadMore": "Load More",
-  "noPress": "No press coverage available",
-  "searchPlaceholder": "Search press...",
+  "searchPlaceholderOld": "Search press...",
   "filterByYear": "By Year",
   "filterByCategory": "By Category"
 }

@@ -8,17 +8,6 @@ import { Button } from "@/shared/components/ui/Button"
 import { Logo, FallbackLogo } from "@/shared/components/ui/Logo"
 import { useTranslation, useLocale, useSetLocale, type Locale } from "@/lib/i18n"
 
-// 기본 텍스트 (서버/클라이언트 동일하게 사용)
-const DEFAULT_TEXTS: Record<string, string> = {
-    "common.nav.home": "홈",
-    "common.nav.products": "제품소개",
-    "common.nav.manbo": "만보 보행기",
-    "common.nav.bodume": "BO DUME 기저귀",
-    "common.nav.stories": "소나버스 스토리",
-    "common.nav.press": "언론보도",
-    "common.nav.inquiry": "구매/제휴 문의",
-}
-
 // 제품 서브메뉴 (정적 정의)
 const PRODUCT_SUB_ITEMS = [
     { nameKey: "common.nav.manbo", href: "/products/manbo" },
@@ -72,30 +61,22 @@ export function Header() {
         }
     }, [isLangMenuOpen, isProductsMenuOpen])
 
-    // 네비게이션 텍스트 - 서버/클라이언트 동일한 기본값 사용
-    const getNavText = React.useCallback((key: string) => {
-        const fallback = DEFAULT_TEXTS[key] || key
-        if (isLoading) return fallback
-        const translated = t(key)
-        return (translated && translated !== key) ? translated : fallback
-    }, [t, isLoading])
-
     // 언어 전환 핸들러
     const handleLanguageChange = (newLocale: Locale) => {
         setLocale(newLocale)
         setIsLangMenuOpen(false)
     }
 
-    const languageLabel = locale === 'ko' ? '한국어' : 'English'
+    const languageLabel = locale === 'ko' ? t('common.language.korean') : t('common.language.english')
     const otherLanguage: Locale = locale === 'ko' ? 'en' : 'ko'
-    const otherLanguageLabel = locale === 'ko' ? 'English' : '한국어'
+    const otherLanguageLabel = locale === 'ko' ? t('common.language.english') : t('common.language.korean')
     const isProductsActive = pathname.startsWith('/products')
 
     return (
         <header
             className={cn(
                 "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-                isScrolled || isMobileMenuOpen ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100" : "bg-transparent"
+                isScrolled || isMobileMenuOpen ? "bg-white/98 backdrop-blur-md shadow-sm border-b border-gray-100" : "bg-white/20 backdrop-blur-sm"
             )}
         >
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
@@ -113,10 +94,10 @@ export function Header() {
                                             "text-lg font-bold flex items-center gap-1 transition-colors",
                                             isProductsActive
                                                 ? 'text-primary'
-                                                : 'text-gray-500 hover:text-primary'
+                                                : 'text-gray-700 hover:text-primary'
                                         )}
                                     >
-                                        {getNavText(item.nameKey)}
+                                        {t(item.nameKey)}
                                         <span className="material-symbols-outlined text-xl">expand_more</span>
                                     </button>
                                     {/* Dropdown */}
@@ -133,7 +114,7 @@ export function Header() {
                                                             : 'text-gray-600 hover:text-primary'
                                                     )}
                                                 >
-                                                    {getNavText(subItem.nameKey)}
+                                                    {t(subItem.nameKey)}
                                                 </Link>
                                             ))}
                                         </div>
@@ -146,10 +127,10 @@ export function Header() {
                                         "text-lg font-bold transition-colors",
                                         (item.href === "/" ? pathname === "/" : pathname.startsWith(item.href))
                                             ? 'text-primary'
-                                            : 'text-gray-500 hover:text-primary'
+                                            : 'text-gray-700 hover:text-primary'
                                     )}
                                 >
-                                    {getNavText(item.nameKey)}
+                                    {t(item.nameKey)}
                                 </Link>
                             )}
                         </div>
@@ -199,7 +180,7 @@ export function Header() {
                         <div key={item.href} className="w-full">
                             {item.hasDropdown ? (
                                 <div className="py-2">
-                                    <div className="text-lg font-bold text-gray-800 mb-2">{getNavText(item.nameKey)}</div>
+                                    <div className="text-lg font-bold text-gray-800 mb-2">{t(item.nameKey)}</div>
                                     <div className="pl-4 flex flex-col gap-2 border-l-2 border-gray-100">
                                         {PRODUCT_SUB_ITEMS.map((subItem) => (
                                             <Link
@@ -211,7 +192,7 @@ export function Header() {
                                                     pathname === subItem.href ? 'text-primary' : 'text-gray-500'
                                                 )}
                                             >
-                                                {getNavText(subItem.nameKey)}
+                                                {t(subItem.nameKey)}
                                             </Link>
                                         ))}
                                     </div>
@@ -222,10 +203,10 @@ export function Header() {
                                     onClick={() => setIsMobileMenuOpen(false)}
                                     className={cn(
                                         "text-left text-lg font-bold py-3 w-full border-b border-gray-50",
-                                        (item.href === "/" ? pathname === "/" : pathname.startsWith(item.href)) ? 'text-primary' : 'text-gray-600'
+                                        (item.href === "/" ? pathname === "/" : pathname.startsWith(item.href)) ? 'text-primary' : 'text-gray-700'
                                     )}
                                 >
-                                    {getNavText(item.nameKey)}
+                                    {t(item.nameKey)}
                                 </Link>
                             )}
                         </div>

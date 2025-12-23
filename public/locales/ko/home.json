@@ -3,6 +3,8 @@
     "title": "시니어의\n더 나은 일상을 위해",
     "subtitle": "불편을 겪는 사용자를 통해 발견한 혁신.",
     "description": "소나버스는 시니어의 자유로운 이동과 편안한 삶을 위한\n혁신적인 솔루션을 연구하고 개발합니다.",
+    "badge": "For a Better Daily Life",
+    "descriptionText": "시니어의 더 나은 일상을 위한 따뜻한 혁신을 만들어갑니다.",
     "cta": {
       "manbo": "Manbo Walker",
       "bodume": "BO DUME Diaper",
@@ -13,6 +15,11 @@
   "problems": {
     "title": "우리가 해결하고자 하는 문제들",
     "subtitle": "불편을 겪는 사용자를 통해 발견한 혁신, 명확한 브랜딩으로 시니어 생활 문제를 해결합니다.",
+    "section": {
+      "badge": "Our Mission",
+      "title": "우리가 해결하고자 하는 새로운 표준",
+      "subtitle": "단순한 도구를 넘어 시니어의 삶에 자부심을 더하는 프리미엄 솔루션을 제공합니다."
+    },
     "items": {
       "aging": {
         "title": "급격한 고령화,\n준비되지 않은 일상",
@@ -25,11 +32,47 @@
       "dignity": {
         "title": "존엄성을 해치는\n돌봄 경험",
         "description": "배설 케어와 같은 민감한 영역에서의 불편함은 시니어의 자존감을 낮추고 보호자의 부담을 가중시킵니다."
+      },
+      "features": {
+        "safety": {
+            "title": "안전성 문제",
+            "description": "단순 보조기를 넘어 능동적인 제어로 낙상 위험을 획기적으로 줄입니다."
+        },
+        "ergonomics": {
+            "title": "인체공학 설계",
+            "description": "사용자의 신체 구조를 고려한 설계로 장시간 사용에도 편안함을 제공합니다."
+        },
+        "psychology": {
+            "title": "심리적 만족감",
+            "description": "시니어의 자존감을 높여주는 세련된 디자인과 사용자 경험을 제공합니다."
+        },
+        "tech_gap": {
+            "title": "기술 사각지대",
+            "description": "디지털 소외 계층도 쉽게 사용할 수 있는 직관적인 인터페이스를 연구합니다."
+        }
       }
     }
   },
   "products": {
     "title": "우리의 해결책",
+    "section": {
+      "badge": "The Collection",
+      "title": "삶의 품격을 높이는 프리미엄 라인업",
+      "manbo": {
+        "badge": "Innovative Smart Walker",
+        "name": "만보 워크메이트",
+        "description": "자유로운 이동을 위한 테크놀로지의 집약",
+        "viewDetail": "상세 보기",
+        "inquiryNow": "문의하기"
+      },
+      "bodume": {
+        "badge": "Premium Care Diaper",
+        "name": "보듬 기저귀",
+        "description": "최상의 편안함과 위생을 향한 고집",
+        "explore": "자세히 보기",
+        "purchaseOnline": "온라인 구매"
+      }
+    },
     "manbo": {
       "badge": "Smart Walker",
       "name": "Manbo",
@@ -46,21 +89,58 @@
   "stories": {
     "title": "소나버스 스토리",
     "subtitle": "소나버스 제품의 개발 스토리부터 유용한 복지/건강 정보까지!",
+    "section": {
+      "badge": "Insights & Heritage",
+      "title": "소나버스 스토리",
+      "viewAll": "View All Stories",
+      "readFullStory": "Read Full Story"
+    },
     "categories": {
       "all": "전체",
       "productStory": "제품 스토리",
       "usage": "사용 후기",
       "healthInfo": "건강 정보",
-      "welfareInfo": "복지 정보"
-    }
+      "welfareInfo": "복지 정보",
+      "company_news": "회사 소식",
+      "product_story": "제품 스토리",
+      "interview": "인터뷰"
+    },
+    "featured": [
+        {
+            "title": "소나버스, 시니어 통합 케어 플랫폼 '소나버스' 런칭",
+            "excerpt": "시니어의 일상을 혁신하는 통합 케어 플랫폼 소나버스가 정식 런칭했습니다."
+        },
+        {
+            "title": "Manbo Walker 개발 비하인드 스토리",
+            "excerpt": "수백 번의 실패 끝에 탄생한 스마트 워커 Manbo의 개발 과정을 공개합니다."
+        },
+        {
+            "title": "사용자와 함께 만든 혁신, BO DUME 기저귀",
+            "excerpt": "실제 요양 현장의 목소리를 담아 만든 BO DUME 기저귀 개발 인터뷰."
+        }
+    ]
   },
   "press": {
     "title": "언론보도",
-    "subtitle": "소나버스의 혁신이 세상에 알려지고 있습니다"
+    "subtitle": "소나버스의 혁신이 세상에 알려지고 있습니다",
+    "section": {
+      "badge": "Global Voice",
+      "title": "미디어가 주목하는 소나버스",
+      "latestRelease": "Latest Release",
+      "readMore": "Read More News"
+    }
   },
   "history": {
     "title": "회사 연혁",
     "subtitle": "혁신을 향한 우리의 여정",
+    "section": {
+      "badge": "Heritage",
+      "title": "소나버스가 걸어온 신뢰의 발자취"
+    },
+    "buttons": {
+      "expand": "전체 연혁 보기",
+      "collapse": "접기"
+    },
     "vision": {
       "title": "계속되는 여정",
       "subtitle": "시니어 라이프 혁신을 위한 소나버스의 도전은 계속됩니다."

@@ -9,11 +9,11 @@ import { Story } from "@/lib/hooks/useStories"
 
 // 카테고리 정의
 const categories = [
-    { key: 'all', labelKo: '전체', labelEn: 'All' },
-    { key: '제품스토리', labelKo: '제품스토리', labelEn: 'Product Story' },
-    { key: '사용법', labelKo: '사용법', labelEn: 'How to Use' },
-    { key: '건강정보', labelKo: '건강정보', labelEn: 'Health Info' },
-    { key: '복지정보', labelKo: '복지정보', labelEn: 'Welfare Info' },
+    { key: 'all', translationKey: 'stories.categories.all' },
+    { key: '제품스토리', translationKey: 'stories.categories.제품스토리' },
+    { key: '사용법', translationKey: 'stories.categories.사용법' },
+    { key: '건강정보', translationKey: 'stories.categories.건강정보' },
+    { key: '복지정보', translationKey: 'stories.categories.복지정보' },
 ]
 
 interface StoriesClientProps {
@@ -81,14 +81,14 @@ export function StoriesClient({ initialStories = [] }: StoriesClientProps) {
                 {/* 헤더 */}
                 <div className="mb-12">
                     <h1 className="text-4xl md:text-5xl font-black text-primary mb-4">
-                        {locale === "en" ? "Sonaverse Story" : "소나버스 스토리"}
+                        {t('stories.title') || (locale === "en" ? "Sonaverse Story" : "소나버스 스토리")}
                     </h1>
                     <p className="text-xl text-gray-600">
-                        {locale === "en" ? (
+                        {t('stories.subtitle') || (locale === "en" ? (
                             <>Product development stories and useful <span className="text-accent font-bold underline decoration-2 decoration-accent/30 underline-offset-4">welfare/health information</span>!</>
                         ) : (
                             <>제품 개발 이야기부터 유용한 <span className="text-accent font-bold underline decoration-2 decoration-accent/30 underline-offset-4">복지/건강 정보</span>까지!</>
-                        )}
+                        ))}
                     </p>
                 </div>
 
@@ -104,7 +104,7 @@ export function StoriesClient({ initialStories = [] }: StoriesClientProps) {
                                     : "bg-white border-2 border-gray-100 text-gray-500 hover:border-accent hover:text-primary hover:bg-accent-light"
                                     }`}
                             >
-                                {locale === "en" ? cat.labelEn : cat.labelKo}
+                                {t(cat.translationKey) || (cat.key === 'all' ? (locale === "en" ? "All" : "전체") : cat.key)}
                             </button>
                         ))}
                     </div>
@@ -138,7 +138,7 @@ export function StoriesClient({ initialStories = [] }: StoriesClientProps) {
                 {isError && (
                     <div className="text-center py-12">
                         <span className="material-symbols-outlined text-gray-400 text-6xl mb-4">error</span>
-                        <p className="text-gray-600">{t('common.common.error')}</p>
+                        <p className="text-gray-600">{t('common.messages.error')}</p>
                     </div>
                 )}
 
@@ -149,7 +149,7 @@ export function StoriesClient({ initialStories = [] }: StoriesClientProps) {
                             <div className="text-center py-20">
                                 <span className="material-symbols-outlined text-gray-300 text-6xl mb-4">article</span>
                                 <p className="text-gray-500">
-                                    {locale === "en" ? "No stories yet" : "스토리가 없습니다"}
+                                    {t('stories.noStories') || (locale === "en" ? "No stories yet" : "스토리가 없습니다")}
                                 </p>
                             </div>
                         ) : (
@@ -242,7 +242,7 @@ export function StoriesClient({ initialStories = [] }: StoriesClientProps) {
                                             onClick={handleLoadMore}
                                             className="h-14 px-12 rounded-full border-2 border-gray-200 text-gray-600 font-bold hover:bg-gray-50 transition-colors"
                                         >
-                                            {locale === "en" ? "Load More" : "더 보기"}
+                                            {t('stories.loadMore') || (locale === "en" ? "Load More" : "더 보기")}
                                         </button>
                                     </div>
                                 )}

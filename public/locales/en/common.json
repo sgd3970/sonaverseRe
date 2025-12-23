@@ -3,28 +3,65 @@
     "home": "Home",
     "about": "About",
     "products": "Products",
-    "bodume": "Bodume",
-    "manbo": "Manbo",
-    "stories": "Stories",
+    "bodume": "BO DUME Diaper",
+    "manbo": "Manbo Walker",
+    "stories": "Sonaverse Story",
     "press": "Press",
-    "inquiry": "Contact"
+    "inquiry": "Inquiry"
   },
   "footer": {
-    "company": "Company",
+    "company": {
+      "companyNameValue": "Sonaverse Co., Ltd.",
+      "ceoNameValue": "Lee Soo-jin",
+      "addressValue": "319, Chuncheon ICT Venture Center, 7, Huseok-ro 462beon-gil, Chuncheon-si, Gangwon-do, 24232, Korea",
+      "phoneValue": "010-5703-8899",
+      "businessNumberValue": "697-87-02555",
+      "salesNumberValue": "2023-Gangwon-Chuncheon-0688"
+    },
+    "links": {
+      "manbo": "Manbo Walker",
+      "bodume": "BO DUME Diaper",
+      "stories": "Sonaverse Story",
+      "press": "Press",
+      "inquiry": "Inquiry"
+    },
+    "support": {
+      "privacy": "Privacy Policy",
+      "catalog": "Download Product Catalog",
+      "customerPhone": "010-5703-8899",
+      "emailValue": "shop@sonaverse.kr",
+      "hoursValue": "Weekdays 09:30 ~ 18:30",
+      "hoursNote": "(Closed on weekends and holidays)"
+    },
+    "social": {
+      "naver": "Naver",
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "kakaotalk": "KakaoTalk"
+    },
     "aboutUs": "About Us",
     "history": "History",
     "contact": "Contact",
-    "support": "Support",
     "faq": "FAQ",
     "termsOfService": "Terms of Service",
     "privacyPolicy": "Privacy Policy",
     "followUs": "Follow Us",
     "copyright": "© {{year}} Sonaverse. All rights reserved.",
     "address": "123 Teheran-ro, Gangnam-gu, Seoul, Korea",
-    "phone": "Phone",
-    "email": "Email"
-  },
-  "buttons": {
+          "phone": "Phone",
+          "email": "Email",
+          "companyName": "Company Name",
+          "ceoName": "CEO",
+          "addressLabel": "Business Address",
+          "phoneLabel": "Phone",
+          "businessNumber": "Business License",
+          "salesNumber": "Mail Order License",
+          "customerCenter": "Customer Support",
+          "operatingHours": "Operating Hours"
+        },
+        "privacy": {
+            "title": "Privacy Policy"
+        },  "buttons": {
     "submit": "Submit",
     "cancel": "Cancel",
     "save": "Save",
@@ -61,5 +98,10 @@
     "minLength": "Please enter at least {{min}} characters",
     "maxLength": "Please enter no more than {{max}} characters",
     "invalidFormat": "Invalid format"
+  },
+  "language": {
+    "korean": "한국어",
+    "english": "English",
+    "select": "Select Language"
   }
 }

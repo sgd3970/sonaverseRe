@@ -31,16 +31,16 @@ interface HeroButtonProps {
 function HeroButton({ href, variant, color = "manbo-green", children }: HeroButtonProps) {
     if (variant === 'primary') {
         return (
-            <button className={`h-14 md:h-16 px-8 md:px-12 rounded-full bg-gradient-to-br from-${color} to-[#1d8e4a] text-white text-xs md:text-sm font-black shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-500 uppercase tracking-widest`}>
-                <Link href={href}>{children}</Link>
-            </button>
+            <Link href={href} className="h-14 md:h-16 px-8 md:px-12 rounded-full bg-gradient-to-br from-manbo-green to-[#1d7a3f] text-white text-xs md:text-sm font-black shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-500 uppercase tracking-widest flex items-center justify-center">
+                {children}
+            </Link>
         )
     }
 
     return (
-        <button className={`h-14 md:h-16 px-8 md:px-12 rounded-full bg-white text-gray-500 text-xs md:text-sm font-black border-2 border-gray-100 hover:border-${color} hover:text-${color} transition-all duration-300 uppercase tracking-widest`}>
-            <Link href={href}>{children}</Link>
-        </button>
+        <Link href={href} className={`h-14 md:h-16 px-8 md:px-12 rounded-full bg-white text-gray-500 text-xs md:text-sm font-black border-2 border-gray-100 hover:border-${color} hover:text-${color} transition-all duration-300 uppercase tracking-widest flex items-center justify-center`}>
+            {children}
+        </Link>
     )
 }
 

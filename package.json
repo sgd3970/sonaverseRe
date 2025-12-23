@@ -6,7 +6,7 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS=--max-old-space-size=3072 --expose-gc next dev --webpack",
+    "dev": "cross-env NODE_OPTIONS=--max-old-space-size=3072 next dev --webpack",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 next build --webpack",
     "start": "next start",
     "lint": "eslint",

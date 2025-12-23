@@ -19,7 +19,7 @@ export function InquiryForm() {
     const [showPrivacyModal, setShowPrivacyModal] = React.useState(false)
     const [attachedFiles, setAttachedFiles] = React.useState<File[]>([])
 
-    const inquirySchema = React.useMemo(() => getInquirySchema(locale), [locale])
+    const inquirySchema = React.useMemo(() => getInquirySchema(locale, t), [locale, t])
 
     const {
         register,
@@ -88,7 +88,7 @@ export function InquiryForm() {
             {/* Inquiry Type */}
             <div className="space-y-3">
                 <label className="text-sm font-bold text-gray-800 block">
-                    {locale === 'en' ? 'Inquiry Type' : '문의 유형'}
+                    {t('inquiry.form.inquiryType.label') || (locale === 'en' ? 'Inquiry Type' : '문의 유형')}
                 </label>
                 <div className="flex flex-wrap gap-3">
                     {inquiryTypes.map((type) => (
@@ -100,7 +100,7 @@ export function InquiryForm() {
                                 {...register("inquiryType")}
                             />
                             <div className="h-10 px-5 flex items-center rounded-xl bg-gray-50 border border-gray-200 text-gray-600 font-medium peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-all">
-                                {locale === 'en' ? type.labelEn : type.labelKo}
+                                {t(`inquiry.form.inquiryType.options.${type.key}`) || (locale === 'en' ? type.labelEn : type.labelKo)}
                             </div>
                         </label>
                     ))}
@@ -110,7 +110,7 @@ export function InquiryForm() {
             {/* Name */}
             <div className="space-y-2">
                 <label htmlFor="name" className="text-sm font-bold text-gray-800">
-                    {locale === 'en' ? 'Name *' : '성함 *'}
+                    {t('inquiry.form.name.label') || (locale === 'en' ? 'Name *' : '성함 *')}
                 </label>
                 <input
                     id="name"
@@ -118,7 +118,7 @@ export function InquiryForm() {
                         "w-full h-12 rounded-xl border px-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary",
                         errors.name ? "border-red-500" : "border-gray-200"
                     )}
-                    placeholder={locale === 'en' ? 'John Doe' : '홍길동'}
+                    placeholder={t('inquiry.form.name.placeholder') || (locale === 'en' ? 'John Doe' : '홍길동')}
                     {...register("name")}
                 />
                 {errors.name && <p className="text-sm text-red-500">{errors.name.message}</p>}
@@ -127,11 +127,11 @@ export function InquiryForm() {
             {/* Position */}
             <div className="space-y-2">
                 <label className="text-sm font-bold text-gray-800">
-                    {locale === 'en' ? 'Position' : '직급'}
+                    {t('inquiry.form.position.label') || (locale === 'en' ? 'Position' : '직급')}
                 </label>
                 <input
                     className="w-full h-12 rounded-xl border border-gray-200 px-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-                    placeholder={locale === 'en' ? 'Manager' : '과장'}
+                    placeholder={t('inquiry.form.position.placeholder') || (locale === 'en' ? 'Manager' : '과장')}
                     {...register("position")}
                 />
             </div>
@@ -139,11 +139,11 @@ export function InquiryForm() {
             {/* Company */}
             <div className="space-y-2">
                 <label className="text-sm font-bold text-gray-800">
-                    {locale === 'en' ? 'Company' : '회사명'}
+                    {t('inquiry.form.companyName.label') || (locale === 'en' ? 'Company' : '회사명')}
                 </label>
                 <input
                     className="w-full h-12 rounded-xl border border-gray-200 px-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-                    placeholder={locale === 'en' ? 'Company Name' : '회사명'}
+                    placeholder={t('inquiry.form.companyName.placeholder') || (locale === 'en' ? 'Company Name' : '회사명')}
                     {...register("company")}
                 />
             </div>
@@ -151,7 +151,7 @@ export function InquiryForm() {
             {/* Phone */}
             <div className="space-y-2">
                 <label htmlFor="phoneNumber" className="text-sm font-bold text-gray-800">
-                    {locale === 'en' ? 'Phone *' : '연락처 *'}
+                    {t('inquiry.form.phoneNumber.label') || (locale === 'en' ? 'Phone *' : '연락처 *')}
                 </label>
                 <input
                     id="phoneNumber"
@@ -159,7 +159,7 @@ export function InquiryForm() {
                         "w-full h-12 rounded-xl border px-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary",
                         errors.phoneNumber ? "border-red-500" : "border-gray-200"
                     )}
-                    placeholder="010-0000-0000"
+                    placeholder={t('inquiry.form.phoneNumber.placeholder') || "010-0000-0000"}
                     {...register("phoneNumber")}
                 />
                 {errors.phoneNumber && <p className="text-sm text-red-500">{errors.phoneNumber.message}</p>}
@@ -168,7 +168,7 @@ export function InquiryForm() {
             {/* Email */}
             <div className="space-y-2">
                 <label htmlFor="email" className="text-sm font-bold text-gray-800">
-                    {locale === 'en' ? 'Email *' : '이메일 *'}
+                    {t('inquiry.form.email.label') || (locale === 'en' ? 'Email *' : '이메일 *')}
                 </label>
                 <input
                     id="email"
@@ -177,7 +177,7 @@ export function InquiryForm() {
                         "w-full h-12 rounded-xl border px-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary",
                         errors.email ? "border-red-500" : "border-gray-200"
                     )}
-                    placeholder="example@email.com"
+                    placeholder={t('inquiry.form.email.placeholder') || "example@email.com"}
                     {...register("email")}
                 />
                 {errors.email && <p className="text-sm text-red-500">{errors.email.message}</p>}
@@ -186,14 +186,14 @@ export function InquiryForm() {
             {/* Message */}
             <div className="space-y-2">
                 <label className="text-sm font-bold text-gray-800">
-                    {locale === 'en' ? 'Message *' : '문의 내용 *'}
+                    {t('inquiry.form.message.label') || (locale === 'en' ? 'Message *' : '문의 내용 *')}
                 </label>
                 <textarea
                     className={cn(
                         "w-full h-40 rounded-xl border p-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary resize-none",
                         errors.message ? "border-red-500" : "border-gray-200"
                     )}
-                    placeholder={locale === 'en' ? 'Please describe your inquiry in detail.' : '문의하실 내용을 입력해 주세요.'}
+                    placeholder={t('inquiry.form.message.placeholder') || (locale === 'en' ? 'Please describe your inquiry in detail.' : '문의하실 내용을 입력해 주세요.')}
                     {...register("message")}
                 />
                 {errors.message && <p className="text-sm text-red-500">{errors.message.message}</p>}
@@ -214,14 +214,14 @@ export function InquiryForm() {
                 <div className="text-sm text-gray-700 leading-snug">
                     <div>
                         <span className="font-bold text-primary">[필수]</span>{" "}
-                        {locale === 'en' ? 'I agree to the collection and use of personal information.' : '개인정보 수집 및 이용에 동의합니다.'}
+                        {t('inquiry.form.privacy.description') || (locale === 'en' ? 'I agree to the collection and use of personal information.' : '개인정보 수집 및 이용에 동의합니다.')}
                     </div>
                     <button
                         type="button"
                         onClick={() => setShowPrivacyModal(true)}
                         className="mt-1 text-xs text-gray-400 underline hover:text-primary transition-colors"
                     >
-                        {locale === 'en' ? 'View Details' : '내용 보기'}
+                        {t('common.buttons.learnMore') || (locale === 'en' ? 'View Details' : '내용 보기')}
                     </button>
                 </div>
             </div>
@@ -243,10 +243,10 @@ export function InquiryForm() {
                 {isSubmitting ? (
                     <span className="flex items-center gap-2 justify-center">
                         <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                        {locale === 'en' ? 'Submitting...' : '제출 중...'}
+                        {t('inquiry.form.submitting') || (locale === 'en' ? 'Submitting...' : '제출 중...')}
                     </span>
                 ) : (
-                    locale === 'en' ? 'Submit Inquiry' : '문의하기'
+                    t('inquiry.form.submit') || (locale === 'en' ? 'Submit Inquiry' : '문의하기')
                 )}
             </button>
         </form>

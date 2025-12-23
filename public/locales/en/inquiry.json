@@ -60,8 +60,8 @@
     "submitting": "Submitting..."
   },
   "success": {
-    "title": "Inquiry Submitted",
-    "message": "We will respond as soon as possible.",
+    "title": "Inquiry Submitted Successfully!",
+    "message": "We will review your inquiry and get back to you soon.",
     "inquiryNumber": "Inquiry Number"
   },
   "error": {
