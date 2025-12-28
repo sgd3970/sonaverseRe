@@ -203,7 +203,7 @@ export function InquiryForm() {
             <FileUpload files={attachedFiles} onFilesChange={setAttachedFiles} />
 
             {/* Privacy Consent */}
-            <div className="p-4 rounded-xl bg-accent/5 border border-accent/20 flex items-start gap-3">
+            <div className="p-4 rounded-xl bg-primary-light border border-primary/20 flex items-start gap-3">
                 <input
                     type="checkbox"
                     id="agree"

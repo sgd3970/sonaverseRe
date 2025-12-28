@@ -12,11 +12,11 @@
   --color-primary-foreground: #ffffff;
 
   /* ============================================
-     ACCENT COLORS (액센트)
+     ACCENT COLORS (액센트) - primary 색상으로 통일
      ============================================ */
-  --color-accent: #BDA191;
-  --color-accent-light: #F2EBE8;
-  --color-accent-dark: #8c6b5d;
+  --color-accent: #1C4376;
+  --color-accent-light: color-mix(in srgb, #1C4376 10%, transparent);
+  --color-accent-dark: #15325b;
 
   /* ============================================
      BACKGROUND COLORS (배경)

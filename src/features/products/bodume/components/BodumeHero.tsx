@@ -12,7 +12,7 @@ interface HeroBadgeProps {
 
 function HeroBadge({ text, color = "bodeum-green" }: HeroBadgeProps) {
     return (
-        <span className="text-[#5eba7d] font-bold text-base md:text-lg mb-2 md:mb-3 block tracking-widest uppercase">
+        <span className="text-primary font-bold text-base md:text-lg mb-2 md:mb-3 block tracking-widest uppercase">
             {text}
         </span>
     )
@@ -28,7 +28,7 @@ interface StatItemProps {
 function StatItem({ value, label, showBorder = false, color = "bodeum-green" }: StatItemProps) {
     return (
         <div className={`text-center ${showBorder ? 'border-l border-gray-100 px-2 md:pl-8' : ''}`}>
-            <p className="text-2xl md:text-4xl font-black text-[#5eba7d] mb-1">{value}</p>
+            <p className="text-2xl md:text-4xl font-black text-primary mb-1">{value}</p>
             <p className="text-[10px] md:text-sm text-gray-400 font-bold uppercase tracking-wider">{label}</p>
         </div>
     )
@@ -45,7 +45,7 @@ function FloatingCard({ icon, title, subtitle, color = "bodeum-green" }: Floatin
     return (
         <div className="absolute bottom-4 right-4 md:bottom-10 md:right-10 bg-white/95 backdrop-blur-md p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-lg border border-white/50 animate-bounce-slow">
             <div className="flex items-center gap-2 mb-1">
-                <span className="material-symbols-outlined select-none text-sm md:text-base text-[#5eba7d]">{icon}</span>
+                <span className="material-symbols-outlined select-none text-sm md:text-base text-primary">{icon}</span>
                 <span className="font-bold text-gray-800 text-sm md:text-lg">{title}</span>
             </div>
             <p className="text-[10px] md:text-sm text-gray-500 font-medium">{subtitle}</p>
@@ -111,8 +111,8 @@ export function BodumeHero({ product, heroImage }: BodumeHeroProps) {
 
     return (
         <section className="pt-32 pb-16 md:pt-40 md:pb-32 bg-white relative overflow-hidden">
-            {/* Background design - right half with soft green */}
-            <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full bg-[#f8fcf9] -z-10 lg:rounded-l-[5rem]" />
+            {/* Background design - right half with soft blue */}
+            <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full bg-primary-light -z-10 lg:rounded-l-[5rem]" />
 
             <div className="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row gap-10 lg:gap-16 items-center">
                 {/* Left Image Side */}

@@ -30,55 +30,57 @@ export function Footer() {
 
     if (isLoading) {
         return (
-            <footer className="bg-white border-t border-gray-200 py-12">
+            <footer className="bg-primary border-t border-primary-dark py-12">
                 <div className="container-custom">
-                    <div className="animate-pulse h-60 bg-gray-100 rounded" />
+                    <div className="animate-pulse h-60 bg-primary-dark/50 rounded" />
                 </div>
             </footer>
         )
     }
 
     return (
-        <footer className="bg-bg-beige py-16 border-t border-gray-200 text-sm">
+        <footer className="bg-primary py-16 border-t border-primary-dark text-sm">
             <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
                 {/* Left Column: Company Info */}
                 <div className="lg:col-span-7 flex flex-col space-y-8">
                     {/* Logo */}
-                    <Logo type="full" size="md" linkToHome={false} />
+                    <div className="brightness-0 invert">
+                        <Logo type="full" size="md" linkToHome={false} />
+                    </div>
 
                     {/* Grid Layout for Perfect Alignment */}
-                    <div className="grid grid-cols-1 sm:grid-cols-[150px_1fr] gap-x-4 gap-y-3 text-gray-600">
-                        <div className="font-bold text-gray-800">{t('common.footer.companyName')}</div>
-                        <div>{t('common.footer.company.companyNameValue')}</div>
+                    <div className="grid grid-cols-1 sm:grid-cols-[150px_1fr] gap-x-4 gap-y-3 text-white/80">
+                        <div className="font-bold text-white">{t('common.footer.companyName')}</div>
+                        <div className="text-white/90">{t('common.footer.company.companyNameValue')}</div>
 
-                        <div className="font-bold text-gray-800">{t('common.footer.ceoName')}</div>
-                        <div>{t('common.footer.company.ceoNameValue')}</div>
+                        <div className="font-bold text-white">{t('common.footer.ceoName')}</div>
+                        <div className="text-white/90">{t('common.footer.company.ceoNameValue')}</div>
 
-                        <div className="font-bold text-gray-800">{t('common.footer.addressLabel')}</div>
-                        <div>{t('common.footer.company.addressValue')}</div>
+                        <div className="font-bold text-white">{t('common.footer.addressLabel')}</div>
+                        <div className="text-white/90">{t('common.footer.company.addressValue')}</div>
 
-                        <div className="font-bold text-gray-800">{t('common.footer.phoneLabel')}</div>
+                        <div className="font-bold text-white">{t('common.footer.phoneLabel')}</div>
                         <div>
-                            <a href="tel:010-5703-8899" className="hover:text-primary">
+                            <a href="tel:010-5703-8899" className="text-white/90 hover:text-white transition-colors">
                                 {t('common.footer.company.phoneValue')}
                             </a>
                         </div>
 
-                        <div className="font-bold text-gray-800">{t('common.footer.businessNumber')}</div>
-                        <div>{t('common.footer.company.businessNumberValue')}</div>
+                        <div className="font-bold text-white">{t('common.footer.businessNumber')}</div>
+                        <div className="text-white/90">{t('common.footer.company.businessNumberValue')}</div>
 
-                        <div className="font-bold text-gray-800">{t('common.footer.salesNumber')}</div>
-                        <div>{t('common.footer.company.salesNumberValue')}</div>
+                        <div className="font-bold text-white">{t('common.footer.salesNumber')}</div>
+                        <div className="text-white/90">{t('common.footer.company.salesNumberValue')}</div>
                     </div>
 
-                    <div className="flex flex-col gap-2 font-bold text-gray-700 pt-4">
+                    <div className="flex flex-col gap-2 font-bold text-white/90 pt-4">
                         <button
                             onClick={() => setShowPrivacyModal(true)}
-                            className="text-left hover:text-primary transition-colors"
+                            className="text-left hover:text-white transition-colors"
                         >
                             {t('common.footer.support.privacy')}
                         </button>
-                        <Link href="/catalog" className="text-left hover:text-primary transition-colors">
+                        <Link href="/catalog" className="text-left hover:text-white transition-colors">
                             {t('common.footer.support.catalog')}
                         </Link>
                     </div>
@@ -86,30 +88,30 @@ export function Footer() {
 
                 {/* Middle Column: Sonaverse Links */}
                 <div className="lg:col-span-2">
-                    <h4 className="font-black text-primary text-lg mb-6 uppercase tracking-tight">SONAVERSE</h4>
-                    <ul className="space-y-4 text-gray-600 font-medium">
+                    <h4 className="font-black text-white text-lg mb-6 uppercase tracking-tight">SONAVERSE</h4>
+                    <ul className="space-y-4 text-white/80 font-medium">
                         <li>
-                            <Link href="/products/manbo" className="cursor-pointer hover:text-primary transition-colors">
+                            <Link href="/products/manbo" className="cursor-pointer hover:text-white transition-colors">
                                 {t('common.footer.links.manbo')}
                             </Link>
                         </li>
                         <li>
-                            <Link href="/products/bodume" className="cursor-pointer hover:text-primary transition-colors">
+                            <Link href="/products/bodume" className="cursor-pointer hover:text-white transition-colors">
                                 {t('common.footer.links.bodume')}
                             </Link>
                         </li>
                         <li>
-                            <Link href="/stories" className="cursor-pointer hover:text-primary transition-colors">
+                            <Link href="/stories" className="cursor-pointer hover:text-white transition-colors">
                                 {t('common.footer.links.stories')}
                             </Link>
                         </li>
                         <li>
-                            <Link href="/press" className="cursor-pointer hover:text-primary transition-colors">
+                            <Link href="/press" className="cursor-pointer hover:text-white transition-colors">
                                 {t('common.footer.links.press')}
                             </Link>
                         </li>
                         <li>
-                            <Link href="/inquiry" className="cursor-pointer hover:text-primary transition-colors">
+                            <Link href="/inquiry" className="cursor-pointer hover:text-white transition-colors">
                                 {t('common.footer.links.inquiry')}
                             </Link>
                         </li>
@@ -119,23 +121,23 @@ export function Footer() {
                 {/* Right Column: Customer Support & SNS */}
                 <div className="lg:col-span-3 space-y-10">
                     <div>
-                        <h4 className="font-black text-primary text-lg mb-6">{t('common.footer.customerCenter')}</h4>
-                        <div className="space-y-6 text-gray-600">
+                        <h4 className="font-black text-white text-lg mb-6">{t('common.footer.customerCenter')}</h4>
+                        <div className="space-y-6 text-white/80">
                             <div>
-                                <p className="font-bold text-gray-800 mb-1">{t('common.footer.customerCenter')}</p>
-                                <a href="tel:010-5703-8899" className="text-lg hover:text-primary">
+                                <p className="font-bold text-white mb-1">{t('common.footer.customerCenter')}</p>
+                                <a href="tel:010-5703-8899" className="text-lg text-white/90 hover:text-white transition-colors">
                                     {t('common.footer.support.customerPhone')}
                                 </a>
                             </div>
                             <div>
-                                <p className="font-bold text-gray-800 mb-1">{t('common.footer.email')}</p>
-                                <a href="mailto:shop@sonaverse.kr" className="hover:text-primary">
+                                <p className="font-bold text-white mb-1">{t('common.footer.email')}</p>
+                                <a href="mailto:shop@sonaverse.kr" className="text-white/90 hover:text-white transition-colors">
                                     {t('common.footer.support.emailValue')}
                                 </a>
                             </div>
                             <div>
-                                <p className="font-bold text-gray-800 mb-1">{t('common.footer.operatingHours')}</p>
-                                <p className="leading-relaxed">
+                                <p className="font-bold text-white mb-1">{t('common.footer.operatingHours')}</p>
+                                <p className="leading-relaxed text-white/90">
                                     {t('common.footer.support.hoursValue')}
                                     <br />
                                     {t('common.footer.support.hoursNote')}
@@ -145,7 +147,7 @@ export function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="font-black text-primary text-lg mb-4">SNS</h4>
+                        <h4 className="font-black text-white text-lg mb-4">SNS</h4>
                         <div className="flex gap-3">
                             {/* Naver */}
                             <a

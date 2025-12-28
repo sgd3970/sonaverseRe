@@ -1,27 +1,27 @@
 "use client"
 
 import * as React from "react"
-import { cn } from "@/lib/utils"
 import { useTranslation, useLocale } from "@/lib/i18n"
 
-// Common Section Title Component
-const SectionHeader = ({ badge, title }: { badge: string, title: React.ReactNode }) => (
-    <div className="mb-16 md:mb-20 text-center">
-        <span className="inline-block py-1 px-3 rounded-full bg-gray-100 text-gray-500 text-xs font-bold tracking-widest uppercase mb-4 border border-gray-200">
-            {badge}
-        </span>
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 tracking-tight mb-4 leading-tight">
-            {title}
-        </h2>
-    </div>
-)
+interface HistoryEvent {
+    id: string
+    year: number
+    title: string
+    subtitle: string
+    items: string[]
+    badgeColor?: string
+    textColor?: string
+}
 
 export function CompanyHistory() {
     const { t, isLoading: isTranslationLoading } = useTranslation()
     const locale = useLocale()
-    const [historyItems, setHistoryItems] = React.useState<any[]>([])
+    const [historyItems, setHistoryItems] = React.useState<HistoryEvent[]>([])
     const [isDataLoading, setIsDataLoading] = React.useState(true)
-    const [isExpanded, setIsExpanded] = React.useState(false)
+    const [activeHistoryIndex, setActiveHistoryIndex] = React.useState(0)
+    const [isTransitioning, setIsTransitioning] = React.useState(false)
+    const [autoPlay, setAutoPlay] = React.useState(true)
+    const yearNavRef = React.useRef<HTMLDivElement>(null)
 
     React.useEffect(() => {
         const fetchHistory = async () => {
@@ -29,7 +29,21 @@ export function CompanyHistory() {
                 const res = await fetch(`/api/history?locale=${locale}`)
                 const data = await res.json()
                 if (data.success) {
-                    setHistoryItems(data.data)
+                    // API 응답을 HistoryEvent 형식으로 변환
+                    const formattedItems: HistoryEvent[] = data.data.map((item: any) => ({
+                        id: item.id,
+                        year: item.year,
+                        title: item.title,
+                        subtitle: item.subtitle || '',
+                        items: item.items?.map((it: { text: string; order: number }) => it.text) || [],
+                        badgeColor: item.badgeColor || '#0b3877', // hex 코드로 저장됨
+                        textColor: item.textColor,
+                    }))
+                    setHistoryItems(formattedItems)
+                    // 초기 인덱스를 마지막에서 두 번째로 설정 (또는 마지막이 있다면 마지막)
+                    if (formattedItems.length > 0) {
+                        setActiveHistoryIndex(Math.max(0, formattedItems.length - 2))
+                    }
                 }
             } catch (error) {
                 console.error("Failed to fetch history:", error)
@@ -40,27 +54,53 @@ export function CompanyHistory() {
         fetchHistory()
     }, [locale])
 
-    // Sort items by year ascending (2022 -> 2026 -> 9999)
-    const sortedItems = React.useMemo(() => {
-        return [...historyItems].sort((a, b) => a.year - b.year)
-    }, [historyItems])
+    // 부드러운 페이드-크로스 전환 함수
+    const handleYearChange = React.useCallback((index: number) => {
+        if (index < 0 || index >= historyItems.length) return
+        setIsTransitioning(true)
+        setTimeout(() => {
+            setActiveHistoryIndex(index)
+            setIsTransitioning(false)
+        }, 400)
+    }, [historyItems.length])
 
-    const visionItem = sortedItems.find(item => item.year === 9999) || {
-        year: 9999,
-        title: t('home.history.vision.title') || "계속되는 여정",
-        subtitle: t('home.history.vision.subtitle') || "시니어 라이프 혁신을 위한 소나버스의 도전은 계속됩니다."
-    }
-    const timelineItems = sortedItems.filter(item => item.year !== 9999)
+    // 사용자가 직접 클릭 시 자동 재생 멈춤
+    const handleManualSelect = React.useCallback((index: number) => {
+        setAutoPlay(false)
+        handleYearChange(index)
+    }, [handleYearChange])
 
-    // Show first 3 items or all if expanded
-    const visibleTimelineItems = isExpanded ? timelineItems : timelineItems.slice(0, 3)
+    // 자동 재생 시퀀스 (5초 간격)
+    React.useEffect(() => {
+        let interval: number
+        if (autoPlay && historyItems.length > 0) {
+            interval = window.setInterval(() => {
+                const nextIndex = (activeHistoryIndex + 1) % historyItems.length
+                handleYearChange(nextIndex)
+            }, 5000)
+        }
+        return () => {
+            if (interval) clearInterval(interval)
+        }
+    }, [activeHistoryIndex, autoPlay, historyItems.length, handleYearChange])
 
-    if (isTranslationLoading || isDataLoading) {
+    // 모바일/태블릿 가로 스크롤 동기화
+    React.useEffect(() => {
+        if (yearNavRef.current && historyItems.length > 0) {
+            const activeEl = yearNavRef.current.children[activeHistoryIndex] as HTMLElement
+            if (activeEl) {
+                const scrollLeft = activeEl.offsetLeft - (yearNavRef.current.offsetWidth / 2) + (activeEl.offsetWidth / 2)
+                yearNavRef.current.scrollTo({ left: scrollLeft, behavior: 'smooth' })
+            }
+        }
+    }, [activeHistoryIndex, historyItems.length])
+
+    if (isTranslationLoading || isDataLoading || historyItems.length === 0) {
         return (
             <section className="py-20 lg:py-28 bg-white">
-                <div className="container-custom">
-                    <div className="h-10 bg-gray-200 rounded w-1/4 mx-auto mb-16 animate-pulse" />
-                    <div className="max-w-4xl mx-auto space-y-12">
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className="h-10 bg-gray-200 rounded w-1/4 mb-16 animate-pulse" />
+                    <div className="max-w-4xl space-y-12">
                         {[1, 2, 3].map((i) => (
                             <div key={i} className="flex flex-col md:flex-row items-center gap-8 animate-pulse">
                                 <div className="w-full md:w-1/2 h-8 bg-gray-200 rounded" />
@@ -76,78 +116,125 @@ export function CompanyHistory() {
         )
     }
 
+    const currentEvent = historyItems[activeHistoryIndex]
+
     return (
-        <section className="py-16 md:py-24 bg-[#fdfcfb] border-y border-gray-100 relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none select-none text-[20vw] font-black text-gray-800 flex items-center justify-center whitespace-nowrap">HISTORY HISTORY HISTORY</div>
-            <div className="max-w-7xl mx-auto px-6 relative z-10">
-                <div className="mb-12 md:mb-16 text-center">
-                    <span className="inline-block py-1.5 px-4 rounded-full bg-gray-100 text-gray-600 text-[10px] md:text-xs font-black tracking-[0.2em] uppercase mb-6 border border-gray-200/50">{t('home.history.section.badge') || 'Heritage'}</span>
-                    <h2 className="text-4xl md:text-6xl font-black text-gray-900 tracking-tight mb-6 leading-[1.15]">{t('home.history.section.title') || '소나버스가 걸어온 신뢰의 발자취'}</h2>
+        <section id="history" className="py-8 md:py-12 lg:py-16 bg-white overflow-hidden">
+            <div className="max-w-7xl mx-auto px-6">
+                {/* 섹션 헤더 */}
+                <div className="mb-6 md:mb-8 lg:mb-10 text-left">
+                    <span className="inline-block py-1.5 px-4 rounded-full bg-primary/5 text-primary text-xs font-black tracking-[0.3em] uppercase mb-3 border border-primary/10">
+                        {t('home.history.section.badge') || 'Heritage'}
+                    </span>
+                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tighter leading-tight">
+                        {t('home.history.section.title') || '소나버스가 걸어온 성장의 기록'}
+                    </h2>
                 </div>
 
-                <div className="relative mt-24">
-                    <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-[2px] bg-gradient-to-b from-primary/5 via-primary/20 to-primary/5"></div>
+                {/* [PC & TABLET] 가로 배열 레이아웃 (md 이상) */}
+                <div className="hidden md:flex gap-6 lg:gap-12 xl:gap-20 items-stretch h-[calc(100vh-240px)] min-h-[450px] max-h-[600px]">
+                    
+                    {/* 좌측: 연도별 버튼 리스트 (5개 기준 높이, 스크롤 가능) */}
+                    <div className="w-1/3 flex flex-col gap-1.5 lg:gap-2 overflow-y-auto no-scrollbar min-h-0" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                        {historyItems.map((event, index) => (
+                            <button
+                                key={event.id}
+                                onClick={() => handleManualSelect(index)}
+                                className={`group relative flex items-center gap-3 lg:gap-4 px-4 lg:px-6 py-2 lg:py-3 rounded-[1.5rem] lg:rounded-[2rem] border transition-all duration-500 text-left shrink-0 ${
+                                    activeHistoryIndex === index ? 'border-transparent bg-gray-50 shadow-inner' : 'border-gray-50 bg-white hover:bg-gray-50/50'
+                                }`}
+                            >
+                                {/* 플로팅 캡슐 인디케이터: 버튼 내부에 떠 있는 유기적인 막대 */}
+                                <div className={`absolute left-2.5 lg:left-4 top-1/2 -translate-y-1/2 w-1.5 h-6 lg:h-8 rounded-full transition-all duration-700 ${
+                                    activeHistoryIndex === index ? 'opacity-100 scale-y-100 shadow-md' : 'opacity-0 scale-y-50'
+                                }`}
+                                style={{ backgroundColor: event.badgeColor || '#0b3877' }}
+                                ></div>
 
-                    <div className="space-y-24 md:space-y-40">
-                        {visibleTimelineItems.map((event, index) => (
-                            <div key={event.id} className={cn(
-                                "flex flex-col md:flex-row items-start md:items-center justify-between gap-12 relative pl-10 md:pl-0",
-                                index % 2 === 0 ? 'md:flex-row-reverse' : ''
-                            )}>
-                                <div className={cn(
-                                    "w-full md:w-[42%]",
-                                    index % 2 === 0 ? 'md:text-left' : 'md:text-right'
-                                )}>
-                                    <span className="text-6xl md:text-8xl font-black text-gray-100 mb-6 block tabular-nums tracking-tighter transition-colors hover:text-primary/10">{event.year}</span>
-                                    <h3 className="text-2xl md:text-3xl font-black text-gray-900 mb-4">{event.title}</h3>
-                                    <p className="text-gray-500 leading-relaxed font-light text-lg">{event.subtitle}</p>
+                                <div className={`flex flex-col transition-all duration-500 ${activeHistoryIndex === index ? 'translate-x-1.5 lg:translate-x-2' : 'translate-x-0'}`}>
+                                    <span className={`text-2xl lg:text-3xl font-black tracking-tighter transition-colors leading-tight ${
+                                        activeHistoryIndex === index ? 'text-gray-900' : 'text-gray-500'
+                                    }`}>
+                                        {event.year}
+                                    </span>
+                                    <div className={`text-xs lg:text-sm font-bold mt-0 leading-tight ${activeHistoryIndex === index ? 'text-gray-800' : 'text-gray-500'}`}>
+                                        {event.title}
+                                    </div>
                                 </div>
-
-                                <div className="absolute left-[-6px] md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full ring-8 ring-white shadow-xl z-10 top-2 md:top-1/2 md:-mt-2"></div>
-
-                                <div className="w-full md:w-[42%] hidden md:block"></div>
-                            </div>
+                            </button>
                         ))}
                     </div>
 
-                    {/* Vision Item (Year 9999) - Only visible when expanded */}
-                    {isExpanded && visionItem && (
-                        <div className="relative mt-24 mb-32">
-                            <div className="relative max-w-3xl mx-auto text-center px-6">
-                                {/* Infinity Bubble */}
-                                <div className="absolute left-1/2 -top-12 transform -translate-x-1/2 z-20">
-                                    <div className="w-24 h-24 rounded-full bg-[#5D5C61] border-[6px] border-white flex items-center justify-center shadow-xl">
-                                        <span className="text-4xl text-white font-bold pb-1">∞</span>
+                    {/* 우측: 상세 내용 카드 (페이드 전환) */}
+                    <div className={`flex-1 bg-gray-50 rounded-[3rem] lg:rounded-[4rem] p-6 lg:p-10 xl:p-12 relative overflow-hidden flex flex-col justify-center border border-gray-100 shadow-xl transition-all duration-500 ${
+                        isTransitioning ? 'opacity-0 translate-y-6' : 'opacity-100 translate-y-0'
+                    }`}>
+                        <div className="space-y-4 lg:space-y-6">
+                            <div className="w-20 lg:w-24 h-2 lg:h-2.5 rounded-full opacity-80" style={{ backgroundColor: currentEvent.badgeColor || '#0b3877' }}></div>
+                            <h3 className="text-2xl lg:text-3xl xl:text-4xl font-black text-gray-900 leading-tight">{currentEvent.title}</h3>
+                            <p className="text-base lg:text-lg xl:text-xl text-gray-500 font-light max-w-xl leading-relaxed">{currentEvent.subtitle}</p>
+                            
+                            <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-8 lg:gap-x-10 gap-y-3 lg:gap-y-4 pt-1 lg:pt-2">
+                                {currentEvent.items?.map((item, i) => (
+                                    <div key={i} className="flex items-start gap-3 lg:gap-4">
+                                        <span className="material-symbols-outlined text-xl lg:text-2xl shrink-0" style={{ color: currentEvent.badgeColor || '#0b3877' }}>
+                                            verified
+                                        </span>
+                                        <span className="text-base lg:text-lg font-bold text-gray-700">{item}</span>
                                     </div>
-                                </div>
-
-                                {/* Card */}
-                                <div className="bg-gradient-to-br from-[#B1A296] to-[#8E7F70] rounded-[3rem] p-12 pt-20 shadow-2xl text-white relative z-10 overflow-hidden group hover:scale-[1.02] transition-transform duration-500">
-                                    {/* Decorative Circles */}
-                                    <div className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
-                                    <div className="absolute bottom-0 right-0 w-64 h-64 bg-black/10 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl"></div>
-
-                                    <h3 className="text-3xl md:text-4xl font-bold mb-6 relative z-10 tracking-tight">{visionItem.title}</h3>
-                                    <p className="text-lg md:text-xl text-white/90 font-medium relative z-10 leading-relaxed max-w-2xl mx-auto">{visionItem.subtitle}</p>
-                                </div>
+                                ))}
                             </div>
                         </div>
-                    )}
+                    </div>
+                </div>
 
-                    {/* Toggle Button - Placed at the bottom */}
-                    {timelineItems.length > 3 && (
-                        <div className="text-center mb-32 relative z-20">
-                            <button
-                                onClick={() => setIsExpanded(!isExpanded)}
-                                className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white border border-gray-200 text-gray-900 font-bold hover:bg-gray-50 hover:border-gray-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-                            >
-                                <span className="text-lg">{isExpanded ? t('home.history.buttons.collapse') || '접기' : t('home.history.buttons.expand') || '전체 연혁 보기'}</span>
-                                <div className={`w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
-                                </div>
-                            </button>
+                {/* [MOBILE] 세로 스택 레이아웃 (md 미만) */}
+                <div className="md:hidden space-y-4 h-[calc(100vh-180px)] flex flex-col min-h-0">
+                    
+                    {/* 4자리 년도 가로 스크롤 리본 (5개 기준 가로 길이, 고정) */}
+                    <div ref={yearNavRef} className="relative flex items-center overflow-hidden py-3 shrink-0">
+                        <div className="absolute left-0 right-0 h-[1px] bg-gray-100 top-1/2 -z-10"></div>
+                        <div className="flex items-center w-full" style={{ gap: 'calc(1rem * 0.75)' }}>
+                            {historyItems.map((event, index) => (
+                                <button key={event.id} onClick={() => handleManualSelect(index)} className="flex flex-col items-center gap-2 shrink-0 flex-1">
+                                    <div className={`h-1.5 transition-all duration-500 rounded-full ${
+                                        activeHistoryIndex === index ? 'w-12 scale-110 shadow-md ring-[6px] ring-white' : 'bg-gray-200 w-3'
+                                    }`}
+                                    style={activeHistoryIndex === index ? { backgroundColor: event.badgeColor || '#0b3877' } : {}}
+                                    ></div>
+                                    <span className={`text-[12px] font-black tracking-tighter ${activeHistoryIndex === index ? 'text-gray-900' : 'text-gray-500'}`}>
+                                        {event.year}
+                                    </span>
+                                </button>
+                            ))}
                         </div>
-                    )}
+                    </div>
+
+                    {/* 모바일 상세 카드 (페이드 + 스케일 전환) */}
+                    <div className={`bg-white rounded-[2rem] border border-gray-100 shadow-2xl overflow-hidden transform transition-all duration-500 flex-1 flex flex-col min-h-0 ${
+                        isTransitioning ? 'opacity-0 scale-[0.97] blur-sm' : 'opacity-100 scale-100 blur-0'
+                    }`}>
+                        <div className="h-2 w-full shrink-0" style={{ backgroundColor: currentEvent.badgeColor || '#0b3877' }}></div>
+                        <div className="p-5 flex flex-col gap-3 flex-1 min-h-0 overflow-hidden">
+                            <div className="space-y-2 shrink-0">
+                                <h3 className="text-xl font-black text-gray-900 leading-tight">{currentEvent.title}</h3>
+                                <p className="text-xs text-gray-500 font-medium leading-relaxed">{currentEvent.subtitle}</p>
+                            </div>
+
+                            {/* 성과 리스트 (순차적 등장 효과) */}
+                            <div className="space-y-2 pt-3 border-t border-gray-50 flex-1 min-h-0 overflow-y-auto">
+                                {currentEvent.items?.map((item, i) => (
+                                    <div key={i} className={`flex items-start gap-2.5 transition-all duration-500 shrink-0 ${isTransitioning ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'}`}
+                                         style={{ transitionDelay: `${i * 100}ms` }}>
+                                        <span className="material-symbols-outlined text-sm mt-0.5 shrink-0" style={{ color: currentEvent.badgeColor || '#0b3877' }}>
+                                            task_alt
+                                        </span>
+                                        <span className="text-[12px] font-bold text-gray-700 leading-snug">{item}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

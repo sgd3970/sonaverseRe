@@ -17,14 +17,14 @@ const buttonVariants = cva(
                     "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white transition-all",
                 secondary:
                     "bg-white text-primary border-2 border-border-light shadow-sm hover:bg-gray-50",
-                ghost: "hover:bg-accent-light hover:text-primary",
+                ghost: "hover:bg-primary-light hover:text-primary",
                 link: "text-primary underline-offset-4 hover:underline inline-flex items-center gap-2 hover:gap-3 transition-all",
 
-                // Product-specific buttons
-                manbo: "bg-[#2eb865] text-white shadow-md hover:bg-[#249652] hover:-translate-y-0.5 transition-all",
-                "manbo-outline": "border-2 border-[#2eb865] text-[#2eb865] bg-transparent hover:bg-[#2eb865] hover:text-white transition-all",
-                bodume: "bg-[#5eba7d] text-white shadow-md hover:bg-[#4a9863] hover:-translate-y-0.5 transition-all",
-                "bodume-outline": "border-2 border-[#5eba7d] text-[#5eba7d] bg-transparent hover:bg-[#5eba7d] hover:text-white transition-all",
+                // Product-specific buttons (changed to primary color)
+                manbo: "bg-primary text-white shadow-md hover:bg-primary-dark hover:-translate-y-0.5 transition-all",
+                "manbo-outline": "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white transition-all",
+                bodume: "bg-primary text-white shadow-md hover:bg-primary-dark hover:-translate-y-0.5 transition-all",
+                "bodume-outline": "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white transition-all",
 
                 // Category/Filter buttons
                 "category-active": "bg-primary text-white shadow-sm",

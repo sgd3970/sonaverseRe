@@ -14,9 +14,9 @@ interface HeroBadgeProps {
 
 function HeroBadge({ icon, text, color = "manbo-green" }: HeroBadgeProps) {
     return (
-        <div className={`inline-flex w-fit items-center gap-2 rounded-full border border-${color}/20 bg-${color}/10 px-4 py-1.5 md:px-5 md:py-2`}>
-            <span className={`material-symbols-outlined text-base md:text-lg text-${color}`}>{icon}</span>
-            <span className={`text-[10px] font-black text-${color} uppercase tracking-[0.2em]`}>{text}</span>
+        <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-primary-light px-4 py-1.5 md:px-5 md:py-2">
+            <span className="material-symbols-outlined text-base md:text-lg text-primary">{icon}</span>
+            <span className="text-[10px] font-black text-primary uppercase tracking-[0.2em]">{text}</span>
         </div>
     )
 }
@@ -31,14 +31,14 @@ interface HeroButtonProps {
 function HeroButton({ href, variant, color = "manbo-green", children }: HeroButtonProps) {
     if (variant === 'primary') {
         return (
-            <Link href={href} className="h-14 md:h-16 px-8 md:px-12 rounded-full bg-gradient-to-br from-manbo-green to-[#1d7a3f] text-white text-xs md:text-sm font-black shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-500 uppercase tracking-widest flex items-center justify-center">
+            <Link href={href} className="h-14 md:h-16 px-8 md:px-12 rounded-full bg-primary hover:bg-primary-dark text-white text-xs md:text-sm font-black shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-500 uppercase tracking-widest flex items-center justify-center">
                 {children}
             </Link>
         )
     }
 
     return (
-        <Link href={href} className={`h-14 md:h-16 px-8 md:px-12 rounded-full bg-white text-gray-500 text-xs md:text-sm font-black border-2 border-gray-100 hover:border-${color} hover:text-${color} transition-all duration-300 uppercase tracking-widest flex items-center justify-center`}>
+        <Link href={href} className="h-14 md:h-16 px-8 md:px-12 rounded-full bg-white text-gray-500 text-xs md:text-sm font-black border-2 border-gray-100 hover:border-primary hover:text-primary transition-all duration-300 uppercase tracking-widest flex items-center justify-center">
             {children}
         </Link>
     )
@@ -53,7 +53,7 @@ interface HeroImageProps {
 function HeroImage({ src, alt, color = "manbo-green" }: HeroImageProps) {
     return (
         <div className="flex-1 w-full relative mt-8 lg:mt-0">
-            <div className={`absolute -inset-10 bg-${color}/20 rounded-full blur-[80px] opacity-20 animate-pulse`}></div>
+            <div className="absolute -inset-10 bg-primary-light rounded-full blur-[80px] opacity-20 animate-pulse"></div>
             <div className="relative aspect-square w-full overflow-hidden rounded-3xl md:rounded-[4rem] bg-white shadow-2xl border border-white/50 p-4 md:p-6">
                 <OptimizedImage
                     alt={alt}

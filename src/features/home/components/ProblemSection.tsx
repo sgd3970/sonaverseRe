@@ -62,8 +62,8 @@ export function ProblemSection() {
         { key: 'tech_gap', icon: 'wifi_off', color: 'bg-purple-500' },
     ].map(item => ({
         ...item,
-        title: t(`home.problems.features.${item.key}.title`),
-        description: t(`home.problems.features.${item.key}.description`),
+        title: t(`home.problems.items.features.${item.key}.title`),
+        description: t(`home.problems.items.features.${item.key}.description`),
     }))
 
     return (

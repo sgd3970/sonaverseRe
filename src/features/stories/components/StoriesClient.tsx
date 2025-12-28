@@ -85,9 +85,9 @@ export function StoriesClient({ initialStories = [] }: StoriesClientProps) {
                     </h1>
                     <p className="text-xl text-gray-600">
                         {t('stories.subtitle') || (locale === "en" ? (
-                            <>Product development stories and useful <span className="text-accent font-bold underline decoration-2 decoration-accent/30 underline-offset-4">welfare/health information</span>!</>
+                            <>Product development stories and useful <span className="text-primary font-bold underline decoration-2 decoration-primary/30 underline-offset-4">welfare/health information</span>!</>
                         ) : (
-                            <>제품 개발 이야기부터 유용한 <span className="text-accent font-bold underline decoration-2 decoration-accent/30 underline-offset-4">복지/건강 정보</span>까지!</>
+                            <>제품 개발 이야기부터 유용한 <span className="text-primary font-bold underline decoration-2 decoration-primary/30 underline-offset-4">복지/건강 정보</span>까지!</>
                         ))}
                     </p>
                 </div>
@@ -101,7 +101,7 @@ export function StoriesClient({ initialStories = [] }: StoriesClientProps) {
                                 onClick={() => handleCategoryChange(cat.key)}
                                 className={`h-12 rounded-full px-6 text-lg font-bold transition-colors ${selectedCategory === cat.key
                                     ? "bg-primary text-white shadow-md shadow-primary/20"
-                                    : "bg-white border-2 border-gray-100 text-gray-500 hover:border-accent hover:text-primary hover:bg-accent-light"
+                                    : "bg-white border-2 border-gray-100 text-gray-500 hover:border-primary hover:text-primary hover:bg-primary-light"
                                     }`}
                             >
                                 {t(cat.translationKey) || (cat.key === 'all' ? (locale === "en" ? "All" : "전체") : cat.key)}
@@ -178,7 +178,7 @@ export function StoriesClient({ initialStories = [] }: StoriesClientProps) {
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent md:hidden" />
                                         </div>
                                         <div className="md:w-[40%] p-8 md:p-12 flex flex-col justify-center">
-                                            <span className="text-accent font-bold mb-4 block">FEATURED</span>
+                                            <span className="text-primary font-bold mb-4 block">FEATURED</span>
                                             <h3 className="text-3xl font-black text-primary mb-4 leading-tight line-clamp-3">
                                                 {featuredStory.title}
                                             </h3>

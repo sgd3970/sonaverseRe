@@ -87,10 +87,10 @@ export default async function ProductDetailPage({ params }: Props) {
     const heroImage = product.hero_image_id || product.thumbnail_image_id
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sonaverse.kr"
 
-    // 타입별 색상 설정
+    // 타입별 색상 설정 (모두 primary로 통일)
     const typeColors: Record<string, { bg: string; text: string; border: string }> = {
-        manbo: { bg: 'bg-[#6366F1]', text: 'text-[#6366F1]', border: 'border-[#6366F1]' },
-        bodume: { bg: 'bg-bodeum-green', text: 'text-bodeum-green', border: 'border-bodeum-green' },
+        manbo: { bg: 'bg-primary', text: 'text-primary', border: 'border-primary' },
+        bodume: { bg: 'bg-primary', text: 'text-primary', border: 'border-primary' },
         accessory: { bg: 'bg-gray-600', text: 'text-gray-600', border: 'border-gray-600' },
         other: { bg: 'bg-gray-500', text: 'text-gray-500', border: 'border-gray-500' },
     }

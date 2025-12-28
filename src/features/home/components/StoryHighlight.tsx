@@ -91,7 +91,7 @@ export function StoryHighlight() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
                         <div className="relative p-12 md:p-20 flex flex-col justify-end h-full">
                             <Link href={`/stories/${stories[0].id}`}>
-                                <span className="inline-block px-4 py-1.5 bg-accent text-white text-[10px] font-black rounded-full mb-6 w-fit uppercase tracking-widest">{t(`stories.categories.${stories[0].categoryKey.split('.').pop()}`) || stories[0].category}</span>
+                                <span className="inline-block px-4 py-1.5 bg-primary text-white text-[10px] font-black rounded-full mb-6 w-fit uppercase tracking-widest">{t(`stories.categories.${stories[0].categoryKey.split('.').pop()}`) || stories[0].category}</span>
                                 <h3 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight max-w-4xl group-hover:translate-x-2 transition-transform duration-500">{stories[0].title}</h3>
                                 <p className="text-white/60 text-xl font-light line-clamp-2 mb-10 max-w-2xl">{stories[0].excerpt}</p>
                                 <div className="flex items-center text-white/40 text-sm font-bold tracking-widest uppercase">

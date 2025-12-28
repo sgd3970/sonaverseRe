@@ -31,8 +31,8 @@ function CategoryButton({ label, isActive, onClick, color = "bodeum-green" }: Ca
         <button
             onClick={onClick}
             className={`whitespace-nowrap rounded-full px-5 md:px-7 py-2 md:py-3 transition-colors text-xs md:text-sm ${isActive
-                ? 'bg-[#5eba7d] text-white font-bold shadow-md'
-                : 'bg-white border border-gray-200 text-gray-500 font-medium hover:border-[#5eba7d] hover:text-[#5eba7d]'
+                ? 'bg-primary text-white font-bold shadow-md'
+                : 'bg-white border border-gray-200 text-gray-500 font-medium hover:border-primary hover:text-primary'
                 }`}
         >
             {label}
@@ -64,13 +64,13 @@ function ProductCard({ product, categoryLabel, locale, color = "bodeum-green" }:
                 />
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur text-[#5eba7d] text-[10px] font-bold shadow-sm">
+                    <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur text-primary text-[10px] font-bold shadow-sm">
                         {categoryLabel}
                     </span>
                 </div>
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <button className="bg-white text-[#5eba7d] font-bold px-6 py-2.5 rounded-full shadow-lg hidden md:block hover:bg-[#5eba7d] hover:text-white transition-colors">
+                    <button className="bg-white text-primary font-bold px-6 py-2.5 rounded-full shadow-lg hidden md:block hover:bg-primary hover:text-white transition-colors">
                         자세히 보기
                     </button>
                 </div>

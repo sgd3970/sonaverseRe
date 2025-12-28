@@ -125,7 +125,7 @@ export function PressSection() {
                                             )}
                                         </div>
                                         <div className="flex flex-col justify-center">
-                                            <span className="text-[10px] font-black text-accent uppercase tracking-widest mb-2">{article.pressName}</span>
+                                            <span className="text-[10px] font-black text-gray-700 uppercase tracking-widest mb-2">{article.pressName}</span>
                                             <h4 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-primary transition-colors leading-snug">{article.title}</h4>
                                             <span className="text-[10px] text-gray-500 font-black tracking-widest">{formatDate(article.publishedAt)}</span>
                                         </div>
@@ -135,9 +135,9 @@ export function PressSection() {
                         </div>
 
                         {/* Read More Button */}
-                        <button className="mt-16 w-full py-6 min-h-[48px] rounded-3xl border-2 border-gray-100 text-gray-900 font-black hover:bg-gray-50 hover:border-primary/20 transition-all flex items-center justify-center gap-3 uppercase text-xs tracking-[0.2em]">
-                            <Link href="/press">{t('home.press.section.readMore') || 'Read More News'}</Link> <span className="material-symbols-outlined select-none text-lg">arrow_outward</span>
-                        </button>
+                        <Link href="/press" className="mt-16 w-full py-6 min-h-[48px] rounded-3xl border-2 border-gray-100 text-gray-900 font-black hover:bg-gray-50 hover:border-primary/20 transition-all flex items-center justify-center gap-3 uppercase text-xs tracking-[0.2em]">
+                            {t('home.press.section.readMore') || 'Read More News'} <span className="material-symbols-outlined select-none text-lg">arrow_outward</span>
+                        </Link>
                     </div>
                 </div>
             </div>

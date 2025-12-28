@@ -33,9 +33,9 @@ function SpecSection({ image, badge, title, highlight, description, reverse = fa
                 </div>
             </div>
             <div className={`w-full lg:flex-1 space-y-6 md:space-y-10 text-center ${TextAlign}`}>
-                <span className={`text-${color} font-black tracking-[0.3em] text-[10px] md:text-xs uppercase`}>{badge}</span>
+                <span className="text-primary font-black tracking-[0.3em] text-[10px] md:text-xs uppercase">{badge}</span>
                 <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.2] tracking-tight">
-                    {title} <br /><span className={`text-${color} italic font-serif`}>{highlight}</span>
+                    {title} <br /><span className="text-primary italic font-serif">{highlight}</span>
                 </h2>
                 <p className={`text-base md:text-xl text-gray-500 leading-relaxed font-light ${reverse ? 'lg:ml-auto lg:max-w-lg' : ''}`}>
                     {description}

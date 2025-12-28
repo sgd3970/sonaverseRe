@@ -18,7 +18,7 @@ export function InquirySuccess({ result, onReset }: InquirySuccessProps) {
 
     return (
         <div className="bg-white p-8 md:p-10 rounded-3xl shadow-lg border border-gray-100 text-center">
-            <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-primary-light text-primary rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="material-symbols-outlined text-3xl">check</span>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">

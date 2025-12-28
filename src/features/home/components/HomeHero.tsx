@@ -32,7 +32,7 @@ export function HomeHero() {
                 src="/images/hero/home-hero.webp"
                 fill
                 priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1920px"
+                sizes="100vw"
                 objectFit="cover"
                 containerClassName="absolute inset-0 w-full h-full"
             />
@@ -44,11 +44,11 @@ export function HomeHero() {
                 <div className="space-y-4">
                     <span className="text-white/60 font-black tracking-[0.4em] text-xs md:text-sm uppercase block animate-pulse">{t('home.hero.badge') || 'For a Better Daily Life'}</span>
                     <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-tight tracking-tighter drop-shadow-2xl">
-                        Sonaverse
+                        SONAVERSE
                     </h1>
                 </div>
                 <p className="text-xl md:text-3xl text-white/90 max-w-3xl leading-relaxed font-extralight drop-shadow-lg">
-                    {t('home.hero.descriptionText') || '시니어의 더 나은 일상을 위한 따뜻한 혁신을 만들어갑니다.'}
+                    {t('home.hero.descriptionText') ?? '시니어의 더 나은 일상을 위한 따뜻한 혁신을 만들어갑니다.'}
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-5 mt-6">

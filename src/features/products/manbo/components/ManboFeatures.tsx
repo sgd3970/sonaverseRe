@@ -13,7 +13,7 @@ interface FeatureCardProps {
 function FeatureCard({ icon, title, description, color = "manbo-green" }: FeatureCardProps) {
     return (
         <div className="p-8 md:p-12 rounded-3xl md:rounded-[3rem] bg-[#fafafa] border border-gray-100 hover:shadow-xl transition-all duration-500 group text-center md:text-left">
-            <div className={`w-16 h-16 md:w-20 md:h-20 mx-auto md:mx-0 rounded-2xl bg-white shadow-sm flex items-center justify-center text-${color} mb-6 md:mb-10 transition-transform group-hover:scale-110`}>
+            <div className="w-16 h-16 md:w-20 md:h-20 mx-auto md:mx-0 rounded-2xl bg-white shadow-sm flex items-center justify-center text-primary mb-6 md:mb-10 transition-transform group-hover:scale-110">
                 <span className="material-symbols-outlined text-3xl md:text-4xl">{icon}</span>
             </div>
             <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-3 md:mb-4">{title}</h3>

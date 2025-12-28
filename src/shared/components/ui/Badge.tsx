@@ -16,12 +16,12 @@ const badgeVariants = cva(
                     "border-transparent bg-red-500 text-white hover:bg-red-500/80",
                 outline: "border-gray-300 bg-transparent text-gray-700",
 
-                // Section headers
-                accent: "border-transparent bg-accent-light text-accent",
+                // Section headers (changed to primary color)
+                accent: "border-transparent bg-primary-light text-primary",
 
-                // Product badges
-                manbo: "border-transparent bg-[#e8f9ee] text-[#2eb865]",
-                bodume: "border-transparent bg-[#edf7f1] text-[#5eba7d]",
+                // Product badges (changed to primary color)
+                manbo: "border-transparent bg-primary-light text-primary",
+                bodume: "border-transparent bg-primary-light text-primary",
 
                 // Status badges
                 new: "border-transparent bg-blue-600 text-white",

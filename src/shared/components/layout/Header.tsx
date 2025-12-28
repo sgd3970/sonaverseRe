@@ -28,20 +28,30 @@ export function Header() {
     const [isLangMenuOpen, setIsLangMenuOpen] = React.useState(false)
     const [isProductsMenuOpen, setIsProductsMenuOpen] = React.useState(false)
     const [isScrolled, setIsScrolled] = React.useState(false)
+    const [isMounted, setIsMounted] = React.useState(false)
     const pathname = usePathname()
 
     const { t, isLoading } = useTranslation()
     const locale = useLocale()
     const setLocale = useSetLocale()
 
+    // Mount 상태 설정 (Hydration 에러 방지)
+    React.useEffect(() => {
+        setIsMounted(true)
+    }, [])
+
     // Handle scroll effect
     React.useEffect(() => {
+        if (!isMounted) return
+        
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 10)
         }
+        // 초기 스크롤 위치 확인
+        handleScroll()
         window.addEventListener("scroll", handleScroll)
         return () => window.removeEventListener("scroll", handleScroll)
-    }, [])
+    }, [isMounted])
 
     // Close mobile menu on path change
     React.useEffect(() => {
@@ -76,7 +86,8 @@ export function Header() {
         <header
             className={cn(
                 "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-                isScrolled || isMobileMenuOpen ? "bg-white/98 backdrop-blur-md shadow-sm border-b border-gray-100" : "bg-white/20 backdrop-blur-sm"
+                // Hydration 에러 방지: 서버와 클라이언트에서 동일한 초기값 사용
+                (isMounted && (isScrolled || isMobileMenuOpen)) ? "bg-white/98 backdrop-blur-md shadow-sm border-b border-gray-100" : "bg-white/20 backdrop-blur-sm"
             )}
         >
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
@@ -94,7 +105,7 @@ export function Header() {
                                             "text-lg font-bold flex items-center gap-1 transition-colors",
                                             isProductsActive
                                                 ? 'text-primary'
-                                                : 'text-gray-700 hover:text-primary'
+                                                : isMounted ? 'text-gray-700 hover:text-primary' : 'text-gray-500 hover:text-primary'
                                         )}
                                     >
                                         {t(item.nameKey)}
@@ -127,7 +138,7 @@ export function Header() {
                                         "text-lg font-bold transition-colors",
                                         (item.href === "/" ? pathname === "/" : pathname.startsWith(item.href))
                                             ? 'text-primary'
-                                            : 'text-gray-700 hover:text-primary'
+                                            : isMounted ? 'text-gray-700 hover:text-primary' : 'text-gray-500 hover:text-primary'
                                     )}
                                 >
                                     {t(item.nameKey)}

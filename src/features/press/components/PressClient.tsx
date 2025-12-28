@@ -151,7 +151,7 @@ export function PressClient({ initialPressItems = [] }: PressClientProps) {
                                         {/* 내용 */}
                                         <div className="flex flex-col justify-center flex-1">
                                             <div className="flex items-center gap-2 mb-2">
-                                                <span className="text-sm font-bold text-accent">
+                                                <span className="text-sm font-bold text-primary">
                                                     {item.pressName}
                                                 </span>
                                                 <span className="text-gray-300">|</span>

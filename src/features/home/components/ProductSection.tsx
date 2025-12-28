@@ -90,22 +90,22 @@ export function ProductSection() {
         <section id="products" className="py-20 md:py-48 bg-[#f5f2f0] relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="mb-12 md:mb-28 text-center">
-                    <span className="inline-block py-1 px-3 md:py-1.5 md:px-4 rounded-full bg-gray-100 text-gray-600 text-[10px] md:text-xs font-black tracking-[0.2em] uppercase mb-4 md:mb-6 border border-gray-200/50">{sectionBadge}</span>
+                    <span className="inline-block py-1 px-3 md:py-1.5 md:px-4 rounded-full bg-gray-100 text-gray-700 text-[10px] md:text-xs font-black tracking-[0.2em] uppercase mb-4 md:mb-6 border border-gray-200/50">{sectionBadge}</span>
                     <h2 className="text-3xl md:text-6xl font-black text-gray-900 tracking-tight mb-4 md:mb-6 leading-[1.2] md:leading-[1.15]">{sectionTitle}</h2>
                 </div>
 
                 <div ref={scrollContainerRef} className="flex overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-2 lg:gap-12 lg:overflow-visible lg:pb-0 no-scrollbar scroll-smooth">
                     {/* Manbo Card */}
-                    <div className="min-w-full md:min-w-[45vw] lg:min-w-0 snap-center group relative rounded-[2.5rem] md:rounded-[3rem] bg-white shadow-2xl transition-all duration-700 flex flex-col overflow-hidden mr-6 lg:mr-0">
+                    <div className="min-w-full md:min-w-[45vw] lg:min-w-0 snap-center group relative rounded-[2.5rem] md:rounded-[3rem] bg-white shadow-2xl transition-all duration-700 flex flex-col overflow-hidden mr-6 lg:mr-0" style={{ transform: 'scale(0.764)', transformOrigin: 'center' }}>
                         <div className="p-8 md:p-12 pb-6">
                             <div className="flex items-center gap-3 mb-4 md:mb-6">
-                                <div className="h-[2px] w-8 md:w-10 bg-manbo-green"></div>
-                                <span className="text-[#1d7a3f] font-black tracking-[0.2em] text-[9px] md:text-[10px] uppercase">{manboBadge}</span>
+                                <div className="h-[2px] w-8 md:w-10 bg-primary"></div>
+                                <span className="text-primary font-black tracking-[0.2em] text-[9px] md:text-[10px] uppercase">{manboBadge}</span>
                             </div>
                             <h3 className="text-3xl md:text-5xl font-black text-gray-900 mb-2 md:mb-4 tracking-tight">{manboName}</h3>
-                            <p className="text-gray-600 text-base md:text-lg font-light leading-relaxed">{manboDescription}</p>
+                            <p className="text-gray-700 text-base md:text-lg font-light leading-relaxed">{manboDescription}</p>
                         </div>
-                        <div className="aspect-[4/3] w-full bg-gray-50 relative overflow-hidden" style={{ position: 'relative', height: 'auto' }}>
+                        <div className="aspect-[4/3] w-full bg-gray-50 relative overflow-hidden">
                             <OptimizedImage
                                 alt="Manbo"
                                 title="만보 워크메이트 - 자유로운 이동을 위한 테크놀로지의 집약"
@@ -119,26 +119,26 @@ export function ProductSection() {
                             <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-0 group-hover:opacity-40 transition-opacity"></div>
                         </div>
                         <div className="p-8 md:p-10 pt-4 mt-auto flex gap-3 md:gap-5">
-                            <Link href="/products/manbo" className="flex-1 py-4 md:py-5 rounded-2xl border-2 border-gray-100 text-gray-600 font-medium hover:border-manbo-green hover:text-manbo-green transition-all duration-300 tracking-widest text-xs md:text-sm flex items-center justify-center">
+                            <Link href="/products/manbo" className="flex-1 py-4 md:py-5 border-2 border-gray-100 text-gray-600 font-medium hover:border-primary hover:text-primary transition-all duration-300 tracking-widest text-xs md:text-sm flex items-center justify-center" style={{ borderRadius: '2rem' }}>
                                 {manboViewDetail}
                             </Link>
-                            <Link href="/inquiry" className="flex-1 py-4 md:py-5 rounded-2xl text-white font-medium shadow-lg hover:-translate-y-1 transition-all duration-500 tracking-widest text-xs md:text-sm flex items-center justify-center" style={{ background: 'linear-gradient(to bottom right, #2eb865, #1d7a3f)' }}>
+                            <Link href="/inquiry" className="flex-1 py-4 md:py-5 text-white font-medium shadow-lg hover:-translate-y-1 transition-all duration-500 tracking-widest text-xs md:text-sm flex items-center justify-center bg-primary hover:bg-primary-dark transition-colors" style={{ borderRadius: '2rem' }}>
                                 {manboInquiryNow}
                             </Link>
                         </div>
                     </div>
 
                     {/* Bodume Card */}
-                    <div className="min-w-full md:min-w-[45vw] lg:min-w-0 snap-center group relative rounded-[2.5rem] md:rounded-[3rem] bg-white shadow-2xl transition-all duration-700 flex flex-col overflow-hidden">
+                    <div className="min-w-full md:min-w-[45vw] lg:min-w-0 snap-center group relative rounded-[2.5rem] md:rounded-[3rem] bg-white shadow-2xl transition-all duration-700 flex flex-col overflow-hidden" style={{ transform: 'scale(0.764)', transformOrigin: 'center' }}>
                         <div className="p-8 md:p-12 pb-6">
                             <div className="flex items-center gap-3 mb-4 md:mb-6">
-                                <div className="h-[2px] w-8 md:w-10" style={{ backgroundColor: '#5eba7d' }}></div>
-                                <span className="text-[#3a7a4f] font-black tracking-[0.2em] text-[9px] md:text-[10px] uppercase">{bodumeBadge}</span>
+                                <div className="h-[2px] w-8 md:w-10 bg-primary"></div>
+                                <span className="text-primary font-black tracking-[0.2em] text-[9px] md:text-[10px] uppercase">{bodumeBadge}</span>
                             </div>
                             <h3 className="text-3xl md:text-5xl font-black text-gray-900 mb-2 md:mb-4 tracking-tight">{bodumeName}</h3>
-                            <p className="text-gray-600 text-base md:text-lg font-light leading-relaxed">{bodumeDescription}</p>
+                            <p className="text-gray-700 text-base md:text-lg font-light leading-relaxed">{bodumeDescription}</p>
                         </div>
-                        <div className="aspect-[4/3] w-full bg-gray-50 relative overflow-hidden" style={{ position: 'relative', height: 'auto' }}>
+                        <div className="aspect-[4/3] w-full bg-gray-50 relative overflow-hidden">
                             <OptimizedImage
                                 alt="Bodeum"
                                 title="보듬 기저귀 - 최상의 편안함과 위생을 향한 고집"
@@ -151,10 +151,10 @@ export function ProductSection() {
                             <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-0 group-hover:opacity-40 transition-opacity"></div>
                         </div>
                         <div className="p-8 md:p-10 pt-4 mt-auto flex gap-3 md:gap-5">
-                            <Link href="/products/bodume" className="flex-1 py-4 md:py-5 rounded-2xl border-2 border-gray-100 text-gray-600 font-medium hover:border-bodeum-green hover:text-bodeum-green transition-all duration-300 tracking-widest text-xs md:text-sm flex items-center justify-center">
+                            <Link href="/products/bodume" className="flex-1 py-4 md:py-5 border-2 border-gray-100 text-gray-600 font-medium hover:border-primary hover:text-primary transition-all duration-300 tracking-widest text-xs md:text-sm flex items-center justify-center" style={{ borderRadius: '2rem' }}>
                                 {bodumeExplore}
                             </Link>
-                            <Link href="/products/bodume" className="flex-1 py-4 md:py-5 rounded-2xl text-white font-medium shadow-lg hover:-translate-y-1 transition-all duration-500 tracking-widest text-xs md:text-sm flex items-center justify-center" style={{ background: 'linear-gradient(to bottom right, #5eba7d, #3a7a4f)' }}>
+                            <Link href="/products/bodume" className="flex-1 py-4 md:py-5 text-white font-medium shadow-lg hover:-translate-y-1 transition-all duration-500 tracking-widest text-xs md:text-sm flex items-center justify-center bg-primary hover:bg-primary-dark transition-colors" style={{ borderRadius: '2rem' }}>
                                 {bodumePurchaseOnline}
                             </Link>
                         </div>
